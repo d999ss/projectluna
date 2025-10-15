@@ -53,7 +53,7 @@ const divisions = {
     subtitle: "Shaping the Future of Aesthetics",
     description:
       "Tiger Aesthetics delivers cutting-edge solutions across reconstructive, cosmetic, and regenerative domains. Each product is designed to meet personalized needs and maximize clinical results. Advanced CAMP technologies open new possibilities in aesthetic practice.",
-    icon: <Building2Icon className="size-12 text-green-600" />,
+    icon: <Building2Icon className="size-12 text-brand" />,
     color: "green",
     features: [
       "Reconstructive and cosmetic solutions",
@@ -74,7 +74,7 @@ const divisions = {
     subtitle: "Global Access to Advanced Cell & Tissue Technologies",
     description:
       "Tiger BioSciences International enables worldwide distribution of cutting-edge cell and tissue products. Based in Germany, with a focus on regulatory excellence and international partnerships. Built to deliver CAMP innovations across borders and care systems.",
-    icon: <GlobeIcon className="size-12 text-orange-600" />,
+    icon: <GlobeIcon className="size-12 text-brand" />,
     color: "orange",
     features: [
       "Global distribution network",
