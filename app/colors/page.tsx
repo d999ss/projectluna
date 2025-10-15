@@ -253,7 +253,7 @@ export default function ColorsPage() {
         <div>
           <h1 className="text-h2">Color System Dashboard</h1>
           <p className="text-muted-foreground mt-2">
-            Centralized color management for Tiger BioSciences
+            Centralized color management for Tiger BioSciences™
           </p>
         </div>
         <div className="flex gap-2">

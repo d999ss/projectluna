@@ -3,13 +3,17 @@ import { Card, CardBody } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { Nav } from "@/components/site/Nav"
+import { Footer } from "@/components/site/Footer"
 
 export default function StyleGuide() {
   return (
-    <main className="container mx-auto max-w-7xl px-6 md:px-10 py-10 md:py-14 mt-16 relative">
+    <>
+      <Nav />
+      <main className="container mx-auto max-w-7xl px-6 md:px-10 py-10 md:py-14 mt-16 relative">
 
       <header className="mb-12">
-        <h1 className="text-h2">Style Guide — Launch UI</h1>
+        <h1 className="text-display">Tiger BioSciences™ Styleguide</h1>
         <p className="text-lead text-muted-foreground mt-4">
           Design system showcasing Launch UI colors, typography, and components with Audi Red brand color.
         </p>
@@ -224,10 +228,11 @@ export default function StyleGuide() {
       <section className="mb-12">
         <h2 className="text-h3 mb-6">Buttons</h2>
         <div className="flex flex-wrap gap-4">
-          <Button variant="default">Primary Button</Button>
+          <Button variant="primary">Primary Button</Button>
           <Button variant="secondary">Secondary Button</Button>
           <Button variant="ghost">Ghost Button</Button>
           <Button variant="outline">Outline Button</Button>
+          <Button variant="danger">Danger Button</Button>
         </div>
       </section>
 
@@ -474,10 +479,11 @@ export default function StyleGuide() {
               <Badge variant="secondary">Secondary</Badge>
               <Badge variant="destructive">Destructive</Badge>
               <Badge variant="outline">Outline</Badge>
+              <Badge variant="glass">Glass</Badge>
               <Badge size="sm">Small</Badge>
             </div>
             <div className="mt-4 text-xs text-muted-foreground">
-              <code>variant: default | brand | secondary | destructive | outline</code>
+              <code>variant: default | brand | secondary | destructive | outline | glass</code>
               <br />
               <code>size: default | sm</code>
             </div>
@@ -648,5 +654,7 @@ export default function StyleGuide() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   )
 }

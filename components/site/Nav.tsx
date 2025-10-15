@@ -37,12 +37,12 @@ export function Nav() {
 
   return (
     <header className="fixed top-0 z-50 w-full">
-      <div className="absolute inset-0 bg-background/95 backdrop-blur-lg border-b border-border/40" />
+      <div className="absolute inset-0 bg-[rgba(255,255,255,.55)] dark:bg-[rgba(0,0,0,.35)] backdrop-blur-xl" />
       <div className="container relative mx-auto max-w-7xl px-6 md:px-10">
         <Navbar className="py-4">
           <NavbarLeft>
             <Link href="/" className="-m-1.5 p-1.5 transition-all duration-200 ease-in-out focus:outline-hidden focus:ring-2 focus:ring-brand/70 rounded-md">
-              <span className="text-xl font-display font-light tracking-tight">Tiger BioSciences</span>
+              <span className="text-base font-[Neuropa,Archivo] font-normal tracking-tight uppercase">Tiger BioSciences™</span>
             </Link>
           </NavbarLeft>
 
@@ -52,7 +52,7 @@ export function Nav() {
               <NavigationMenuList>
                 {MEGA_SECTIONS.map((section) => (
                   <NavigationMenuItem key={section.id}>
-                    <NavigationMenuTrigger className="font-display text-sm font-light uppercase tracking-wide">
+                    <NavigationMenuTrigger className="font-display text-sm font-light tracking-wide">
                       {section.id === "company" ? "Company" : section.id === "expertise" ? "Expertise" : "Products"}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -61,7 +61,7 @@ export function Nav() {
                         <div className="grid grid-cols-2 gap-6">
                           {section.groups.map((group) => (
                             <div key={group.title} className="space-y-3">
-                              <div className="font-display text-xs font-light uppercase tracking-wide text-foreground/90">
+                              <div className="font-display text-xs font-light tracking-wide text-foreground/90">
                                 {group.title}
                               </div>
                               <ul className="space-y-2">
@@ -84,7 +84,7 @@ export function Nav() {
 
                         {/* Right side: Featured section */}
                         <div className="rounded-lg bg-muted/40 border border-border/60 p-6 space-y-4">
-                          <span className="font-display inline-block text-xs tracking-wide font-light uppercase rounded-full px-3 py-1 bg-brand/15 text-brand border border-brand/25">
+                          <span className="font-display inline-block text-xs tracking-wide font-light rounded-full px-3 py-1 bg-brand/15 text-brand border border-brand/25">
                             {section.feature.badge}
                           </span>
                           <h3 className="font-display text-xl font-light tracking-tight">{section.feature.title}</h3>
@@ -102,7 +102,7 @@ export function Nav() {
                 ))}
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href="/careers" className="font-display group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-light uppercase tracking-wide transition-all duration-200 ease-in-out hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-hidden focus:ring-2 focus:ring-brand/70">
+                    <Link href="/careers" className="font-display group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-light tracking-wide transition-all duration-200 ease-in-out hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-hidden focus:ring-2 focus:ring-brand/70">
                       Career
                     </Link>
                   </NavigationMenuLink>
@@ -114,12 +114,6 @@ export function Nav() {
           <NavbarRight>
             <div className="flex items-center gap-3">
               <ThemeToggle />
-              <Link
-                href="/contact"
-                className="font-body hidden lg:inline-flex rounded-lg bg-brand px-4 py-2 text-sm text-brand-foreground transition-all duration-200 ease-in-out hover:brightness-110 focus:outline-hidden focus:ring-2 focus:ring-brand/70"
-              >
-                Request Demo
-              </Link>
 
               {/* Mobile menu */}
               <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -136,7 +130,7 @@ export function Nav() {
                   <SheetHeader>
                     <SheetTitle className="font-display font-light">
                       <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                        Tiger BioSciences
+                        Tiger BioSciences™
                       </Link>
                     </SheetTitle>
                   </SheetHeader>
@@ -153,15 +147,6 @@ export function Nav() {
                             {item.name}
                           </Link>
                         ))}
-                      </div>
-                      <div className="py-6">
-                        <Link
-                          href="/contact"
-                          className="font-body block rounded-lg bg-brand px-4 py-2.5 text-center text-base text-brand-foreground transition-all duration-200 ease-in-out hover:brightness-110 focus:outline-hidden focus:ring-2 focus:ring-brand/70"
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          Request Demo
-                        </Link>
                       </div>
                     </div>
                   </div>

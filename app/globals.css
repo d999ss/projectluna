@@ -5,6 +5,15 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Neuropa Font */
+@font-face {
+  font-family: 'Neuropa';
+  src: url('/fonts/Neuropa-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   --color-brand: hsl(var(--brand));
   --color-brand-foreground: hsl(var(--brand-foreground));

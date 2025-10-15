@@ -17,6 +17,8 @@ const badgeVariants = cva(
         destructive:
           "border-transparent bg-destructive/30 text-destructive-foreground dark:shadow-sm dark:border-transparent",
         outline: "text-foreground",
+        glass:
+          "border-[rgba(12,16,24,.12)] dark:border-[rgba(255,255,255,.12)] bg-[rgba(255,255,255,.55)] dark:bg-[rgba(0,0,0,.35)] backdrop-blur-xl text-foreground",
       },
       size: {
         default: "px-2.5 py-1",

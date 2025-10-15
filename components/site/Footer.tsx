@@ -26,7 +26,7 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <h3 className="font-display mb-4 text-xl font-light tracking-tight">Tiger BioSciences</h3>
+            <h3 className="font-display mb-4 text-xl font-light tracking-tight">Tiger BioSciences™</h3>
             <p className="font-body text-muted-foreground mb-4 text-sm">
               Global leader in medical technology, delivering cutting-edge solutions for clinicians worldwide.
             </p>
@@ -47,7 +47,7 @@ export function Footer() {
 
           {/* Solutions */}
           <div>
-            <h4 className="font-display mb-4 text-sm font-light uppercase tracking-wide">
+            <h4 className="font-display mb-4 text-sm font-light tracking-wide">
               Solutions
             </h4>
             <ul className="space-y-3">
@@ -66,7 +66,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="font-display mb-4 text-sm font-light uppercase tracking-wide">
+            <h4 className="font-display mb-4 text-sm font-light tracking-wide">
               Company
             </h4>
             <ul className="space-y-3">
@@ -85,7 +85,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-display mb-4 text-sm font-light uppercase tracking-wide">
+            <h4 className="font-display mb-4 text-sm font-light tracking-wide">
               Legal
             </h4>
             <ul className="space-y-3">
@@ -113,7 +113,7 @@ export function Footer() {
 
         <div className="border-border/60 mt-12 border-t pt-8">
           <p className="font-body text-muted-foreground text-center text-xs">
-            © {new Date().getFullYear()} Tiger BioSciences. All rights reserved.
+            © {new Date().getFullYear()} Tiger BioSciences™. All rights reserved.
           </p>
         </div>
       </div>

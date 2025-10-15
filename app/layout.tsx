@@ -8,7 +8,7 @@ import { archivo, inter } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Tiger BioSciences - Medical Technology Innovation",
+  title: "Tiger BioSciences™ - Medical Technology Innovation",
   description: "Global leader in medical technology, delivering cutting-edge solutions for clinicians worldwide",
 };
 
