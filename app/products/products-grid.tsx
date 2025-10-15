@@ -60,12 +60,12 @@ export default function ProductsGrid({
           value={q}
           onChange={e=>setQ(e.target.value)}
           placeholder="Search products…"
-          className="px-3 py-2 rounded-md border border-black/10 dark:border-white/10 bg-white/50 dark:bg-black/50"
+          className="px-3 py-2 rounded-md border border-border/60 bg-card/70"
         />
         <select
           value={div}
           onChange={e=>setDiv(e.target.value)}
-          className="px-3 py-2 rounded-md border border-black/10 dark:border-white/10 bg-white/50 dark:bg-black/50"
+          className="px-3 py-2 rounded-md border border-border/60 bg-card/70"
         >
           <option value="all">All divisions</option>
           <option value="regentx">RegenTX</option>
@@ -79,9 +79,9 @@ export default function ProductsGrid({
         {filtered.map(p => (
           <Card key={p.slug}>
             <CardBody>
-              <div className="text-xs uppercase tracking-[0.14em] text-black/60 dark:text-white/60">{p.company}</div>
+              <div className="text-xs uppercase tracking-[0.14em] text-foreground/60">{p.company}</div>
               <h2 className="mt-1 text-xl font-semibold">{p.title}</h2>
-              {p.subtitle ? <p className="mt-1 text-black/70 dark:text-white/70 text-sm">{p.subtitle}</p> : null}
+              {p.subtitle ? <p className="mt-1 text-foreground/70 text-sm">{p.subtitle}</p> : null}
               <div className="mt-4">
                 <Link className="underline" href={`/products/${p.slug}`}>View product</Link>
               </div>

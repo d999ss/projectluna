@@ -6,7 +6,7 @@ export function Card(props: React.HTMLAttributes<HTMLDivElement>) {
       {...props}
       className={[
         "rounded-[var(--radius-card)] border border-border/60",
-        "bg-white/55 dark:bg-white/5 supports-[backdrop-filter]:backdrop-blur",
+        "bg-card/80 supports-[backdrop-filter]:backdrop-blur",
         "shadow-[var(--shadow-inset)]",
         props.className || ""
       ].join(" ")}
