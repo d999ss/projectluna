@@ -114,11 +114,11 @@ export default function Home() {
 
           <Link href="/careers" className="group">
             <StatCard
-              icon={<HeartPulseIcon className="size-6 text-green-600" />}
+              icon={<HeartPulseIcon className="size-6 text-brand" />}
               title="Careers"
               description="Join our team and be at the forefront of medical technology innovation. Explore open positions."
             >
-              <div className="mt-4 flex items-center text-sm font-semibold text-green-600 transition-transform group-hover:translate-x-1">
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
                 View Careers
                 <ArrowRightIcon className="ml-2 size-4" />
               </div>

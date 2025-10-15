@@ -43,7 +43,7 @@ export function Hero({
             {primaryCTA && (
               <Link
                 href={primaryCTA.href}
-                className="inline-flex items-center justify-center rounded-[var(--radius-button)] px-5 py-3 bg-brand text-brand-foreground font-semibold hover:opacity-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/40"
+                className="inline-flex items-center justify-center rounded-full px-8 py-3 bg-brand text-brand-foreground font-semibold hover:brightness-110 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/60"
               >
                 {primaryCTA.text}
               </Link>
@@ -51,7 +51,7 @@ export function Hero({
             {secondaryCTA && (
               <Link
                 href={secondaryCTA.href}
-                className="inline-flex items-center justify-center rounded-[var(--radius-button)] px-5 py-3 border border-border/60 text-foreground hover:bg-muted/60"
+                className="inline-flex items-center justify-center rounded-full px-8 py-3 border border-border/60 text-foreground hover:bg-muted/60 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/60"
               >
                 {secondaryCTA.text}
               </Link>
