@@ -39,8 +39,8 @@ export const designTokens = {
 
   // Glass Card
   glass: {
-    card: "rounded-2xl border border-black/10 bg-white/55 dark:border-white/10 dark:bg-white/5 backdrop-blur-xl",
-    cardHover: "hover:border-black/15 hover:bg-white/65 dark:hover:border-white/15 dark:hover:bg-white/10",
+    card: "rounded-2xl border border-border/60 bg-card/80 backdrop-blur-xl",
+    cardHover: "hover:border-border/70 hover:bg-card/90",
     shadow: "shadow-[inset_0_1px_0_rgba(255,255,255,0.35)]",
   },
 
@@ -53,9 +53,9 @@ export const designTokens = {
 
   // Forms
   forms: {
-    input: "rounded-md border border-black/10 bg-white/50 px-3 py-2 dark:border-white/10 dark:bg-black/50",
-    textarea: "rounded-md border border-black/10 bg-white/50 px-3 py-2 min-h-[120px] dark:border-white/10 dark:bg-black/50",
-    select: "rounded-md border border-black/10 bg-white/50 px-3 py-2 dark:border-white/10 dark:bg-black/50",
+    input: "rounded-md border border-border/60 bg-card/70 px-3 py-2",
+    textarea: "rounded-md border border-border/60 bg-card/70 px-3 py-2 min-h-[120px]",
+    select: "rounded-md border border-border/60 bg-card/70 px-3 py-2",
   },
 
   // Grids

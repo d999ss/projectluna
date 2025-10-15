@@ -152,11 +152,11 @@ export default function DesignSystemPage() {
         <Card>
           <CardBody className="space-y-6">
             <div>
-              <button className="rounded-lg bg-brand px-8 py-3 text-base font-semibold text-white transition-all hover:bg-brand hover:shadow-lg">
+              <button className="rounded-lg bg-brand px-8 py-3 text-base font-semibold text-brand-foreground transition-all hover:opacity-95 hover:shadow-lg">
                 Primary Button
               </button>
               <code className="text-muted-foreground mt-2 block text-xs">
-                bg-brand hover:bg-brand
+                bg-brand hover:opacity-95
               </code>
             </div>
 
@@ -170,11 +170,11 @@ export default function DesignSystemPage() {
             </div>
 
             <div>
-              <button className="rounded-lg bg-gradient-to-r   px-8 py-3 text-base font-semibold text-white transition-all hover:shadow-lg">
+              <button className="rounded-lg bg-gradient-to-r from-brand to-accent px-8 py-3 text-base font-semibold text-brand-foreground transition-all hover:shadow-lg">
                 Gradient Button
               </button>
               <code className="text-muted-foreground mt-2 block text-xs">
-                bg-gradient-to-r  
+                bg-gradient-to-r from-brand to-accent
               </code>
             </div>
 
@@ -201,7 +201,7 @@ export default function DesignSystemPage() {
                 Rounded-2xl with backdrop-blur and subtle border. Core primitive for all content containers.
               </p>
               <code className="text-muted-foreground mt-4 block text-xs">
-                border-[rgba(12,16,24,.12)] bg-[rgba(255,255,255,.55)] backdrop-blur-xl
+                border-border/60 bg-card/80 backdrop-blur-xl
               </code>
             </CardBody>
           </Card>
@@ -385,16 +385,16 @@ export default function DesignSystemPage() {
               <input
                 type="text"
                 placeholder="Enter text..."
-                className="w-full rounded-md border border-black/10 bg-white/50 px-3 py-2 dark:border-white/10 dark:bg-black/50"
+                className="w-full rounded-md border border-border/60 bg-card/70 px-3 py-2"
               />
               <code className="text-muted-foreground mt-1 block text-xs">
-                rounded-md border border-black/10 bg-white/50 dark:border-white/10 dark:bg-black/50
+                rounded-md border border-border/60 bg-card/70
               </code>
             </div>
 
             <div>
               <label className="mb-2 block text-sm font-medium">Select Dropdown</label>
-              <select className="w-full rounded-md border border-black/10 bg-white/50 px-3 py-2 dark:border-white/10 dark:bg-black/50">
+              <select className="w-full rounded-md border border-border/60 bg-card/70 px-3 py-2">
                 <option>Option 1</option>
                 <option>Option 2</option>
                 <option>Option 3</option>
@@ -406,7 +406,7 @@ export default function DesignSystemPage() {
               <textarea
                 placeholder="Enter message..."
                 rows={4}
-                className="w-full rounded-md border border-black/10 bg-white/50 px-3 py-2 dark:border-white/10 dark:bg-black/50"
+                className="w-full rounded-md border border-border/60 bg-card/70 px-3 py-2"
               />
             </div>
           </CardBody>

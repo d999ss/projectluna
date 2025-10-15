@@ -54,8 +54,8 @@ export default function CompaniesGrid({
   return (
     <>
       <div className="mt-4 flex flex-wrap gap-3">
-        <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search companies…" className="px-3 py-2 rounded-md border border-black/10 dark:border-white/10 bg-white/50 dark:bg-black/50" />
-        <select value={rel} onChange={e=>setRel(e.target.value)} className="px-3 py-2 rounded-md border border-black/10 dark:border-white/10 bg-white/50 dark:bg-black/50">
+        <input value={q} onChange={e=>setQ(e.target.value)} placeholder="Search companies…" className="px-3 py-2 rounded-md border border-border/60 bg-card/70" />
+        <select value={rel} onChange={e=>setRel(e.target.value)} className="px-3 py-2 rounded-md border border-border/60 bg-card/70">
           <option value="all">All relationships</option>
           <option value="Subsidiary">Subsidiary</option>
           <option value="Partner">Partner</option>
@@ -68,9 +68,9 @@ export default function CompaniesGrid({
         {filtered.map(c => (
           <Card key={c.slug}>
             <CardBody>
-              <div className="text-xs uppercase tracking-[0.14em] text-black/60 dark:text-white/60">{c.relationship}</div>
+              <div className="text-xs uppercase tracking-[0.14em] text-foreground/60">{c.relationship}</div>
               <h2 className="mt-1 text-xl font-semibold">{c.name}</h2>
-              {c.summary ? <p className="mt-1 text-sm text-black/70 dark:text-white/70">{c.summary}</p> : null}
+              {c.summary ? <p className="mt-1 text-sm text-foreground/70">{c.summary}</p> : null}
               <div className="mt-4">
                 <Link className="underline" href={`/companies/${c.slug}`}>View company</Link>
               </div>

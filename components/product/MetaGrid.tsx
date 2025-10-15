@@ -9,7 +9,7 @@ export function MetaGrid(props: { items: { label: string, value: string }[] }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-3">
           {items.map((it) => (
             <div key={it.label}>
-              <div className="text-[13px] text-black/60 dark:text-white/65">{it.label}</div>
+              <div className="text-[13px] text-foreground/65">{it.label}</div>
               <div className="mt-1 text-[16px] font-medium">{it.value}</div>
             </div>
           ))}
