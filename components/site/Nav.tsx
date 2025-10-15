@@ -61,7 +61,7 @@ export function Nav() {
                         <div className="grid grid-cols-2 gap-6">
                           {section.groups.map((group) => (
                             <div key={group.title} className="space-y-3">
-                              <div className="font-display text-xs font-light tracking-wide text-foreground/90">
+                              <div className="font-display text-xs font-light tracking-wide text-brand">
                                 {group.title}
                               </div>
                               <ul className="space-y-2">

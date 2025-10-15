@@ -1,6 +1,6 @@
 "use client"
 import { Card, CardBody } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/Button"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Nav } from "@/components/site/Nav"
@@ -227,12 +227,26 @@ export default function StyleGuide() {
       {/* Buttons */}
       <section className="mb-12">
         <h2 className="text-h3 mb-6">Buttons</h2>
-        <div className="flex flex-wrap gap-4">
-          <Button variant="primary">Primary Button</Button>
-          <Button variant="secondary">Secondary Button</Button>
-          <Button variant="ghost">Ghost Button</Button>
-          <Button variant="outline">Outline Button</Button>
-          <Button variant="danger">Danger Button</Button>
+
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold mb-4">Button Variants</h3>
+          <div className="flex flex-wrap gap-4">
+            <Button variant="primary">Primary Button</Button>
+            <Button variant="secondary">Secondary Button</Button>
+            <Button variant="ghost">Ghost Button</Button>
+            <Button variant="outline">Outline Button</Button>
+            <Button variant="danger">Danger Button</Button>
+          </div>
+        </div>
+
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Button Radius Options</h3>
+          <div className="flex flex-wrap gap-4">
+            <Button variant="primary" radius="full">Full Rounded</Button>
+            <Button variant="primary" radius="16">Radius 16px</Button>
+            <Button variant="primary" radius="12">Radius 12px</Button>
+            <Button variant="primary" radius="10">Radius 10px</Button>
+          </div>
         </div>
       </section>
 
