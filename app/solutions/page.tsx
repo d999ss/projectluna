@@ -22,7 +22,6 @@ export default function SolutionsPage() {
 
       {/* Wound Care & Pain Management */}
       <Section
-        id="wound-care"
         title="Wound Care & Pain Management"
         description="Advanced CAMP solutions tailored for chronic and hard-to-treat wounds"
       >
@@ -47,7 +46,6 @@ export default function SolutionsPage() {
 
       {/* Soft Tissue Recon & Aesthetics */}
       <Section
-        id="aesthetics"
         title="Soft Tissue Recon & Aesthetics"
         description="Cutting-edge solutions across reconstructive, cosmetic, and regenerative domains"
       >
@@ -84,7 +82,6 @@ export default function SolutionsPage() {
 
       {/* Tissue R&D, Processing and Recovery */}
       <Section
-        id="tissue-rd"
         title="Tissue R&D, Processing and Recovery"
         description="Rigorous protocols and advanced biotech ensuring exceptional tissue quality"
       >
@@ -114,18 +111,17 @@ export default function SolutionsPage() {
 
       {/* Tiger International */}
       <Section
-        id="international"
         title="Tiger International"
         description="Global access to advanced cell and tissue technologies"
       >
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <StatCard
-            icon={<GlobeIcon className="size-6 text-orange-600" />}
+            icon={<GlobeIcon className="size-6 text-brand" />}
             title="Lizard Health Technology"
             description="Based in Germany, delivering CAMP innovations across borders and care systems"
           />
           <StatCard
-            icon={<GlobeIcon className="size-6 text-orange-600" />}
+            icon={<GlobeIcon className="size-6 text-brand" />}
             title="Airway Medix"
             description="Specialized airway management and respiratory solutions"
           />

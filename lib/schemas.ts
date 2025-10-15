@@ -16,20 +16,20 @@ export const ProductFM = z.object({
     fda: z.string().optional().default(""),
     ce: z.string().optional().default(""),
     "510k": z.string().optional().default("")
-  }).optional().default({}),
+  }).optional().default({ fda: "", ce: "", "510k": "" }),
   regions: z.array(z.string()).optional().default([]),
   status: z.string().optional().default("Active"),
   downloads: z.array(z.object({ label: z.string(), link: z.string() })).optional().default([]),
   contacts: z.object({
     sales: z.string().optional().default(""),
     support: z.string().optional().default("")
-  }).optional().default({}),
+  }).optional().default({ sales: "", support: "" }),
   heroImage: z.string().optional().default(""),
   gallery: z.array(z.string()).optional().default([]),
   seo: z.object({
     title: z.string().optional().default(""),
     description: z.string().optional().default("")
-  }).optional().default({}),
+  }).optional().default({ title: "", description: "" }),
 })
 
 export const CompanyFM = z.object({
@@ -44,11 +44,12 @@ export const CompanyFM = z.object({
   brands: z.array(z.string()).optional().default([]),
   products: z.array(z.string()).optional().default([]), // product slugs
   regions: z.array(z.string()).optional().default([]),
-  contacts: z.object({ partner: z.string().optional().default("") }).optional().default({}),
+  // Partner contact info
+  contacts: z.object({ partner: z.string().optional().default("") }).optional().default({ partner: "" }),
   heroImage: z.string().optional().default(""),
   seo: z.object({
     title: z.string().optional().default(""),
     description: z.string().optional().default("")
-  }).optional().default({}),
+  }).optional().default({ title: "", description: "" }),
 })
 

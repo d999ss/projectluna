@@ -44,7 +44,6 @@ export default function Home() {
 
       {/* About Section */}
       <Section
-        id="about"
         title="The Tiger Way: Vertical Integration"
         description="Our distinct advantage lies in our fully integrated approach—we oversee every stage of our products, from donor screening and tissue collection to research and development, manufacturing, and distribution."
       >
@@ -128,11 +127,11 @@ export default function Home() {
 
           <Link href="/contact" className="group">
             <StatCard
-              icon={<GlobeIcon className="size-6 text-orange-600" />}
+              icon={<GlobeIcon className="size-6 text-brand" />}
               title="Contact Us"
               description="Get in touch with our team to learn more about our solutions or request a product demonstration."
             >
-              <div className="mt-4 flex items-center text-sm font-semibold text-orange-600 transition-transform group-hover:translate-x-1">
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
                 Contact Us
                 <ArrowRightIcon className="ml-2 size-4" />
               </div>
