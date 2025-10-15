@@ -1,6 +1,6 @@
 "use client"
 import { Card, CardBody } from "@/components/ui/card"
-import { Button } from "@/components/ui/Button"
+import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Nav } from "@/components/site/Nav"
@@ -660,7 +660,7 @@ export default function StyleGuide() {
         <div className="grid gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="mb-4 text-lg font-semibold text-green-600">✅ Best Practices</h3>
+              <h3 className="mb-4 text-lg font-semibold text-brand">✅ Best Practices</h3>
               <ul className="text-muted-foreground space-y-2 text-sm">
                 <li>• Use Launch UI Card components for all content containers</li>
                 <li>• Use CSS variables (--background, --brand, etc.)</li>

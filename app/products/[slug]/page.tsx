@@ -1,4 +1,5 @@
 import Link from "next/link";
+import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 
 import { Card, CardBody } from "@/components/ui/card"
@@ -7,6 +8,22 @@ import { getProduct, allProducts } from "@/lib/content"
 
 export async function generateStaticParams() {
   return allProducts().map(p => ({ slug: p.slug }))
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const entry = getProduct(slug);
+
+  if (!entry) {
+    return {
+      title: "Product Not Found - Tiger BioSciences",
+    };
+  }
+
+  return {
+    title: `${entry.data.title} - Tiger BioSciences`,
+    description: entry.data.subtitle || entry.data.seo?.description || `${entry.data.title} by Tiger BioSciences`,
+  };
 }
 
 export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {

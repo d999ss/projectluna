@@ -103,7 +103,7 @@ export default function TrainingPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">Digital Learning Platform</h3>
+              <h3 className="font-display text-xl mb-4">Digital Learning Platform</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 Our comprehensive online learning portal provides 24/7 access to training modules, video demonstrations, and interactive content.
               </p>
@@ -119,7 +119,7 @@ export default function TrainingPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">Clinical Support Materials</h3>
+              <h3 className="font-display text-xl mb-4">Clinical Support Materials</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 Practical tools and resources designed to support clinical decision-making and patient education.
               </p>
@@ -141,7 +141,7 @@ export default function TrainingPage() {
       >
         <Card>
           <CardBody>
-            <h3 className="text-h2 mb-4">Educational Events</h3>
+            <h3 className="font-display text-xl mb-4">Educational Events</h3>
             <p className="text-lead text-muted-foreground mb-6">
               Join us at conferences, symposiums, and hands-on workshops throughout the year. These events provide opportunities to learn from leading experts, share experiences with colleagues, and stay current with advances in tissue engineering.
             </p>

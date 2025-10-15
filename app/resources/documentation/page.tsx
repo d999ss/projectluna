@@ -85,7 +85,7 @@ export default function DocumentationPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">TigerMatrix™ Series</h3>
+              <h3 className="font-display text-xl mb-4">TigerMatrix™ Series</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 Complete documentation for our advanced dermal matrix products used in wound care and soft tissue reconstruction.
               </p>
@@ -100,7 +100,7 @@ export default function DocumentationPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">TigerRegen™ Series</h3>
+              <h3 className="font-display text-xl mb-4">TigerRegen™ Series</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 Technical documentation for our regenerative tissue products designed for complex reconstruction applications.
               </p>
@@ -121,7 +121,7 @@ export default function DocumentationPage() {
       >
         <Card>
           <CardBody>
-            <h3 className="text-h2 mb-4">Accessing Documentation</h3>
+            <h3 className="font-display text-xl mb-4">Accessing Documentation</h3>
             <p className="text-lead text-muted-foreground mb-6">
               All product documentation is available to verified healthcare professionals and authorized distributors. Documents are regularly updated to reflect the latest product information and clinical evidence.
             </p>

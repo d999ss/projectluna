@@ -1,4 +1,9 @@
-export const metadata = { title: "Contact | Tiger BioSciences" }
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Contact - Tiger BioSciences",
+  description: "Get in touch with Tiger BioSciences. We'll get back to you within one business day.",
+}
 
 export default function Contact() {
   return (

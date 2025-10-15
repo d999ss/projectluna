@@ -23,7 +23,7 @@ export default function InvestorsPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Market Leadership</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Market Leadership</h3>
               <p className="font-body text-muted-foreground">
                 Leading position in the rapidly growing tissue engineering and regenerative medicine market with a comprehensive product portfolio.
               </p>
@@ -32,7 +32,7 @@ export default function InvestorsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Innovation Pipeline</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Innovation Pipeline</h3>
               <p className="font-body text-muted-foreground">
                 Robust R&D pipeline with multiple products in clinical development, supported by strategic investments in cutting-edge technology.
               </p>
@@ -41,7 +41,7 @@ export default function InvestorsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Global Presence</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Global Presence</h3>
               <p className="font-body text-muted-foreground">
                 Established distribution network across 50+ countries with continued expansion into high-growth emerging markets.
               </p>
@@ -50,7 +50,7 @@ export default function InvestorsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Financial Performance</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Financial Performance</h3>
               <p className="font-body text-muted-foreground">
                 Consistent revenue growth and improving profitability driven by strong product demand and operational efficiency.
               </p>
@@ -59,7 +59,7 @@ export default function InvestorsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Strategic Partnerships</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Strategic Partnerships</h3>
               <p className="font-body text-muted-foreground">
                 Collaborative relationships with leading healthcare institutions and research organizations worldwide.
               </p>
@@ -68,7 +68,7 @@ export default function InvestorsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Experienced Leadership</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Experienced Leadership</h3>
               <p className="font-body text-muted-foreground">
                 Proven management team with deep industry expertise and track record of successful execution.
               </p>
@@ -85,7 +85,7 @@ export default function InvestorsPage() {
           <Card>
             <CardBody>
               <div className="mb-4 flex items-center justify-between">
-                <h3 className="text-h2">Quarterly Earnings</h3>
+                <h3 className="font-display text-xl">Quarterly Earnings</h3>
                 <span className="inline-block rounded-full border border-brand/20 bg-brand/10 px-3 py-1 text-xs font-medium uppercase tracking-wider text-brand">
                   Latest
                 </span>
@@ -113,7 +113,7 @@ export default function InvestorsPage() {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             <Card>
               <CardBody>
-                <h3 className="text-h2 mb-3">Annual Reports</h3>
+                <h3 className="font-display text-xl mb-3">Annual Reports</h3>
                 <p className="font-body text-muted-foreground mb-4">
                   Download our comprehensive annual reports, including financial statements and management discussion and analysis.
                 </p>
@@ -128,7 +128,7 @@ export default function InvestorsPage() {
 
             <Card>
               <CardBody>
-                <h3 className="text-h2 mb-3">SEC Filings</h3>
+                <h3 className="font-display text-xl mb-3">SEC Filings</h3>
                 <p className="font-body text-muted-foreground mb-4">
                   View our latest 10-K, 10-Q, 8-K, and other regulatory filings with the Securities and Exchange Commission.
                 </p>
@@ -143,7 +143,7 @@ export default function InvestorsPage() {
 
             <Card>
               <CardBody>
-                <h3 className="text-h2 mb-3">Financial Presentations</h3>
+                <h3 className="font-display text-xl mb-3">Financial Presentations</h3>
                 <p className="font-body text-muted-foreground mb-4">
                   Access investor presentations, conference materials, and other key financial documents.
                 </p>
@@ -158,7 +158,7 @@ export default function InvestorsPage() {
 
             <Card>
               <CardBody>
-                <h3 className="text-h2 mb-3">Stock Information</h3>
+                <h3 className="font-display text-xl mb-3">Stock Information</h3>
                 <p className="font-body text-muted-foreground mb-4">
                   Real-time stock quotes, historical data, and analyst coverage information for TGBS shares.
                 </p>
@@ -232,7 +232,7 @@ export default function InvestorsPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Annual Meeting</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Annual Meeting</h3>
               <p className="font-body text-muted-foreground mb-4">
                 Information about our upcoming annual shareholders meeting, including proxy materials, voting procedures, and meeting logistics.
               </p>
@@ -247,7 +247,7 @@ export default function InvestorsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Dividend Information</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Dividend Information</h3>
               <p className="font-body text-muted-foreground mb-4">
                 Current dividend policy, payment schedules, and historical dividend information for Tiger BioSciences shareholders.
               </p>
@@ -262,7 +262,7 @@ export default function InvestorsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Transfer Agent</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Transfer Agent</h3>
               <p className="font-body text-muted-foreground mb-4">
                 Contact information and resources for share transfers, certificate replacements, and other shareholder services.
               </p>
@@ -277,7 +277,7 @@ export default function InvestorsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Email Alerts</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Email Alerts</h3>
               <p className="font-body text-muted-foreground mb-4">
                 Subscribe to receive email notifications about press releases, earnings announcements, and other investor updates.
               </p>

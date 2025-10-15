@@ -23,7 +23,7 @@ export default function PrivacyPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Personal Information</h3>
+              <h3 className="font-display text-xl mb-3">Personal Information</h3>
               <p className="font-body text-muted-foreground">
                 We collect personal information that you provide directly to us, including name, email address, phone number, and professional credentials when you register for our services or contact us.
               </p>
@@ -32,7 +32,7 @@ export default function PrivacyPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Usage Data</h3>
+              <h3 className="font-display text-xl mb-3">Usage Data</h3>
               <p className="font-body text-muted-foreground">
                 We automatically collect information about your device and how you interact with our website, including IP address, browser type, pages visited, and time spent on pages.
               </p>
@@ -41,7 +41,7 @@ export default function PrivacyPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Professional Data</h3>
+              <h3 className="font-display text-xl mb-3">Professional Data</h3>
               <p className="font-body text-muted-foreground">
                 For healthcare professionals, we may collect medical license information, specialty, practice details, and other relevant professional credentials for verification purposes.
               </p>
@@ -50,7 +50,7 @@ export default function PrivacyPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Cookies and Tracking</h3>
+              <h3 className="font-display text-xl mb-3">Cookies and Tracking</h3>
               <p className="font-body text-muted-foreground">
                 We use cookies and similar technologies to enhance your experience, analyze site usage, and support our marketing efforts. You can control cookie preferences through your browser settings.
               </p>
@@ -85,7 +85,7 @@ export default function PrivacyPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Security Measures</h3>
+              <h3 className="font-display text-xl mb-3">Security Measures</h3>
               <p className="font-body text-muted-foreground">
                 We implement industry-standard security measures including encryption, secure servers, and access controls to protect your data from unauthorized access or disclosure.
               </p>
@@ -94,7 +94,7 @@ export default function PrivacyPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Data Retention</h3>
+              <h3 className="font-display text-xl mb-3">Data Retention</h3>
               <p className="font-body text-muted-foreground">
                 We retain personal data only for as long as necessary to fulfill the purposes outlined in this policy or as required by law, after which it is securely deleted.
               </p>
@@ -103,7 +103,7 @@ export default function PrivacyPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Your Rights</h3>
+              <h3 className="font-display text-xl mb-3">Your Rights</h3>
               <p className="font-body text-muted-foreground">
                 You have the right to access, correct, delete, or export your personal data. Contact us to exercise these rights or if you have any privacy concerns.
               </p>
@@ -112,7 +112,7 @@ export default function PrivacyPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">International Transfers</h3>
+              <h3 className="font-display text-xl mb-3">International Transfers</h3>
               <p className="font-body text-muted-foreground">
                 When transferring data internationally, we ensure appropriate safeguards are in place to protect your information in accordance with applicable data protection laws.
               </p>
@@ -121,7 +121,7 @@ export default function PrivacyPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Updates to Policy</h3>
+              <h3 className="font-display text-xl mb-3">Updates to Policy</h3>
               <p className="font-body text-muted-foreground">
                 We may update this privacy policy periodically. We will notify you of significant changes via email or prominent notice on our website.
               </p>
@@ -130,7 +130,7 @@ export default function PrivacyPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Contact Us</h3>
+              <h3 className="font-display text-xl mb-3">Contact Us</h3>
               <p className="font-body text-muted-foreground">
                 For privacy-related questions or concerns, contact our Data Protection Officer at privacy@tigerbio.com or write to us at our corporate address.
               </p>

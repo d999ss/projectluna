@@ -23,7 +23,7 @@ export default function CompliancePage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">FDA Compliance</h3>
+              <h3 className="font-display text-xl mb-3">FDA Compliance</h3>
               <p className="font-body text-muted-foreground">
                 Our products comply with U.S. Food and Drug Administration regulations, including 21 CFR Part 820 for Quality System Regulations and applicable premarket approval requirements.
               </p>
@@ -32,7 +32,7 @@ export default function CompliancePage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">CE Marking</h3>
+              <h3 className="font-display text-xl mb-3">CE Marking</h3>
               <p className="font-body text-muted-foreground">
                 We maintain CE marking for European markets, demonstrating compliance with EU Medical Device Regulation (MDR 2017/745) and In Vitro Diagnostic Regulation (IVDR 2017/746).
               </p>
@@ -41,7 +41,7 @@ export default function CompliancePage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">ISO 13485</h3>
+              <h3 className="font-display text-xl mb-3">ISO 13485</h3>
               <p className="font-body text-muted-foreground">
                 Our quality management system is certified to ISO 13485, the international standard for medical device quality management systems, ensuring consistent product quality.
               </p>
@@ -50,7 +50,7 @@ export default function CompliancePage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">ISO 9001</h3>
+              <h3 className="font-display text-xl mb-3">ISO 9001</h3>
               <p className="font-body text-muted-foreground">
                 We maintain ISO 9001 certification for our overall quality management system, demonstrating our commitment to continuous improvement and customer satisfaction.
               </p>
@@ -59,7 +59,7 @@ export default function CompliancePage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">GMP Compliance</h3>
+              <h3 className="font-display text-xl mb-3">GMP Compliance</h3>
               <p className="font-body text-muted-foreground">
                 Our manufacturing facilities adhere to Good Manufacturing Practice (GMP) standards, ensuring consistent production control and quality assurance throughout the manufacturing process.
               </p>
@@ -68,7 +68,7 @@ export default function CompliancePage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">International Standards</h3>
+              <h3 className="font-display text-xl mb-3">International Standards</h3>
               <p className="font-body text-muted-foreground">
                 We comply with regulatory requirements in multiple jurisdictions including Health Canada, TGA (Australia), PMDA (Japan), and other international regulatory bodies.
               </p>
@@ -103,7 +103,7 @@ export default function CompliancePage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Clinical Research</h3>
+              <h3 className="font-display text-xl mb-3">Clinical Research</h3>
               <p className="font-body text-muted-foreground">
                 All clinical research is conducted in accordance with Good Clinical Practice (GCP) guidelines, ICH standards, and the Declaration of Helsinki, with appropriate institutional review board oversight.
               </p>
@@ -112,7 +112,7 @@ export default function CompliancePage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Environmental Responsibility</h3>
+              <h3 className="font-display text-xl mb-3">Environmental Responsibility</h3>
               <p className="font-body text-muted-foreground">
                 We comply with environmental regulations and implement sustainable practices across our operations, including proper waste management and reduction of environmental impact.
               </p>
@@ -121,7 +121,7 @@ export default function CompliancePage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Data Privacy</h3>
+              <h3 className="font-display text-xl mb-3">Data Privacy</h3>
               <p className="font-body text-muted-foreground">
                 We maintain compliance with HIPAA, GDPR, and other data protection regulations, ensuring the privacy and security of all personal and health information we handle.
               </p>
@@ -130,7 +130,7 @@ export default function CompliancePage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Supply Chain Integrity</h3>
+              <h3 className="font-display text-xl mb-3">Supply Chain Integrity</h3>
               <p className="font-body text-muted-foreground">
                 Our supply chain practices comply with the Drug Supply Chain Security Act (DSCSA) and other regulations ensuring product authenticity, traceability, and security.
               </p>

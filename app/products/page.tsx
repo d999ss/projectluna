@@ -1,7 +1,13 @@
 // SERVER — do not add "use client"
+import type { Metadata } from "next"
 import { allProducts } from "@/lib/content"
 
 import ProductsGrid from "./products-grid"
+
+export const metadata: Metadata = {
+  title: "Products - Tiger BioSciences",
+  description: "Explore our comprehensive portfolio of medical technology products for wound care, soft tissue reconstruction, and aesthetics.",
+}
 
 export default async function ProductsIndex({
   searchParams,

@@ -23,7 +23,7 @@ export default function TermsPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Professional Use Only</h3>
+              <h3 className="font-display text-xl mb-3">Professional Use Only</h3>
               <p className="font-body text-muted-foreground">
                 Our products and services are intended for use by qualified healthcare professionals. Users must maintain appropriate licenses and credentials for their jurisdiction.
               </p>
@@ -32,7 +32,7 @@ export default function TermsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Account Security</h3>
+              <h3 className="font-display text-xl mb-3">Account Security</h3>
               <p className="font-body text-muted-foreground">
                 You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. Notify us immediately of any unauthorized use.
               </p>
@@ -41,7 +41,7 @@ export default function TermsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Prohibited Activities</h3>
+              <h3 className="font-display text-xl mb-3">Prohibited Activities</h3>
               <p className="font-body text-muted-foreground">
                 Users may not misuse our services, attempt to access unauthorized areas, interfere with proper functioning, or violate any applicable laws or regulations.
               </p>
@@ -50,7 +50,7 @@ export default function TermsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Content Standards</h3>
+              <h3 className="font-display text-xl mb-3">Content Standards</h3>
               <p className="font-body text-muted-foreground">
                 Any content you submit must be accurate, lawful, and respectful. You retain ownership of your content but grant us necessary licenses to provide our services.
               </p>
@@ -85,7 +85,7 @@ export default function TermsPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Warranty Disclaimer</h3>
+              <h3 className="font-display text-xl mb-3">Warranty Disclaimer</h3>
               <p className="font-body text-muted-foreground">
                 Services are provided "as is" without warranties of any kind, either express or implied, except where prohibited by law. Product warranties are stated separately.
               </p>
@@ -94,7 +94,7 @@ export default function TermsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Limitation of Liability</h3>
+              <h3 className="font-display text-xl mb-3">Limitation of Liability</h3>
               <p className="font-body text-muted-foreground">
                 To the maximum extent permitted by law, Tiger BioSciences shall not be liable for indirect, incidental, consequential, or punitive damages arising from your use of our services.
               </p>
@@ -103,7 +103,7 @@ export default function TermsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Indemnification</h3>
+              <h3 className="font-display text-xl mb-3">Indemnification</h3>
               <p className="font-body text-muted-foreground">
                 You agree to indemnify and hold Tiger BioSciences harmless from claims arising from your violation of these terms or misuse of our services.
               </p>
@@ -112,7 +112,7 @@ export default function TermsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Medical Disclaimer</h3>
+              <h3 className="font-display text-xl mb-3">Medical Disclaimer</h3>
               <p className="font-body text-muted-foreground">
                 Our website content is for informational purposes only and does not constitute medical advice. Healthcare professionals must use their professional judgment.
               </p>
@@ -121,7 +121,7 @@ export default function TermsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Governing Law</h3>
+              <h3 className="font-display text-xl mb-3">Governing Law</h3>
               <p className="font-body text-muted-foreground">
                 These terms are governed by applicable laws. Disputes shall be resolved through arbitration or in courts of competent jurisdiction as specified in our agreements.
               </p>
@@ -130,7 +130,7 @@ export default function TermsPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Termination</h3>
+              <h3 className="font-display text-xl mb-3">Termination</h3>
               <p className="font-body text-muted-foreground">
                 We may terminate or suspend access to our services immediately for violations of these terms. Certain provisions survive termination, including disclaimers and limitations.
               </p>

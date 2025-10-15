@@ -1,7 +1,13 @@
 // SERVER — do not add "use client"
+import type { Metadata } from "next"
 import { allCompanies } from "@/lib/content"
 
 import CompaniesGrid from "./companies-grid"
+
+export const metadata: Metadata = {
+  title: "Companies - Tiger BioSciences",
+  description: "Discover our network of partner companies, subsidiaries, brands, and distributors in the medical technology industry.",
+}
 
 export default async function CompaniesIndex({
   searchParams,

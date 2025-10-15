@@ -42,7 +42,7 @@ export default function AccessibilityPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Keyboard Navigation</h3>
+              <h3 className="font-display text-xl mb-3">Keyboard Navigation</h3>
               <p className="font-body text-muted-foreground">
                 Our website can be fully navigated using only a keyboard, allowing users who cannot use a mouse to access all features and content.
               </p>
@@ -51,7 +51,7 @@ export default function AccessibilityPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Screen Reader Support</h3>
+              <h3 className="font-display text-xl mb-3">Screen Reader Support</h3>
               <p className="font-body text-muted-foreground">
                 We use semantic HTML and ARIA labels to ensure compatibility with screen readers like JAWS, NVDA, and VoiceOver, providing clear content structure and descriptions.
               </p>
@@ -60,7 +60,7 @@ export default function AccessibilityPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Color Contrast</h3>
+              <h3 className="font-display text-xl mb-3">Color Contrast</h3>
               <p className="font-body text-muted-foreground">
                 Our design meets WCAG AA standards for color contrast, ensuring text is readable for users with low vision or color blindness.
               </p>
@@ -69,7 +69,7 @@ export default function AccessibilityPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Responsive Design</h3>
+              <h3 className="font-display text-xl mb-3">Responsive Design</h3>
               <p className="font-body text-muted-foreground">
                 Our website adapts to different screen sizes and orientations, supporting users who need to zoom in or use mobile devices for accessibility.
               </p>
@@ -78,7 +78,7 @@ export default function AccessibilityPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Clear Language</h3>
+              <h3 className="font-display text-xl mb-3">Clear Language</h3>
               <p className="font-body text-muted-foreground">
                 We strive to use clear, concise language and provide explanations for technical terms to make our content understandable to all users.
               </p>
@@ -87,7 +87,7 @@ export default function AccessibilityPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Alternative Text</h3>
+              <h3 className="font-display text-xl mb-3">Alternative Text</h3>
               <p className="font-body text-muted-foreground">
                 All meaningful images include descriptive alternative text, ensuring that visual information is accessible to users who cannot see images.
               </p>
@@ -103,7 +103,7 @@ export default function AccessibilityPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">WCAG 2.1 Level AA</h3>
+              <h3 className="font-display text-xl mb-3">WCAG 2.1 Level AA</h3>
               <p className="font-body text-muted-foreground">
                 We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA, an internationally recognized standard for web accessibility established by the World Wide Web Consortium (W3C).
               </p>
@@ -112,7 +112,7 @@ export default function AccessibilityPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Section 508</h3>
+              <h3 className="font-display text-xl mb-3">Section 508</h3>
               <p className="font-body text-muted-foreground">
                 Our website strives to meet Section 508 standards, which require federal agencies and their contractors to make electronic information accessible to people with disabilities.
               </p>
@@ -121,7 +121,7 @@ export default function AccessibilityPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">ADA Compliance</h3>
+              <h3 className="font-display text-xl mb-3">ADA Compliance</h3>
               <p className="font-body text-muted-foreground">
                 We are committed to compliance with the Americans with Disabilities Act (ADA) and ensuring that our digital presence does not discriminate against individuals with disabilities.
               </p>
@@ -130,7 +130,7 @@ export default function AccessibilityPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3">Continuous Improvement</h3>
+              <h3 className="font-display text-xl mb-3">Continuous Improvement</h3>
               <p className="font-body text-muted-foreground">
                 We regularly audit our website for accessibility issues, conduct user testing with people who have disabilities, and implement improvements based on feedback and best practices.
               </p>

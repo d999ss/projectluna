@@ -103,7 +103,7 @@ export default function SupportPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">Emergency Clinical Support</h3>
+              <h3 className="font-display text-xl mb-4">Emergency Clinical Support</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 For urgent clinical questions during procedures or time-sensitive case consultations.
               </p>
@@ -123,7 +123,7 @@ export default function SupportPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">General Support</h3>
+              <h3 className="font-display text-xl mb-4">General Support</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 For product information, ordering assistance, and non-urgent technical questions.
               </p>
@@ -149,7 +149,7 @@ export default function SupportPage() {
       >
         <Card>
           <CardBody>
-            <h3 className="text-h2 mb-4">Knowledge Base & FAQ</h3>
+            <h3 className="font-display text-xl mb-4">Knowledge Base & FAQ</h3>
             <p className="text-lead text-muted-foreground mb-6">
               Access our comprehensive library of frequently asked questions, product guides, troubleshooting tips, and instructional videos. Search by product, procedure, or topic to find the information you need.
             </p>

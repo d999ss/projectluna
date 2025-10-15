@@ -44,7 +44,7 @@ export default function HeritagePage() {
                   <span className="text-display font-bold text-brand">Jul 2023</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Tiger BioSciences Founded</h3>
+                  <h3 className="font-display text-xl mb-3">Tiger BioSciences Founded</h3>
                   <p className="font-body text-muted-foreground">
                     Oliver Burckhardt and Scott Madden establish Tiger BioSciences in Conshohocken, Pennsylvania. The company is formed as a holding company to consolidate and grow a portfolio of regenerative medicine and tissue engineering businesses, including existing operations from Extremity Care and RegenTX Partners.
                   </p>
@@ -60,7 +60,7 @@ export default function HeritagePage() {
                   <span className="text-display font-bold text-brand">Apr 2024</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Sientra Acquisition</h3>
+                  <h3 className="font-display text-xl mb-3">Sientra Acquisition</h3>
                   <p className="font-body text-muted-foreground">
                     Tiger Aesthetics acquires substantially all assets of Sientra Inc.'s breast implant business for $42.5 million plus assumption of liabilities. This strategic acquisition brings premium silicone gel breast implants and a Wisconsin-based manufacturing facility into the portfolio, establishing Tiger as a major player in aesthetic breast surgery.
                   </p>
@@ -76,7 +76,7 @@ export default function HeritagePage() {
                   <span className="text-display font-bold text-brand">Oct 2024</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Suneva Medical Acquisition</h3>
+                  <h3 className="font-display text-xl mb-3">Suneva Medical Acquisition</h3>
                   <p className="font-body text-muted-foreground">
                     Tiger Aesthetics expands regenerative aesthetics portfolio with acquisition of select Suneva Medical assets, including BellaFill® biostimulatory dermal filler, Silhouette Instalift® absorbable suspension sutures, and Amplifine™ PRP system. The acquisition adds manufacturing capabilities and three established product lines to complement upcoming adipose tissue products.
                   </p>
@@ -92,7 +92,7 @@ export default function HeritagePage() {
                   <span className="text-display font-bold text-brand">Nov 2024</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Revelle Aesthetics Acquisition</h3>
+                  <h3 className="font-display text-xl mb-3">Revelle Aesthetics Acquisition</h3>
                   <p className="font-body text-muted-foreground">
                     Tiger Aesthetics acquires Revelle Aesthetics, makers of the FDA-cleared Avéli® cellulite reduction device. This acquisition broadens Tiger's commercial reach into regenerative body aesthetics, providing a comprehensive suite for lower body rejuvenation when combined with Viality™ fat transfer and the upcoming alloClae™ structural adipose fillers.
                   </p>
@@ -108,7 +108,7 @@ export default function HeritagePage() {
                   <span className="text-display font-bold text-brand">Feb 2025</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Encore Surgical Acquisition</h3>
+                  <h3 className="font-display text-xl mb-3">Encore Surgical Acquisition</h3>
                   <p className="font-body text-muted-foreground">
                     Tiger Wound Care acquires Novo Health Care Service's Encore Surgical HealPACK Solutions, expanding into comprehensive surgical dressing systems. This strategic move strengthens Tiger's wound care portfolio with proven surgical site management products and further positions the company across the full continuum of tissue care.
                   </p>
@@ -124,7 +124,7 @@ export default function HeritagePage() {
                   <span className="text-display font-bold text-brand">2025</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Continued Growth</h3>
+                  <h3 className="font-display text-xl mb-3">Continued Growth</h3>
                   <p className="font-body text-muted-foreground">
                     Tiger BioSciences continues expanding its regenerative medicine platform with ongoing product launches including alloClae™ and dermaClae™ adipose fillers, international market expansion through Lizard Health Technologies, and development of next-generation CAMP products through RegenTX Labs. The company maintains its aggressive growth trajectory while building infrastructure to support global operations.
                   </p>
@@ -142,7 +142,7 @@ export default function HeritagePage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Oliver Burckhardt</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Oliver Burckhardt</h3>
               <p className="font-display text-lg font-medium mb-3">Co-Founder, Co-CEO & Co-Owner</p>
               <p className="font-body text-muted-foreground">
                 A proven entrepreneur in medical devices with deep expertise in orthopedics, spine, and regenerative medicine. Oliver previously founded Extremity Care (2020) and Flower Orthopedics, and co-owned RegenTX Partners (2022). His strategic vision and M&A expertise have been instrumental in rapidly building Tiger BioSciences' comprehensive portfolio through targeted acquisitions and organic growth.
@@ -152,7 +152,7 @@ export default function HeritagePage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Scott Madden</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Scott Madden</h3>
               <p className="font-display text-lg font-medium mb-3">Co-Founder, Co-CEO & Co-Owner</p>
               <p className="font-body text-muted-foreground">
                 A biotech innovator and sales strategist with extensive experience in building and scaling regenerative medicine businesses. Scott's leadership in commercial operations and market development has been critical to Tiger BioSciences' rapid market penetration. His focus on customer relationships and clinical education has positioned Tiger as a trusted partner for healthcare professionals worldwide.

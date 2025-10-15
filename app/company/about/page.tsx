@@ -39,7 +39,7 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Tissue Engineering</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Tissue Engineering</h3>
               <p className="font-body text-muted-foreground">
                 Advanced bioengineered tissue solutions for complex wound care, surgical applications, and reconstructive procedures.
               </p>
@@ -48,7 +48,7 @@ export default function AboutPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Regenerative Medicine</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Regenerative Medicine</h3>
               <p className="font-body text-muted-foreground">
                 Cutting-edge cellular therapies and biological products that harness the body's natural healing capabilities.
               </p>
@@ -57,7 +57,7 @@ export default function AboutPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Research & Development</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Research & Development</h3>
               <p className="font-body text-muted-foreground">
                 Continuous innovation through dedicated R&D programs focused on next-generation medical technologies.
               </p>
@@ -66,7 +66,7 @@ export default function AboutPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Clinical Excellence</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Clinical Excellence</h3>
               <p className="font-body text-muted-foreground">
                 Rigorous clinical trials and evidence-based research supporting the safety and efficacy of our products.
               </p>
@@ -75,7 +75,7 @@ export default function AboutPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Quality Assurance</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Quality Assurance</h3>
               <p className="font-body text-muted-foreground">
                 Industry-leading quality standards and regulatory compliance across all manufacturing processes.
               </p>
@@ -84,7 +84,7 @@ export default function AboutPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Global Distribution</h3>
+              <h3 className="font-display text-xl mb-3 text-brand">Global Distribution</h3>
               <p className="font-body text-muted-foreground">
                 Comprehensive distribution network ensuring reliable access to our products for healthcare providers worldwide.
               </p>

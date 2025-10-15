@@ -103,7 +103,7 @@ export default function ClinicalPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">Randomized Controlled Trials</h3>
+              <h3 className="font-display text-xl mb-4">Randomized Controlled Trials</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 Gold-standard RCTs comparing our products to conventional treatments and demonstrating superior outcomes in patient care.
               </p>
@@ -118,7 +118,7 @@ export default function ClinicalPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">Real-World Evidence</h3>
+              <h3 className="font-display text-xl mb-4">Real-World Evidence</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 Comprehensive data from clinical practice demonstrating consistent outcomes across diverse patient populations and care settings.
               </p>

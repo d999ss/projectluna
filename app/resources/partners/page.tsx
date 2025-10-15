@@ -85,7 +85,7 @@ export default function PartnersPage() {
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">Sales & Marketing Support</h3>
+              <h3 className="font-display text-xl mb-4">Sales & Marketing Support</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 Comprehensive tools and materials to support your sales efforts and market development initiatives.
               </p>
@@ -102,7 +102,7 @@ export default function PartnersPage() {
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-4">Operational Support</h3>
+              <h3 className="font-display text-xl mb-4">Operational Support</h3>
               <p className="text-lead text-muted-foreground mb-4">
                 Streamlined systems and dedicated support to optimize your distribution operations and customer service.
               </p>
@@ -125,7 +125,7 @@ export default function PartnersPage() {
       >
         <Card>
           <CardBody>
-            <h3 className="text-h2 mb-4">Comprehensive Partner Program</h3>
+            <h3 className="font-display text-xl mb-4">Comprehensive Partner Program</h3>
             <p className="text-lead text-muted-foreground mb-6">
               Our partner program is built on a foundation of mutual success. We provide the tools, training, and support you need to grow your business while delivering exceptional value to healthcare providers and patients.
             </p>
@@ -177,7 +177,7 @@ export default function PartnersPage() {
       >
         <Card>
           <CardBody>
-            <h3 className="text-h2 mb-4">Partnership Opportunities</h3>
+            <h3 className="font-display text-xl mb-4">Partnership Opportunities</h3>
             <p className="text-lead text-muted-foreground mb-6">
               Tiger BioSciences is actively seeking qualified partners who share our commitment to clinical excellence and patient care. We offer competitive terms, comprehensive support, and opportunities for growth in the rapidly expanding tissue engineering market.
             </p>
