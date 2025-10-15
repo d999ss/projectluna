@@ -5,7 +5,7 @@ import { Card, CardBody } from "@/components/ui/card";
 
 export const metadata: Metadata = {
   title: "Our Heritage - Tiger BioSciences",
-  description: "Discover the rich history and legacy of Tiger BioSciences, from our founding to becoming a global leader in tissue engineering and regenerative medicine.",
+  description: "Discover the history and legacy of Tiger BioSciences, from our founding in 2023 to rapid growth as a leader in regenerative medicine and tissue engineering.",
 };
 
 export default function HeritagePage() {
@@ -13,20 +13,20 @@ export default function HeritagePage() {
     <main className="min-h-screen">
       <Hero
         title="Our Heritage"
-        description="A legacy of innovation, excellence, and dedication to advancing medical science for over three decades."
+        description="A story of rapid innovation and strategic growth, building a comprehensive portfolio in regenerative medicine and tissue engineering."
       />
 
       <Section
         title="Our Story"
-        description="From humble beginnings to global leadership"
+        description="Building a comprehensive regenerative medicine platform"
       >
         <Card>
           <CardBody>
             <p className="text-lead text-muted-foreground mb-6">
-              Tiger BioSciences was founded with a singular vision: to revolutionize tissue engineering and regenerative medicine. What began as a small research laboratory has grown into a global enterprise, but our commitment to innovation and patient care remains unchanged.
+              Tiger BioSciences was founded in July 2023 by Oliver Burckhardt and Scott Madden in Conshohocken, Pennsylvania, with a clear vision: to build a comprehensive platform of regenerative medicine and tissue engineering solutions. Drawing on decades of combined expertise in medical device innovation, the founders assembled a portfolio of leading biotechnology companies focused on cellular, acellular, and matrix-like products (CAMPs) for wound care, soft tissue reconstruction, and aesthetics.
             </p>
             <p className="text-lead text-muted-foreground">
-              Our journey has been marked by groundbreaking discoveries, strategic partnerships, and an unwavering dedication to scientific excellence. Today, we stand as a testament to what can be achieved when passion, expertise, and purpose align.
+              From day one, Tiger BioSciences has pursued an aggressive growth strategy through strategic acquisitions of established brands and technologies. Our journey has been marked by rapid expansion, bringing together best-in-class products and exceptional talent to serve healthcare professionals worldwide. Today, we stand as a dynamic force in regenerative medicine, with a growing portfolio spanning multiple therapeutic areas.
             </p>
           </CardBody>
         </Card>
@@ -34,19 +34,19 @@ export default function HeritagePage() {
 
       <Section
         title="Key Milestones"
-        description="Defining moments in our history"
+        description="Our rapid growth journey"
       >
         <div className="space-y-6">
           <Card>
             <CardBody>
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <span className="text-display font-bold text-brand">1995</span>
+                  <span className="text-display font-bold text-brand">Jul 2023</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Company Founded</h3>
+                  <h3 className="text-h2 mb-3">Tiger BioSciences Founded</h3>
                   <p className="font-body text-muted-foreground">
-                    Dr. Sarah Mitchell and Dr. James Chen establish Tiger BioSciences with a focus on developing advanced tissue engineering solutions. The company begins operations with a team of five researchers in a modest laboratory facility.
+                    Oliver Burckhardt and Scott Madden establish Tiger BioSciences in Conshohocken, Pennsylvania. The company is formed as a holding company to consolidate and grow a portfolio of regenerative medicine and tissue engineering businesses, including existing operations from Extremity Care and RegenTX Partners.
                   </p>
                 </div>
               </div>
@@ -57,12 +57,12 @@ export default function HeritagePage() {
             <CardBody>
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <span className="text-display font-bold text-brand">2001</span>
+                  <span className="text-display font-bold text-brand">Apr 2024</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">First FDA Approval</h3>
+                  <h3 className="text-h2 mb-3">Sientra Acquisition</h3>
                   <p className="font-body text-muted-foreground">
-                    Tiger BioSciences receives FDA approval for its first bioengineered tissue product, marking a significant milestone in regenerative medicine. This breakthrough opens new possibilities for treating complex wounds and tissue injuries.
+                    Tiger Aesthetics acquires substantially all assets of Sientra Inc.'s breast implant business for $42.5 million plus assumption of liabilities. This strategic acquisition brings premium silicone gel breast implants and a Wisconsin-based manufacturing facility into the portfolio, establishing Tiger as a major player in aesthetic breast surgery.
                   </p>
                 </div>
               </div>
@@ -73,12 +73,12 @@ export default function HeritagePage() {
             <CardBody>
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <span className="text-display font-bold text-brand">2008</span>
+                  <span className="text-display font-bold text-brand">Oct 2024</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Global Expansion</h3>
+                  <h3 className="text-h2 mb-3">Suneva Medical Acquisition</h3>
                   <p className="font-body text-muted-foreground">
-                    The company expands operations internationally, establishing distribution partnerships across Europe and Asia. Our products begin reaching patients in over 25 countries, significantly expanding our global impact.
+                    Tiger Aesthetics expands regenerative aesthetics portfolio with acquisition of select Suneva Medical assets, including BellaFill® biostimulatory dermal filler, Silhouette Instalift® absorbable suspension sutures, and Amplifine™ PRP system. The acquisition adds manufacturing capabilities and three established product lines to complement upcoming adipose tissue products.
                   </p>
                 </div>
               </div>
@@ -89,12 +89,12 @@ export default function HeritagePage() {
             <CardBody>
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <span className="text-display font-bold text-brand">2014</span>
+                  <span className="text-display font-bold text-brand">Nov 2024</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Research Center Opening</h3>
+                  <h3 className="text-h2 mb-3">Revelle Aesthetics Acquisition</h3>
                   <p className="font-body text-muted-foreground">
-                    Tiger BioSciences inaugurates a state-of-the-art research and development center, featuring advanced laboratories and manufacturing facilities. This investment reinforces our commitment to innovation and product development.
+                    Tiger Aesthetics acquires Revelle Aesthetics, makers of the FDA-cleared Avéli® cellulite reduction device. This acquisition broadens Tiger's commercial reach into regenerative body aesthetics, providing a comprehensive suite for lower body rejuvenation when combined with Viality™ fat transfer and the upcoming alloClae™ structural adipose fillers.
                   </p>
                 </div>
               </div>
@@ -105,12 +105,12 @@ export default function HeritagePage() {
             <CardBody>
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <span className="text-display font-bold text-brand">2019</span>
+                  <span className="text-display font-bold text-brand">Feb 2025</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">One Million Patients</h3>
+                  <h3 className="text-h2 mb-3">Encore Surgical Acquisition</h3>
                   <p className="font-body text-muted-foreground">
-                    We reach a significant milestone as our products have been used to treat over one million patients worldwide. This achievement reflects the trust healthcare professionals place in our solutions.
+                    Tiger Wound Care acquires Novo Health Care Service's Encore Surgical HealPACK Solutions, expanding into comprehensive surgical dressing systems. This strategic move strengthens Tiger's wound care portfolio with proven surgical site management products and further positions the company across the full continuum of tissue care.
                   </p>
                 </div>
               </div>
@@ -121,12 +121,12 @@ export default function HeritagePage() {
             <CardBody>
               <div className="flex flex-col md:flex-row md:items-start gap-6">
                 <div className="flex-shrink-0">
-                  <span className="text-display font-bold text-brand">2023</span>
+                  <span className="text-display font-bold text-brand">2025</span>
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-h2 mb-3">Next-Generation Platform</h3>
+                  <h3 className="text-h2 mb-3">Continued Growth</h3>
                   <p className="font-body text-muted-foreground">
-                    Launch of our next-generation tissue engineering platform, incorporating cutting-edge biomaterials and cellular technologies. This platform represents the future of regenerative medicine.
+                    Tiger BioSciences continues expanding its regenerative medicine platform with ongoing product launches including alloClae™ and dermaClae™ adipose fillers, international market expansion through Lizard Health Technologies, and development of next-generation CAMP products through RegenTX Labs. The company maintains its aggressive growth trajectory while building infrastructure to support global operations.
                   </p>
                 </div>
               </div>
@@ -137,25 +137,25 @@ export default function HeritagePage() {
 
       <Section
         title="Leadership Legacy"
-        description="Visionaries who shaped our company"
+        description="Visionaries who built our company"
       >
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Dr. Sarah Mitchell</h3>
-              <p className="font-display text-lg font-medium mb-3">Co-Founder & Former CEO</p>
+              <h3 className="text-h2 mb-3 text-brand">Oliver Burckhardt</h3>
+              <p className="font-display text-lg font-medium mb-3">Co-Founder, Co-CEO & Co-Owner</p>
               <p className="font-body text-muted-foreground">
-                A pioneer in tissue engineering, Dr. Mitchell's groundbreaking research in biomaterials laid the foundation for our company's success. Her vision and leadership transformed Tiger BioSciences from a startup to an industry leader.
+                A proven entrepreneur in medical devices with deep expertise in orthopedics, spine, and regenerative medicine. Oliver previously founded Extremity Care (2020) and Flower Orthopedics, and co-owned RegenTX Partners (2022). His strategic vision and M&A expertise have been instrumental in rapidly building Tiger BioSciences' comprehensive portfolio through targeted acquisitions and organic growth.
               </p>
             </CardBody>
           </Card>
 
           <Card>
             <CardBody>
-              <h3 className="text-h2 mb-3 text-brand">Dr. James Chen</h3>
-              <p className="font-display text-lg font-medium mb-3">Co-Founder & Chief Scientific Officer</p>
+              <h3 className="text-h2 mb-3 text-brand">Scott Madden</h3>
+              <p className="font-display text-lg font-medium mb-3">Co-Founder, Co-CEO & Co-Owner</p>
               <p className="font-body text-muted-foreground">
-                Dr. Chen's expertise in cellular biology and regenerative medicine has been instrumental in developing our innovative product portfolio. His commitment to scientific excellence continues to drive our research initiatives.
+                A biotech innovator and sales strategist with extensive experience in building and scaling regenerative medicine businesses. Scott's leadership in commercial operations and market development has been critical to Tiger BioSciences' rapid market penetration. His focus on customer relationships and clinical education has positioned Tiger as a trusted partner for healthcare professionals worldwide.
               </p>
             </CardBody>
           </Card>
@@ -164,15 +164,15 @@ export default function HeritagePage() {
 
       <Section
         title="Our Continuing Journey"
-        description="Building on our legacy for the future"
+        description="Accelerating growth and innovation"
       >
         <Card>
           <CardBody>
             <p className="text-lead text-muted-foreground mb-6">
-              As we look to the future, we remain committed to the values and vision that have guided us from the beginning. Our heritage is not just about our past achievements—it's about the foundation upon which we continue to build, innovate, and transform patient care.
+              Our story is just beginning. Since our founding in 2023, we have demonstrated that strategic vision combined with operational excellence can rapidly build a comprehensive regenerative medicine platform. Through targeted acquisitions and organic growth, we've assembled a portfolio of leading brands and technologies that serve healthcare professionals across multiple therapeutic areas.
             </p>
             <p className="text-lead text-muted-foreground mb-6">
-              Every product we develop, every partnership we forge, and every patient we help reflects the legacy of excellence established by our founders and sustained by our dedicated team.
+              Looking ahead, we remain committed to aggressive growth while maintaining the quality and innovation that define our brands. With upcoming product launches, international expansion, and continued M&A activity, Tiger BioSciences is poised to become a global leader in regenerative medicine. Every acquisition, every product launch, and every patient we serve adds to our growing legacy of excellence.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <a
