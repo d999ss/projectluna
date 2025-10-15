@@ -98,8 +98,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-  const division = divisions[params.slug as keyof typeof divisions];
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const division = divisions[slug as keyof typeof divisions];
 
   if (!division) {
     return {

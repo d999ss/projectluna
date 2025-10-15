@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation"
 
-import { Card, CardBody } from "@/components/ui/Card"
+import { Card, CardBody } from "@/components/ui/card"
 import { MetaGrid } from "@/components/product/MetaGrid"
 import { getProduct, allProducts } from "@/lib/content"
 

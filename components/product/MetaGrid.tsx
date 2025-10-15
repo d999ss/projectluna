@@ -1,4 +1,4 @@
-import { Card, CardBody } from "@/components/ui/Card"
+import { Card, CardBody } from "@/components/ui/card"
 
 export function MetaGrid(props: { items: { label: string, value: string }[] }) {
   const { items } = props

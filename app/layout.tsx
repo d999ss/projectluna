@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/contexts/theme-provider";
 import { Footer } from "@/components/site/Footer";
 import { Nav } from "@/components/site/Nav";
-import { inter } from "@/lib/fonts";
+import { archivo, inter } from "@/lib/fonts";
 
 import "./globals.css";
 
@@ -18,18 +18,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" className={`${archivo.variable} ${inter.variable}`} suppressHydrationWarning>
       <body
-        className={`${inter.className} min-h-screen bg-background text-foreground antialiased`}
+        className="min-h-screen bg-background text-foreground antialiased"
       >
-        {/* Fixed radial gradient background */}
+        {/* Fixed radial gradient background - neutral tones */}
         <div className="fixed inset-0 -z-50">
           <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "radial-gradient(circle at 50% 0%, rgba(147, 51, 234, 0.15), transparent 50%), radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1), transparent 50%)",
-            }}
+            className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,_rgba(0,0,0,0.08),_transparent_50%),radial-gradient(circle_at_80%_20%,_rgba(0,0,0,0.05),_transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_0%,_rgba(255,255,255,0.05),_transparent_50%),radial-gradient(circle_at_80%_20%,_rgba(255,255,255,0.03),_transparent_50%)]"
           />
         </div>
 

@@ -21,30 +21,33 @@ const footerLinks = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-background/50 backdrop-blur">
-      <div className="max-w-container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+    <footer className="border-t border-border/60 bg-background/50 backdrop-blur">
+      <div className="container mx-auto max-w-7xl px-6 md:px-10 py-12">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div className="md:col-span-1">
-            <h3 className="mb-4 text-xl font-bold">Tiger BioSciences</h3>
-            <p className="text-muted-foreground mb-4 text-sm">
+            <h3 className="font-display mb-4 text-xl font-light tracking-tight">Tiger BioSciences</h3>
+            <p className="font-body text-muted-foreground mb-4 text-sm">
               Global leader in medical technology, delivering cutting-edge solutions for clinicians worldwide.
             </p>
-            <div className="text-muted-foreground text-sm">
+            <address className="font-body text-muted-foreground text-sm not-italic">
               <p>555 E North Ln, Ste 5000</p>
               <p>Bldg D</p>
               <p>Conshohocken, PA 19428</p>
               <p className="mt-2">
-                <a href="tel:+18886655005" className="hover:text-foreground">
+                <a
+                  href="tel:+18886655005"
+                  className="transition-all duration-200 ease-in-out hover:text-foreground focus:outline-hidden focus:ring-2 focus:ring-brand/70 rounded-md"
+                >
                   1-888-665-5005
                 </a>
               </p>
-            </div>
+            </address>
           </div>
 
           {/* Solutions */}
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider">
+            <h4 className="font-display mb-4 text-sm font-light uppercase tracking-wide">
               Solutions
             </h4>
             <ul className="space-y-3">
@@ -52,7 +55,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-muted-foreground text-sm hover:text-foreground"
+                    className="font-body text-muted-foreground text-sm transition-all duration-200 ease-in-out hover:text-foreground focus:outline-hidden focus:ring-2 focus:ring-brand/70 rounded-md"
                   >
                     {link.name}
                   </Link>
@@ -63,7 +66,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider">
+            <h4 className="font-display mb-4 text-sm font-light uppercase tracking-wide">
               Company
             </h4>
             <ul className="space-y-3">
@@ -71,7 +74,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-muted-foreground text-sm hover:text-foreground"
+                    className="font-body text-muted-foreground text-sm transition-all duration-200 ease-in-out hover:text-foreground focus:outline-hidden focus:ring-2 focus:ring-brand/70 rounded-md"
                   >
                     {link.name}
                   </Link>
@@ -82,7 +85,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="mb-4 text-sm font-semibold uppercase tracking-wider">
+            <h4 className="font-display mb-4 text-sm font-light uppercase tracking-wide">
               Legal
             </h4>
             <ul className="space-y-3">
@@ -90,7 +93,7 @@ export function Footer() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-muted-foreground text-sm hover:text-foreground"
+                    className="font-body text-muted-foreground text-sm transition-all duration-200 ease-in-out hover:text-foreground focus:outline-hidden focus:ring-2 focus:ring-brand/70 rounded-md"
                   >
                     {link.name}
                   </Link>
@@ -98,18 +101,18 @@ export function Footer() {
               ))}
               <li>
                 <Link
-                  href="/design-system"
-                  className="text-muted-foreground text-sm hover:text-foreground"
+                  href="/style"
+                  className="font-body text-muted-foreground text-sm transition-all duration-200 ease-in-out hover:text-foreground focus:outline-hidden focus:ring-2 focus:ring-brand/70 rounded-md"
                 >
-                  Design System
+                  Style Guide
                 </Link>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-border mt-12 border-t pt-8">
-          <p className="text-muted-foreground text-center text-sm">
+        <div className="border-border/60 mt-12 border-t pt-8">
+          <p className="font-body text-muted-foreground text-center text-xs">
             © {new Date().getFullYear()} Tiger BioSciences. All rights reserved.
           </p>
         </div>

@@ -5,7 +5,8 @@ import CompaniesGrid from "./companies-grid"
 
 export default async function CompaniesIndex({
   searchParams,
-}: { searchParams?: { q?: string; relationship?: string } }) {
+}: { searchParams?: Promise<{ q?: string; relationship?: string }> }) {
+  const params = await searchParams;
   const companies = allCompanies().map(c => ({
     slug: c.slug,
     name: c.name,
@@ -17,8 +18,8 @@ export default async function CompaniesIndex({
       <h1 className="text-3xl md:text-4xl font-semibold">Companies</h1>
       <CompaniesGrid
         initialCompanies={companies}
-        initialQ={searchParams?.q ?? ""}
-        initialRelationship={searchParams?.relationship ?? "all"}
+        initialQ={params?.q ?? ""}
+        initialRelationship={params?.relationship ?? "all"}
       />
     </main>
   )

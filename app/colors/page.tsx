@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { type ColorToken, getColorInfo, getAllTokens } from "@/lib/colors"
-import { Button } from "@/components/ui/Button"
-import { Card, CardBody, CardHeader } from "@/components/ui/Card"
+import { Button } from "@/components/ui/button"
+import { Card, CardBody, CardHeader } from "@/components/ui/card"
 
 interface ColorSwatchProps {
   token: ColorToken

@@ -104,7 +104,7 @@ export default function TemplatesPage() {
 
                 {/* Action */}
                 <div className="flex gap-3">
-                  <Button variant="default" size="lg" asChild className="flex-1">
+                  <Button variant="primary" className="flex-1">
                     <Link href={template.href}>
                       View Template
                       <ArrowRightIcon className="ml-2 size-4" />
@@ -124,7 +124,7 @@ export default function TemplatesPage() {
               All templates are fully customizable. Mix and match sections from
               different templates or create your own unique design.
             </p>
-            <Button variant="glow" size="lg" asChild>
+            <Button variant="primary">
               <Link href="https://github.com/launch-ui/launch-ui">
                 View on GitHub
                 <ArrowRightIcon className="ml-2 size-4" />
