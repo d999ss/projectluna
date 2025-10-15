@@ -28,6 +28,16 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) to view your site
 
+## 🎨 Templates
+
+Launch UI includes multiple landing page templates to choose from:
+
+- **Default Template** (`/`) - The classic Launch UI template with a clean, professional design
+- **Luna Template** (`/luna`) - 🌙 An elegant moonlit template with purple-blue gradients and cosmic aesthetics
+- **Templates Gallery** (`/templates`) - Browse and compare all available templates
+
+Each template is fully customizable and includes its own variants of hero and CTA sections. See [LUNA_README.md](LUNA_README.md) for detailed Luna template documentation.
+
 ## 📚 Resources
 
 - [Live Preview](https://launchuicomponents.com/preview)
