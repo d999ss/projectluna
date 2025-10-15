@@ -27,11 +27,11 @@ const templates = [
     id: "luna",
     name: "Luna",
     description:
-      "An elegant moonlit template with purple-blue gradients and cosmic aesthetics for a sophisticated, dreamy feel.",
+      "An elegant moonlit template with -blue gradients and cosmic aesthetics for a sophisticated, dreamy feel.",
     href: "/luna",
     icon: <MoonIcon className="size-8" />,
     theme: "Moonlit",
-    tags: ["Elegant", "Purple", "Modern"],
+    tags: ["Elegant", "", "Modern"],
     badge: "New",
   },
 ];
@@ -116,7 +116,7 @@ export default function TemplatesPage() {
           </div>
 
           {/* Footer CTA */}
-          <div className="border-border mt-16 flex flex-col items-center gap-6 rounded-2xl border bg-gradient-to-br from-purple-500/5 to-blue-500/5 p-12 text-center">
+          <div className="border-border mt-16 flex flex-col items-center gap-6 rounded-2xl border bg-gradient-to-br /5 /5 p-12 text-center">
             <h3 className="text-2xl font-semibold sm:text-3xl">
               Need a custom template?
             </h3>

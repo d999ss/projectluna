@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kill-Switch Test</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <!-- These purple classes should be blocked by the kill-switch -->
+    <div class="bg-purple-500 text-purple-600 border-purple-400">
+        This should be transparent/inherit due to kill-switch
+    </div>
+    
+    <!-- These should work normally -->
+    <div class="bg-brand text-brand-foreground">
+        This should work with Audi×J&J tokens
+    </div>
+</body>
+</html>

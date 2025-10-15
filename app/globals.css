@@ -206,10 +206,127 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
+  /* Technical Luna (Audi × J&J) — tokens */
+  :root {
+    /* NEUTRALS (light) */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 10%;
+    --muted: 0 0% 94%;
+    --muted-foreground: 0 0% 45%;
+    --border: 0 0% 85%;
+
+    /* BRAND / ACCENTS */
+    --brand: 0 84% 60%;            /* True Audi red */
+    --brand-foreground: 0 0% 100%;
+    --accent: 210 6% 42%;          /* colder steel */
+    --success: 145 55% 42%;
+    --warning: 38 92% 46%;         /* tuned for AA contrast */
+    --danger: 355 82% 44%;
+
+    /* RADII & SPACING */
+    --radius: 12px;
+    --radius-card: 16px;
+    --radius-button: 10px;
+    --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+    --space-5: 20px; --space-6: 24px; --space-7: 32px; --space-8: 40px;
+
+    /* TYPOGRAPHY (tight kerning & line) */
+    --font-sans: 'Inter Tight', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-serif: 'Playfair Display', serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+    --h1-size: clamp(48px, 5vw, 80px);
+    --h2-size: clamp(32px, 3.5vw, 48px);
+    --h3-size: 24px;
+    --lead-size: 18px;
+    --body-size: 16px;
+
+    --h1-weight: 700; --h2-weight: 600; --h3-weight: 600;
+    --h1-tracking: -0.02em; --h2-tracking: -0.015em; --h3-tracking: -0.01em;
+    --h1-line: 1.05; --h2-line: 1.15; --h3-line: 1.25;
+    --lead-line: 1.45; --body-line: 1.55;
+
+    /* SHADOWS */
+    --shadow-inset: inset 0 1px 0 rgba(255,255,255,0.12);
+    --shadow-card: 0 8px 24px rgba(0,0,0,0.08);
   }
+
+  .dark {
+    /* NEUTRALS (dark) */
+    --background: 0 0% 6%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
+    --border: 0 0% 25%;
+
+    /* BRAND / ACCENTS tuned for dark */
+    --brand: 0 84% 60%;            /* True Audi red */
+    --brand-foreground: 0 0% 100%;
+    --accent: 210 8% 58%;
+    --success: 145 55% 48%;
+    --warning: 38 92% 52%;
+    --danger: 355 88% 54%;
+  }
+
+  html, body { height: 100% }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+    font-size: var(--body-size);
+    line-height: var(--body-line);
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern" 1, "liga" 1;
   }
+}
+
+/* TEMP kill legacy borders while migrating away from tables */
+table, thead, tbody, tr, th, td, hr {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* Luna Typography Utilities — use these instead of text-[Npx] */
+@layer utilities {
+  .text-display { font-size: var(--h1-size); font-weight: var(--h1-weight); letter-spacing: var(--h1-tracking); line-height: var(--h1-line); }
+  .text-h1      { font-size: var(--h1-size); font-weight: var(--h1-weight); letter-spacing: var(--h1-tracking); line-height: var(--h1-line); }
+  .text-h2      { font-size: var(--h2-size); font-weight: var(--h2-weight); letter-spacing: var(--h2-tracking); line-height: var(--h2-line); }
+  .text-h3      { font-size: var(--h3-size); font-weight: var(--h3-weight); letter-spacing: var(--h3-tracking); line-height: var(--h3-line); }
+  .text-lead    { font-size: var(--lead-size); line-height: var(--lead-line); }
+  .text-body    { font-size: var(--body-size); line-height: var(--body-line); }
+  /* Gradient utilities — recolored Luna */
+  .bg-vignette {
+    background:
+      radial-gradient(60% 40% at 25% 20%, hsl(var(--accent)/.12), transparent 60%),
+      radial-gradient(40% 40% at 75% 60%, hsl(var(--foreground)/.06), transparent 60%);
+  }
+  .bg-vignette-red {
+    background:
+      radial-gradient(22% 18% at 82% 18%, hsl(var(--brand)/.16), transparent 60%),
+      radial-gradient(60% 40% at 25% 80%, hsl(var(--accent)/.10), transparent 60%);
+  }
+  /* Menu entrance */
+  .mm-enter { animation: mmIn .18s cubic-bezier(.25,.1,.25,1) both }
+}
+@keyframes mmIn {
+  from { opacity: 0; transform: translate(-50%, 4px) }
+  to   { opacity: 1; transform: translate(-50%, 0) }
+}
+
+/* 🚫 AUDI×J&J KILL-SWITCH: Block any /orange Tailwind classes */
+[class*="from-"],[class*="to-"],
+[class*="from-"],[class*="to-"],
+[class*="from-violet"],[class*="to-violet"],
+[class*="bg--"],[class*="bg--"],[class*="bg-violet-"],
+[class*="bg-amber-"],[class*="bg-orange-"],[class*="text-amber-"],
+[class*="text--"],[class*="text--"],[class*="text-violet-"],
+[class*="border--"],[class*="border--"],[class*="border-violet-"] {
+  background-image: none !important;
+  background-color: transparent !important;
+  color: inherit !important;
+  border-color: inherit !important;
 }

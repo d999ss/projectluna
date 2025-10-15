@@ -1,62 +1,15 @@
-import "@/app/globals.css";
-
 import type { Metadata } from "next";
 
 import { ThemeProvider } from "@/components/contexts/theme-provider";
+import { Footer } from "@/components/site/Footer";
+import { Nav } from "@/components/site/Nav";
 import { inter } from "@/lib/fonts";
 
-import { siteConfig } from "../config/site";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  metadataBase: new URL(siteConfig.getStartedUrl),
-  description: siteConfig.description,
-  keywords: [
-    "Landing page template",
-    "Components",
-    "Shadcn",
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Radix UI",
-  ],
-  authors: [
-    {
-      name: "Mikolaj Dobrucki",
-      url: "https://mikolajdobrucki.com",
-    },
-  ],
-  creator: "mikolajdobrucki",
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: siteConfig.getStartedUrl,
-    title: siteConfig.name,
-    description: siteConfig.description,
-    siteName: siteConfig.name,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: siteConfig.name,
-    description: siteConfig.description,
-    images: [siteConfig.ogImage],
-    creator: "@mikolajdobrucki",
-  },
-  icons: {
-    icon: "/favicon.svg",
-    apple: "/apple-touch-icon.png",
-  },
+  title: "Tiger BioSciences - Medical Technology Innovation",
+  description: "Global leader in medical technology, delivering cutting-edge solutions for clinicians worldwide",
 };
 
 export default function RootLayout({
@@ -65,9 +18,31 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{ colorScheme: "dark" }} className="dark">
-      <body className={`${inter.className} bg-background antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
+    <html lang="en" suppressHydrationWarning>
+      <body
+        className={`${inter.className} min-h-screen bg-background text-foreground antialiased`}
+      >
+        {/* Fixed radial gradient background */}
+        <div className="fixed inset-0 -z-50">
+          <div
+            className="absolute inset-0"
+            style={{
+              background:
+                "radial-gradient(circle at 50% 0%, rgba(147, 51, 234, 0.15), transparent 50%), radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1), transparent 50%)",
+            }}
+          />
+        </div>
+
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Nav />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

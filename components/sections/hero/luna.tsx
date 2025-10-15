@@ -42,8 +42,8 @@ export default function HeroLuna({
     />
   ),
   badge = (
-    <Badge variant="outline" className="animate-appear border-purple-500/30">
-      <MoonIcon className="mr-2 size-3 text-purple-500" />
+    <Badge variant="outline" className="animate-appear border-border/30">
+      <MoonIcon className="mr-2 size-3 text-brand" />
       <span className="text-muted-foreground">Powered by moonlight</span>
     </Badge>
   ),
@@ -65,15 +65,15 @@ export default function HeroLuna({
     >
       {/* Moonlight gradient background */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="from-purple-500/10 via-blue-500/10 to-transparent absolute top-0 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-radial-to-r blur-3xl" />
-        <div className="from-purple-600/5 via-indigo-500/5 to-transparent absolute top-20 left-1/4 h-[400px] w-[400px] rounded-full bg-radial-to-r blur-3xl" />
-        <div className="from-blue-500/5 via-purple-500/5 to-transparent absolute top-32 right-1/4 h-[500px] w-[500px] rounded-full bg-radial-to-r blur-3xl" />
+        <div className="/10 /10 to-transparent absolute top-0 left-1/2 h-[600px] w-[600px] -translate-x-1/2 rounded-full bg-radial-to-r blur-3xl" />
+        <div className="/5 /5 to-transparent absolute top-20 left-1/4 h-[400px] w-[400px] rounded-full bg-radial-to-r blur-3xl" />
+        <div className="/5 /5 to-transparent absolute top-32 right-1/4 h-[500px] w-[500px] rounded-full bg-radial-to-r blur-3xl" />
       </div>
 
       <div className="max-w-container mx-auto flex flex-col gap-12 pt-16 sm:gap-24">
         <div className="flex flex-col items-center gap-6 text-center sm:gap-12">
           {badge !== false && badge}
-          <h1 className="from-foreground via-purple-500/80 to-foreground dark:via-purple-400/60 animate-appear relative z-10 inline-block bg-linear-to-r bg-clip-text text-4xl leading-tight font-semibold text-balance text-transparent drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
+          <h1 className="from-foreground /80 to-foreground dark:/60 animate-appear relative z-10 inline-block bg-linear-to-r bg-clip-text text-4xl leading-tight font-semibold text-balance text-transparent drop-shadow-2xl sm:text-6xl sm:leading-tight md:text-8xl md:leading-tight">
             {title}
           </h1>
           <p className="text-md animate-appear text-muted-foreground relative z-10 max-w-[740px] font-medium text-balance opacity-0 delay-100 sm:text-xl">
@@ -89,7 +89,7 @@ export default function HeroLuna({
                   asChild
                   className={cn(
                     button.variant === "default" &&
-                      "bg-purple-600 hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600",
+                      "bg-brand hover:bg-brand dark:bg-brand dark:hover:bg-brand",
                   )}
                 >
                   <a href={button.href}>
