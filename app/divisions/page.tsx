@@ -63,11 +63,11 @@ export default function DivisionsPage() {
 
           <Link href="/divisions/international" className="group">
             <StatCard
-              icon={<GlobeIcon className="size-8 text-orange-600" />}
+              icon={<GlobeIcon className="size-8 text-brand" />}
               title="Tiger International"
               description="Global Access to Advanced Cell & Tissue Technologies. Enabling worldwide distribution of cutting-edge products from Germany."
             >
-              <div className="mt-4 flex items-center text-sm font-semibold text-orange-600 transition-transform group-hover:translate-x-1">
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
                 Learn More
                 <ArrowRightIcon className="ml-2 size-4" />
               </div>
