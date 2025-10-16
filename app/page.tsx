@@ -1,16 +1,36 @@
+"use client";
+
 import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
+import { useRef } from "react";
 
 import { Hero } from "@/components/site/Hero";
 
 export default function Home() {
+  const videoRef1 = useRef<HTMLVideoElement>(null);
+  const videoRef2 = useRef<HTMLVideoElement>(null);
+  const videoRef3 = useRef<HTMLVideoElement>(null);
+  const videoRef4 = useRef<HTMLVideoElement>(null);
+
+  const handleMouseEnter = (videoRef: React.RefObject<HTMLVideoElement>) => {
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
+  const handleMouseLeave = (videoRef: React.RefObject<HTMLVideoElement>) => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
   return (
     <main className="min-h-screen">
       {/* Full-viewport Hero */}
       <Hero
         title="Building the future of tissue and cellular innovation"
         description="Zero compromises in quality, innovation, and patient outcomes"
-        backgroundVideo="/images/social_boredoptimism_reflection_in_the_cats_eyes_--ar_9151_--bs_1_--_fd91aae9-9fc0-4a4c-98d7-2d0bf3ced741_0.mp4"
+        backgroundVideo="/images/Vile.mp4"
         primaryCTA={{ text: "Explore Solutions", href: "/solutions" }}
         secondaryCTA={{ text: "Request a Demo", href: "/contact" }}
         size="extra-large"
@@ -22,23 +42,32 @@ export default function Home() {
         <div className="container mx-auto max-w-7xl px-6 md:px-10">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             {/* Wound Care Solutions */}
-            <Link href="/solutions/wound-care" className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+            <Link
+              href="/solutions/wound-care"
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3]"
+              onMouseEnter={() => handleMouseEnter(videoRef1)}
+              onMouseLeave={() => handleMouseLeave(videoRef1)}
+            >
               <div className="absolute inset-0">
-                <img
-                  src="/images/boredoptimism_human_skin_--ar_169_--raw_--profile_e1dtuj2_--v_350bc8db-8fea-4316-aa3b-ec44b72f8094_2.png"
-                  alt="Wound Care Solutions"
+                <video
+                  ref={videoRef1}
+                  muted
+                  loop
+                  playsInline
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                >
+                  <source src="/images/social_boredoptimism_particles_in_motion_--ar_9151_--bs_1_--raw_--vi_813b1528-646c-423d-82c6-72c70de33f51_0.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/20" />
               </div>
               <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-12">
-                <h3 className="font-display text-3xl md:text-4xl font-light text-white tracking-tight">
+                <h3 className="font-display text-3xl md:text-4xl font-light text-white tracking-tight drop-shadow-lg">
                   Wound Care Solutions
                 </h3>
-                <p className="mt-3 text-lg text-white/90 max-w-lg">
+                <p className="mt-3 text-lg text-white/90 max-w-lg leading-snug drop-shadow-md">
                   Advanced CAMP solutions for chronic wounds and extremity reconstruction
                 </p>
-                <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold transition-transform group-hover:translate-x-2">
+                <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold transition-transform group-hover:translate-x-2 drop-shadow-md">
                   Explore Solutions
                   <ArrowRightIcon className="size-5" />
                 </div>
@@ -46,23 +75,32 @@ export default function Home() {
             </Link>
 
             {/* Aesthetic Solutions */}
-            <Link href="/solutions/aesthetics" className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+            <Link
+              href="/solutions/aesthetics"
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3]"
+              onMouseEnter={() => handleMouseEnter(videoRef2)}
+              onMouseLeave={() => handleMouseLeave(videoRef2)}
+            >
               <div className="absolute inset-0">
-                <img
-                  src="/images/boredoptimism_beauty_aesthetics_--ar_169_--raw_--profile_e1dt_34284714-30fb-4104-8ef7-79f98077bc60_2.png"
-                  alt="Aesthetic Solutions"
+                <video
+                  ref={videoRef2}
+                  muted
+                  loop
+                  playsInline
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                >
+                  <source src="/images/social_boredoptimism_soft_touch_depth_of_field_--ar_9151_--bs_1_--ra_ed2f58c5-c992-4d00-9ca1-b92d58f88d4b_0.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/20" />
               </div>
               <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-12">
-                <h3 className="font-display text-3xl md:text-4xl font-light text-white tracking-tight">
+                <h3 className="font-display text-3xl md:text-4xl font-light text-white tracking-tight drop-shadow-lg">
                   Aesthetic Solutions
                 </h3>
-                <p className="mt-3 text-lg text-white/90 max-w-lg">
+                <p className="mt-3 text-lg text-white/90 max-w-lg leading-snug drop-shadow-md">
                   Cutting-edge aesthetic medicine for reconstruction and renewal
                 </p>
-                <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold transition-transform group-hover:translate-x-2">
+                <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold transition-transform group-hover:translate-x-2 drop-shadow-md">
                   Explore Solutions
                   <ArrowRightIcon className="size-5" />
                 </div>
@@ -70,23 +108,32 @@ export default function Home() {
             </Link>
 
             {/* Regenerative Sciences */}
-            <Link href="/solutions/regenerative-sciences" className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+            <Link
+              href="/solutions/regenerative-sciences"
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3]"
+              onMouseEnter={() => handleMouseEnter(videoRef3)}
+              onMouseLeave={() => handleMouseLeave(videoRef3)}
+            >
               <div className="absolute inset-0">
-                <img
-                  src="/images/boredoptimism_close_up_of_skin_--ar_169_--raw_--profile_el37i_d81643f3-7159-4088-adcf-d7413e31b848_1.png"
-                  alt="Regenerative Sciences"
+                <video
+                  ref={videoRef3}
+                  muted
+                  loop
+                  playsInline
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                >
+                  <source src="/images/social_boredoptimism_particles_--ar_9151_--bs_1_--raw_--video_1_--en_e2952807-175a-44d3-a5b5-7e527dcbedd8_0.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/20" />
               </div>
               <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-12">
-                <h3 className="font-display text-3xl md:text-4xl font-light text-white tracking-tight">
+                <h3 className="font-display text-3xl md:text-4xl font-light text-white tracking-tight drop-shadow-lg">
                   Regenerative Sciences
                 </h3>
-                <p className="mt-3 text-lg text-white/90 max-w-lg">
+                <p className="mt-3 text-lg text-white/90 max-w-lg leading-snug drop-shadow-md">
                   Leading tissue processing, R&D, and regenerative medicine innovations
                 </p>
-                <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold transition-transform group-hover:translate-x-2">
+                <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold transition-transform group-hover:translate-x-2 drop-shadow-md">
                   Explore Solutions
                   <ArrowRightIcon className="size-5" />
                 </div>
@@ -94,23 +141,32 @@ export default function Home() {
             </Link>
 
             {/* International */}
-            <Link href="/solutions/international" className="group relative overflow-hidden rounded-2xl aspect-[4/3]">
+            <Link
+              href="/solutions/international"
+              className="group relative overflow-hidden rounded-2xl aspect-[4/3]"
+              onMouseEnter={() => handleMouseEnter(videoRef4)}
+              onMouseLeave={() => handleMouseLeave(videoRef4)}
+            >
               <div className="absolute inset-0">
-                <img
-                  src="/images/G2lpOORXYAAwOtV.jpeg"
-                  alt="International Solutions"
+                <video
+                  ref={videoRef4}
+                  muted
+                  loop
+                  playsInline
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                >
+                  <source src="/images/social_boredoptimism_subtle_movement_--ar_9151_--bs_1_--raw_--video__b3dc0572-b2b1-4207-a8fb-422c8d20b33f_0.mp4" type="video/mp4" />
+                </video>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/70 to-black/20" />
               </div>
               <div className="relative z-10 flex h-full flex-col justify-end p-8 md:p-12">
-                <h3 className="font-display text-3xl md:text-4xl font-light text-white tracking-tight">
+                <h3 className="font-display text-3xl md:text-4xl font-light text-white tracking-tight drop-shadow-lg">
                   International
                 </h3>
-                <p className="mt-3 text-lg text-white/90 max-w-lg">
+                <p className="mt-3 text-lg text-white/90 max-w-lg leading-snug drop-shadow-md">
                   Global access to advanced cell and tissue technologies
                 </p>
-                <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold transition-transform group-hover:translate-x-2">
+                <div className="mt-6 inline-flex items-center gap-2 text-white font-semibold transition-transform group-hover:translate-x-2 drop-shadow-md">
                   Explore Solutions
                   <ArrowRightIcon className="size-5" />
                 </div>
@@ -151,7 +207,7 @@ export default function Home() {
             </div>
             <div className="order-1 lg:order-2 relative aspect-[4/3] rounded-2xl overflow-hidden">
               <img
-                src="/images/boredoptimism_close_up_of_a_man_eye_--ar_9151_--raw_--v_7_6e1ef8a8-f234-4f8d-b09d-ab30df60ec89_0.png"
+                src="/images/boredoptimism_science_aesthetics_--ar_169_--raw_--profile_e1d_be617358-9084-4f84-b1dc-378a67fd1009_0.png"
                 alt="CAMPs Technology"
                 className="h-full w-full object-cover"
               />

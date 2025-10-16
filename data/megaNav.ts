@@ -33,7 +33,7 @@ export const MEGA_SECTIONS: MegaSection[] = [
       title: "Transforming Lives Through Science",
       body: "Tiger BioSciences advances biotechnology with innovation, integrity, and excellence.",
       cta: { label: "Learn More", href: "/company/overview" },
-      image: "/images/boredoptimism_close_up_of_a_man_eye_--ar_9151_--raw_--v_7_6e1ef8a8-f234-4f8d-b09d-ab30df60ec89_0.png"
+      image: "/images/01.png"
     }
   },
   {
@@ -69,7 +69,7 @@ export const MEGA_SECTIONS: MegaSection[] = [
       title: "Innovation Across Disciplines",
       body: "From cell & tissue engineering to regenerative sciences, Tiger BioSciences delivers clinical impact.",
       cta: { label: "Explore More", href: "/solutions" },
-      image: "/images/boredoptimism_close_up_of_skin_--ar_169_--raw_--profile_el37i_d81643f3-7159-4088-adcf-d7413e31b848_1.png"
+      image: "/images/02.png"
     }
   },
   {
@@ -104,11 +104,11 @@ export const MEGA_SECTIONS: MegaSection[] = [
       ]},
     ],
     feature: {
-      badge: "FEATURED",
-      title: "CAMPs Technology",
-      body: "Cell & tissue products with proven clinical outcomes and standardized quality.",
-      cta: { label: "Discover CAMPs", href: "/products/camps" },
-      image: "/images/boredoptimism_human_skin_--ar_169_--raw_--profile_e1dtuj2_--v_350bc8db-8fea-4316-aa3b-ec44b72f8094_2.png"
+      badge: "ALL PRODUCTS",
+      title: "Complete Product Portfolio",
+      body: "Explore our comprehensive range of wound care, aesthetic, regenerative, and international solutions—all backed by scientific excellence.",
+      cta: { label: "View All Products", href: "/products" },
+      image: "/images/G2x1VYJX0AAwNvW.png"
     }
   },
 ]

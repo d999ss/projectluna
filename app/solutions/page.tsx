@@ -18,6 +18,8 @@ export default function SolutionsPage() {
         description="Comprehensive medical technology solutions designed to advance patient care across multiple therapeutic areas."
         primaryCTA={{ text: "Request a Demo", href: "/contact" }}
         secondaryCTA={{ text: "View Divisions", href: "/divisions" }}
+        backgroundVideo="/images/social_boredoptimism_close_up_of_Tiger_eye_--ar_9151_--bs_1_--motion_0647411b-082c-4933-9b4c-b3eee78d34ba_0.mp4"
+        size="extra-large"
       />
 
       {/* Wound Care & Pain Management */}

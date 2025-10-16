@@ -51,7 +51,7 @@ export function Nav({ variant }: NavProps = {}) {
       <div className="container relative mx-auto max-w-7xl px-6 md:px-10">
         <Navbar className="py-4">
           <NavbarLeft>
-            <Link href="/" className="-m-1.5 p-1.5 transition-all duration-200 ease-in-out focus:outline-hidden focus:ring-2 focus:ring-brand/70 rounded-md">
+            <Link href="/" className="-m-1.5 p-1.5 transition-all duration-200 ease-in-out focus:outline-none rounded-md">
               <span className={`text-base font-[Neuropa,Archivo] font-normal tracking-tight uppercase ${isLight ? 'text-white' : ''}`}>Tiger BioSciences™</span>
             </Link>
           </NavbarLeft>
@@ -66,9 +66,9 @@ export function Nav({ variant }: NavProps = {}) {
                       {section.id === "company" ? "Company" : section.id === "expertise" ? "Expertise" : "Products"}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
-                      <div className="grid w-[800px] grid-cols-2 gap-8 p-6">
+                      <div className="grid w-[800px] h-[550px] grid-cols-2 gap-8 p-6">
                         {/* Left side: Navigation groups */}
-                        <div className="grid grid-cols-2 gap-6">
+                        <div className="grid grid-cols-2 gap-6 content-start">
                           {section.groups.map((group) => (
                             <div key={group.title} className="space-y-3">
                               <div className="font-display text-xs font-light tracking-wide text-brand">
@@ -93,28 +93,33 @@ export function Nav({ variant }: NavProps = {}) {
                         </div>
 
                         {/* Right side: Featured section */}
-                        <div className="rounded-lg bg-muted/40 p-6 space-y-4 overflow-hidden relative">
+                        <Link
+                          href={section.id === "products" ? "/products" : section.feature.cta.href}
+                          className="rounded-lg p-6 overflow-hidden relative flex items-end transition-all duration-200 group"
+                        >
                           {section.feature.image && (
-                            <div className="absolute inset-0 -z-10">
-                              <img
-                                src={section.feature.image}
-                                alt={section.feature.title}
-                                className="w-full h-full object-cover opacity-20"
-                              />
-                            </div>
+                            <>
+                              <div className="absolute inset-0">
+                                <img
+                                  src={section.feature.image}
+                                  alt={section.feature.title}
+                                  className="w-full h-full object-cover rounded-lg transition-transform duration-200 group-hover:scale-105"
+                                />
+                              </div>
+                              <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/60 to-transparent rounded-lg" />
+                            </>
                           )}
-                          <span className="font-display inline-block text-xs tracking-wide font-light rounded-full px-3 py-1 bg-brand/15 text-brand">
-                            {section.feature.badge}
-                          </span>
-                          <h3 className="font-display text-xl font-light tracking-tight">{section.feature.title}</h3>
-                          <p className="font-body text-sm text-muted-foreground">{section.feature.body}</p>
-                          <Link
-                            href={section.feature.cta.href}
-                            className="font-body inline-flex items-center gap-2 text-sm text-brand hover:opacity-85 transition-all duration-200 ease-in-out focus:outline-hidden focus:ring-2 focus:ring-brand/70 rounded-md"
-                          >
-                            {section.feature.cta.label} <span aria-hidden>→</span>
-                          </Link>
-                        </div>
+                          <div className="relative space-y-3">
+                            <span className="font-display inline-block text-xs tracking-wide font-light rounded-full px-3 py-1 bg-white/10 text-white backdrop-blur-md border border-white/20">
+                              {section.feature.badge}
+                            </span>
+                            <h3 className="font-display text-xl font-light tracking-tight text-white">{section.feature.title}</h3>
+                            <p className="font-body text-sm text-white/90">{section.feature.body}</p>
+                            <div className="font-body inline-flex items-center gap-2 text-sm text-white font-semibold transition-all duration-200 ease-in-out group-hover:translate-x-1">
+                              {section.feature.cta.label} <span aria-hidden>→</span>
+                            </div>
+                          </div>
+                        </Link>
                       </div>
                     </NavigationMenuContent>
                   </NavigationMenuItem>

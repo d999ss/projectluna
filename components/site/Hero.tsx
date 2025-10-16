@@ -36,7 +36,7 @@ export function Hero({
   const hasMediaBackground = backgroundVideo || backgroundImage;
 
   return (
-    <div className={`relative overflow-hidden ${hasMediaBackground ? 'h-[90vh] flex items-end' : 'pt-32 pb-16 md:pt-40 md:pb-24'} ${!hasMediaBackground ? sizeClasses[size] : ''}`}>
+    <div className={`relative overflow-hidden ${hasMediaBackground ? 'h-[100vh] flex items-end' : 'pt-32 pb-16 md:pt-40 md:pb-24'} ${!hasMediaBackground ? sizeClasses[size] : ''}`}>
       {backgroundVideo ? (
         <>
           {/* Background video with overlay */}
@@ -49,7 +49,7 @@ export function Hero({
           >
             <source src={backgroundVideo} type="video/mp4" />
           </video>
-          <div className="absolute inset-0 -z-10 bg-background/80" />
+          <div className="absolute inset-0 -z-10 bg-gradient-to-t from-black/95 via-black/75 to-black/40" />
         </>
       ) : backgroundImage ? (
         <>

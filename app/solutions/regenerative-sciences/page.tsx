@@ -71,7 +71,7 @@ export default function RegenerativeSciencesPage() {
         description="Tiger BioSciences leads in tissue processing and CAMP-based innovation through rigorous protocols, advanced biotech, and scientific precision. Our regenerative sciences division encompasses research, development, tissue recovery, and comprehensive processing services that set new industry benchmarks."
         primaryCTA={{ text: "Request a Demo", href: "/contact" }}
         secondaryCTA={{ text: "View All Solutions", href: "/solutions" }}
-        backgroundImage="/images/boredoptimism_close_up_of_skin_--ar_169_--raw_--profile_el37i_d81643f3-7159-4088-adcf-d7413e31b848_1.png"
+        backgroundImage="/images/boredoptimism_science_aesthetics_--ar_169_--raw_--profile_e1d_6fbaafb0-1d29-4a2a-8229-3c226e2218c3_3.png"
         size="extra-large"
       />
 
