@@ -23,7 +23,7 @@ export default function History() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">The Beginning (2000-2005)</h3>
               <p className="font-body text-muted-foreground">
-                Founded by pioneering researchers in tissue engineering, Tiger BioSciences began with a vision to harness the body's natural healing capabilities through advanced biomaterials. Our first laboratory focused on developing innovative wound care solutions.
+                Founded by pioneering researchers in tissue engineering, Tiger BioSciences began with a vision to harness the body&apos;s natural healing capabilities through advanced biomaterials. Our first laboratory focused on developing innovative wound care solutions.
               </p>
             </CardBody>
           </Card>

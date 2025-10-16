@@ -50,7 +50,7 @@ export default function LifeAtTiger() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Integrity & Trust</h3>
               <p className="font-body text-muted-foreground">
-                Ethical conduct, transparency, and accountability form the foundation of our work. We do what's right, even when it's difficult.
+                Ethical conduct, transparency, and accountability form the foundation of our work. We do what&apos;s right, even when it&apos;s difficult.
               </p>
             </CardBody>
           </Card>
@@ -222,7 +222,7 @@ export default function LifeAtTiger() {
           <Card>
             <CardBody>
               <p className="font-body text-muted-foreground italic mb-4">
-                "Every day I see how my work contributes to therapies that will help patients. That sense of purpose drives me to bring my best to everything I do."
+                &quot;Every day I see how my work contributes to therapies that will help patients. That sense of purpose drives me to bring my best to everything I do.&quot;
               </p>
               <div className="text-sm font-medium">Research Scientist</div>
             </CardBody>
@@ -231,7 +231,7 @@ export default function LifeAtTiger() {
           <Card>
             <CardBody>
               <p className="font-body text-muted-foreground italic mb-4">
-                "The collaborative culture here is incredible. People from different departments work together seamlessly, and everyone's expertise is valued."
+                &quot;The collaborative culture here is incredible. People from different departments work together seamlessly, and everyone&apos;s expertise is valued.&quot;
               </p>
               <div className="text-sm font-medium">Manufacturing Manager</div>
             </CardBody>
@@ -240,7 +240,7 @@ export default function LifeAtTiger() {
           <Card>
             <CardBody>
               <p className="font-body text-muted-foreground italic mb-4">
-                "I've grown so much in my role. The company invests in training and development, and there are real opportunities to advance your career."
+                &quot;I&apos;ve grown so much in my role. The company invests in training and development, and there are real opportunities to advance your career.&quot;
               </p>
               <div className="text-sm font-medium">Quality Assurance Specialist</div>
             </CardBody>
@@ -249,7 +249,7 @@ export default function LifeAtTiger() {
           <Card>
             <CardBody>
               <p className="font-body text-muted-foreground italic mb-4">
-                "The leadership team is approachable and transparent. I feel informed about company goals and how my work contributes to our success."
+                &quot;The leadership team is approachable and transparent. I feel informed about company goals and how my work contributes to our success.&quot;
               </p>
               <div className="text-sm font-medium">Operations Coordinator</div>
             </CardBody>

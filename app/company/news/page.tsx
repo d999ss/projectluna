@@ -209,7 +209,7 @@ export default function NewsPage() {
         <Card>
           <CardBody>
             <p className="text-lead text-muted-foreground mb-6">
-              Stay informed about Tiger BioSciences' latest innovations, clinical research, and company developments. Follow us on social media or subscribe to our newsletter for regular updates.
+              Stay informed about Tiger BioSciences&apos; latest innovations, clinical research, and company developments. Follow us on social media or subscribe to our newsletter for regular updates.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <a

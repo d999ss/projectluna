@@ -36,7 +36,7 @@ export default function AestheticPage() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3 text-brand">Regenerative Injectables</h3>
               <p className="font-body text-muted-foreground">
-                Advanced biologic formulations that harness the body's natural healing mechanisms for skin rejuvenation and tissue regeneration.
+                Advanced biologic formulations that harness the body&apos;s natural healing mechanisms for skin rejuvenation and tissue regeneration.
               </p>
             </CardBody>
           </Card>

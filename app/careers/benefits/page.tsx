@@ -90,7 +90,7 @@ export default function BenefitsAndGrowth() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Equity Opportunities</h3>
               <p className="font-body text-muted-foreground">
-                Eligible employees receive stock options or equity grants. Share in the company's success and growth as we advance regenerative medicine.
+                Eligible employees receive stock options or equity grants. Share in the company&apos;s success and growth as we advance regenerative medicine.
               </p>
             </CardBody>
           </Card>
@@ -108,7 +108,7 @@ export default function BenefitsAndGrowth() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Disability Coverage</h3>
               <p className="font-body text-muted-foreground">
-                Short-term and long-term disability insurance protects your income if you're unable to work due to illness or injury.
+                Short-term and long-term disability insurance protects your income if you&apos;re unable to work due to illness or injury.
               </p>
             </CardBody>
           </Card>

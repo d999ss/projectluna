@@ -33,7 +33,7 @@ export default function BirthTissueSciences() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Umbilical Cord</h3>
               <p className="font-body text-muted-foreground">
-                Wharton's jelly-derived products providing structural matrix and biological signaling for soft tissue reinforcement and regeneration.
+                Wharton&apos;s jelly-derived products providing structural matrix and biological signaling for soft tissue reinforcement and regeneration.
               </p>
             </CardBody>
           </Card>
@@ -104,7 +104,7 @@ export default function BirthTissueSciences() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Ophthalmology</h3>
               <p className="font-body text-muted-foreground">
-                Ocular surface reconstruction for corneal defects, chemical burns, and refractory dry eye leveraging membrane's anti-scarring properties.
+                Ocular surface reconstruction for corneal defects, chemical burns, and refractory dry eye leveraging membrane&apos;s anti-scarring properties.
               </p>
             </CardBody>
           </Card>

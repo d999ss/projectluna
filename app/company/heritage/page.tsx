@@ -63,7 +63,7 @@ export default function HeritagePage() {
                 <div className="flex-1">
                   <h3 className="font-display text-xl mb-3">Sientra Acquisition</h3>
                   <p className="font-body text-muted-foreground">
-                    Tiger Aesthetics acquires substantially all assets of Sientra Inc.'s breast implant business for $42.5 million plus assumption of liabilities. This strategic acquisition brings premium silicone gel breast implants and a Wisconsin-based manufacturing facility into the portfolio, establishing Tiger as a major player in aesthetic breast surgery.
+                    Tiger Aesthetics acquires substantially all assets of Sientra Inc.&apos;s breast implant business for $42.5 million plus assumption of liabilities. This strategic acquisition brings premium silicone gel breast implants and a Wisconsin-based manufacturing facility into the portfolio, establishing Tiger as a major player in aesthetic breast surgery.
                   </p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function HeritagePage() {
                 <div className="flex-1">
                   <h3 className="font-display text-xl mb-3">Revelle Aesthetics Acquisition</h3>
                   <p className="font-body text-muted-foreground">
-                    Tiger Aesthetics acquires Revelle Aesthetics, makers of the FDA-cleared Avéli® cellulite reduction device. This acquisition broadens Tiger's commercial reach into regenerative body aesthetics, providing a comprehensive suite for lower body rejuvenation when combined with Viality™ fat transfer and the upcoming alloClae™ structural adipose fillers.
+                    Tiger Aesthetics acquires Revelle Aesthetics, makers of the FDA-cleared Avéli® cellulite reduction device. This acquisition broadens Tiger&apos;s commercial reach into regenerative body aesthetics, providing a comprehensive suite for lower body rejuvenation when combined with Viality™ fat transfer and the upcoming alloClae™ structural adipose fillers.
                   </p>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function HeritagePage() {
                 <div className="flex-1">
                   <h3 className="font-display text-xl mb-3">Encore Surgical Acquisition</h3>
                   <p className="font-body text-muted-foreground">
-                    Tiger Wound Care acquires Novo Health Care Service's Encore Surgical HealPACK Solutions, expanding into comprehensive surgical dressing systems. This strategic move strengthens Tiger's wound care portfolio with proven surgical site management products and further positions the company across the full continuum of tissue care.
+                    Tiger Wound Care acquires Novo Health Care Service&apos;s Encore Surgical HealPACK Solutions, expanding into comprehensive surgical dressing systems. This strategic move strengthens Tiger&apos;s wound care portfolio with proven surgical site management products and further positions the company across the full continuum of tissue care.
                   </p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ export default function HeritagePage() {
               <h3 className="font-display text-xl mb-3 text-brand">Oliver Burckhardt</h3>
               <p className="font-display text-lg font-medium mb-3">Co-Founder, Co-CEO & Co-Owner</p>
               <p className="font-body text-muted-foreground">
-                A proven entrepreneur in medical devices with deep expertise in orthopedics, spine, and regenerative medicine. Oliver previously founded Extremity Care (2020) and Flower Orthopedics, and co-owned RegenTX Partners (2022). His strategic vision and M&A expertise have been instrumental in rapidly building Tiger BioSciences' comprehensive portfolio through targeted acquisitions and organic growth.
+                A proven entrepreneur in medical devices with deep expertise in orthopedics, spine, and regenerative medicine. Oliver previously founded Extremity Care (2020) and Flower Orthopedics, and co-owned RegenTX Partners (2022). His strategic vision and M&A expertise have been instrumental in rapidly building Tiger BioSciences&apos; comprehensive portfolio through targeted acquisitions and organic growth.
               </p>
             </CardBody>
           </Card>
@@ -156,7 +156,7 @@ export default function HeritagePage() {
               <h3 className="font-display text-xl mb-3 text-brand">Scott Madden</h3>
               <p className="font-display text-lg font-medium mb-3">Co-Founder, Co-CEO & Co-Owner</p>
               <p className="font-body text-muted-foreground">
-                A biotech innovator and sales strategist with extensive experience in building and scaling regenerative medicine businesses. Scott's leadership in commercial operations and market development has been critical to Tiger BioSciences' rapid market penetration. His focus on customer relationships and clinical education has positioned Tiger as a trusted partner for healthcare professionals worldwide.
+                A biotech innovator and sales strategist with extensive experience in building and scaling regenerative medicine businesses. Scott&apos;s leadership in commercial operations and market development has been critical to Tiger BioSciences&apos; rapid market penetration. His focus on customer relationships and clinical education has positioned Tiger as a trusted partner for healthcare professionals worldwide.
               </p>
             </CardBody>
           </Card>
@@ -170,7 +170,7 @@ export default function HeritagePage() {
         <Card>
           <CardBody>
             <p className="text-lead text-muted-foreground mb-6">
-              Our story is just beginning. Since our founding in 2023, we have demonstrated that strategic vision combined with operational excellence can rapidly build a comprehensive regenerative medicine platform. Through targeted acquisitions and organic growth, we've assembled a portfolio of leading brands and technologies that serve healthcare professionals across multiple therapeutic areas.
+              Our story is just beginning. Since our founding in 2023, we have demonstrated that strategic vision combined with operational excellence can rapidly build a comprehensive regenerative medicine platform. Through targeted acquisitions and organic growth, we&apos;ve assembled a portfolio of leading brands and technologies that serve healthcare professionals across multiple therapeutic areas.
             </p>
             <p className="text-lead text-muted-foreground mb-6">
               Looking ahead, we remain committed to aggressive growth while maintaining the quality and innovation that define our brands. With upcoming product launches, international expansion, and continued M&A activity, Tiger BioSciences is poised to become a global leader in regenerative medicine. Every acquisition, every product launch, and every patient we serve adds to our growing legacy of excellence.

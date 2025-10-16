@@ -87,7 +87,7 @@ export default function TermsPage() {
             <CardBody>
               <h3 className="font-display text-xl mb-3">Warranty Disclaimer</h3>
               <p className="font-body text-muted-foreground">
-                Services are provided "as is" without warranties of any kind, either express or implied, except where prohibited by law. Product warranties are stated separately.
+                Services are provided &quot;as is&quot; without warranties of any kind, either express or implied, except where prohibited by law. Product warranties are stated separately.
               </p>
             </CardBody>
           </Card>

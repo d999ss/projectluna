@@ -44,7 +44,7 @@ export default function PressReleases() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Tiger BioSciences Expands Global Footprint with Asia-Pacific Distribution Centers</h3>
               <p className="font-body text-muted-foreground mb-4">
-                DALLAS, TX - August 12, 2025 - Tiger BioSciences announced the opening of new distribution centers in Singapore and Sydney to support growing demand for regenerative medicine solutions across Asia-Pacific markets. The expansion strengthens the company's ability to serve healthcare providers in the region with innovative wound care and reconstruction products.
+                DALLAS, TX - August 12, 2025 - Tiger BioSciences announced the opening of new distribution centers in Singapore and Sydney to support growing demand for regenerative medicine solutions across Asia-Pacific markets. The expansion strengthens the company&apos;s ability to serve healthcare providers in the region with innovative wound care and reconstruction products.
               </p>
               <p className="font-body text-sm text-brand mb-2">August 12, 2025</p>
               <p className="font-body text-sm text-muted-foreground">Corporate Expansion | Global Operations</p>
@@ -66,7 +66,7 @@ export default function PressReleases() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Tiger BioSciences Honored with Innovation Excellence Award</h3>
               <p className="font-body text-muted-foreground mb-4">
-                DALLAS, TX - June 5, 2025 - The Regenerative Medicine Foundation recognized Tiger BioSciences with its Innovation Excellence Award for breakthrough advances in tissue processing technology. The award acknowledges the company's proprietary methods for preserving the native structure and biological activity of tissue-based biomaterials.
+                DALLAS, TX - June 5, 2025 - The Regenerative Medicine Foundation recognized Tiger BioSciences with its Innovation Excellence Award for breakthrough advances in tissue processing technology. The award acknowledges the company&apos;s proprietary methods for preserving the native structure and biological activity of tissue-based biomaterials.
               </p>
               <p className="font-body text-sm text-brand mb-2">June 5, 2025</p>
               <p className="font-body text-sm text-muted-foreground">Industry Recognition | Awards</p>

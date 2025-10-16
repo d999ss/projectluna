@@ -86,7 +86,7 @@ export default function RegenerativePage() {
         <Card>
           <CardBody>
             <p className="text-lead text-muted-foreground mb-6">
-              Our regenerative science platform represents the convergence of molecular biology, tissue engineering, and clinical medicine. By understanding and modulating the body's natural repair mechanisms, we develop therapies that don't just treat symptoms but fundamentally restore tissue structure and function.
+              Our regenerative science platform represents the convergence of molecular biology, tissue engineering, and clinical medicine. By understanding and modulating the body&apos;s natural repair mechanisms, we develop therapies that don&apos;t just treat symptoms but fundamentally restore tissue structure and function.
             </p>
             <p className="text-lead text-muted-foreground">
               From orthopedic injuries to chronic wounds, cardiovascular disease to neurological conditions, our regenerative technologies are opening new frontiers in medicine. We collaborate with leading research institutions and clinicians to translate cutting-edge science into practical, effective therapies that improve lives.

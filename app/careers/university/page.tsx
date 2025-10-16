@@ -127,7 +127,7 @@ export default function UniversityPrograms() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Program Structure</h3>
               <p className="font-body text-muted-foreground">
-                Six-month co-op rotations aligned with academic calendars. Work full-time while earning academic credit through your university's co-op program.
+                Six-month co-op rotations aligned with academic calendars. Work full-time while earning academic credit through your university&apos;s co-op program.
               </p>
             </CardBody>
           </Card>

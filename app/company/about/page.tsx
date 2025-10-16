@@ -24,7 +24,7 @@ export default function AboutPage() {
         <Card>
           <CardBody>
             <p className="text-lead text-muted-foreground mb-6">
-              Tiger BioSciences is a global leader in tissue engineering and regenerative medicine, dedicated to developing innovative solutions that improve patient outcomes and quality of life. Since our founding, we have been at the forefront of medical technology, pushing the boundaries of what's possible in tissue repair and regeneration.
+              Tiger BioSciences is a global leader in tissue engineering and regenerative medicine, dedicated to developing innovative solutions that improve patient outcomes and quality of life. Since our founding, we have been at the forefront of medical technology, pushing the boundaries of what&apos;s possible in tissue repair and regeneration.
             </p>
             <p className="text-lead text-muted-foreground">
               With state-of-the-art research facilities and a team of world-class scientists and medical professionals, we are committed to advancing the field of regenerative medicine through rigorous research, innovative product development, and collaborative partnerships with healthcare providers worldwide.
@@ -51,7 +51,7 @@ export default function AboutPage() {
             <CardBody>
               <h3 className="font-display text-xl mb-3 text-brand">Regenerative Medicine</h3>
               <p className="font-body text-muted-foreground">
-                Cutting-edge cellular therapies and biological products that harness the body's natural healing capabilities.
+                Cutting-edge cellular therapies and biological products that harness the body&apos;s natural healing capabilities.
               </p>
             </CardBody>
           </Card>
@@ -138,7 +138,7 @@ export default function AboutPage() {
         <Card>
           <CardBody>
             <p className="text-lead text-muted-foreground mb-6">
-              Whether you're a healthcare professional, researcher, or potential partner, we invite you to join us in advancing the field of regenerative medicine. Together, we can transform patient care and improve lives around the world.
+              Whether you&apos;re a healthcare professional, researcher, or potential partner, we invite you to join us in advancing the field of regenerative medicine. Together, we can transform patient care and improve lives around the world.
             </p>
             <div className="flex flex-col gap-4 sm:flex-row">
               <a

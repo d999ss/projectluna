@@ -89,7 +89,7 @@ export default function ResearchPage() {
               Our research and development efforts are guided by unmet clinical needs and driven by scientific rigor. We maintain state-of-the-art facilities staffed by accomplished scientists and engineers who collaborate closely with clinical advisors to ensure our research addresses real-world challenges in patient care.
             </p>
             <p className="text-lead text-muted-foreground">
-              Through strategic partnerships with academic institutions, research hospitals, and industry leaders, we accelerate innovation while maintaining the highest standards of scientific integrity. Our robust intellectual property portfolio and proven track record of successful product launches demonstrate our commitment to transforming breakthrough science into therapies that make a meaningful difference in patients' lives.
+              Through strategic partnerships with academic institutions, research hospitals, and industry leaders, we accelerate innovation while maintaining the highest standards of scientific integrity. Our robust intellectual property portfolio and proven track record of successful product launches demonstrate our commitment to transforming breakthrough science into therapies that make a meaningful difference in patients&apos; lives.
             </p>
           </CardBody>
         </Card>

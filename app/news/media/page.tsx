@@ -179,7 +179,7 @@ export default function MediaInquiries() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Image Usage</h3>
               <p className="font-body text-muted-foreground">
-                All images and visual materials are provided for editorial use only. Please credit "Tiger BioSciences" when using company imagery.
+                All images and visual materials are provided for editorial use only. Please credit &quot;Tiger BioSciences&quot; when using company imagery.
               </p>
             </CardBody>
           </Card>
@@ -188,7 +188,7 @@ export default function MediaInquiries() {
             <CardBody>
               <h3 className="font-display text-xl font-medium mb-3">Fact Checking</h3>
               <p className="font-body text-muted-foreground">
-                We're committed to accuracy in media coverage. Contact our media team to verify facts, quotes, or technical information before publication.
+                We&apos;re committed to accuracy in media coverage. Contact our media team to verify facts, quotes, or technical information before publication.
               </p>
             </CardBody>
           </Card>
