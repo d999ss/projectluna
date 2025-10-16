@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tiger BioSciences — Elegant Biology. Rigorous Results.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tiger BioSciences advances regenerative medicine with cellular, acellular, and matrix-like products for wound care, soft-tissue reconstruction, and aesthetics.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Brand tokens from your styleguide -->
+  <style>
+    :root{
+      /* Core brand */
+      --red-600:#D40F20;  /* Tiger Red (primary) */
+      --red-700:#B50F1B;  /* Hover/active */
+      --red-050:#FFF5F6;  /* Tinted bg */
+      --ink:#121212;      /* Primary text */
+      --muted:#666666;    /* Secondary text */
+      --neutral-300:#A3A3A3;
+      --line:#E8E8E8;     /* 1px borders */
+      --panel:#FFFFFF;    /* Cards/panels */
+      --bg:#FCFCFC;       /* Page */
+      --success:#9ADCB0;  /* Success from styleguide */
+      --radius-8:8px;
+      --radius-12:12px;
+      --shadow:0 8px 24px rgba(0,0,0,.08);
+      --max:1200px;
+      --focus:0 0 0 3px rgba(212,15,32,.18);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:var(--max);margin:0 auto;padding:0 20px}
+    .sr-only{position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden}
+
+    /* Nav */
+    .nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.8);backdrop-filter:saturate(140%) blur(10px);border-bottom:1px solid var(--line)}
+    .nav-in{height:72px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:700;letter-spacing:.2px}
+    .crest{width:26px;height:26px;border-radius:999px;background:
+      radial-gradient(120% 120% at 30% 30%, var(--red-600), #8F1017 60%, #5E0B10 100%),
+      conic-gradient(from 160deg at 50% 50%, transparent 0 40deg, rgba(255,255,255,.18) 60deg 65deg, transparent 90deg 360deg);
+      box-shadow:0 0 0 1px rgba(0,0,0,.06), inset 0 0 8px rgba(0,0,0,.35)}
+    .menu{display:flex;gap:20px;align-items:center;color:#2B2B2B;font-size:14px}
+    .menu a{padding:8px 0}
+    .cta{display:flex;gap:10px}
+
+    /* Buttons (brand) */
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 16px;border-radius:var(--radius-12);border:1px solid var(--line);background:#fff;font-weight:600;box-shadow:var(--shadow);cursor:pointer}
+    .btn:hover{filter:brightness(.98)}
+    .btn:focus{outline:none;box-shadow:var(--focus)}
+    .btn.primary{background:linear-gradient(135deg,var(--red-600),var(--red-700));color:#fff;border-color:transparent}
+    .btn.ghost{background:transparent}
+    .btn.small{padding:8px 12px;border-radius:var(--radius-8);font-weight:600}
+
+    /* Hero */
+    .hero{padding:88px 0 28px}
+    .eyebrow{color:var(--muted);text-transform:uppercase;letter-spacing:.18em;font-size:12px}
+    .h1{font-size:clamp(36px,6vw,64px);line-height:1.05;margin:8px 0 10px}
+    .sub{max-width:860px;color:#2B2B2B;font-size:clamp(16px,2.1vw,20px)}
+    .hero-cta{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+
+    /* Panels, cards */
+    .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-12);box-shadow:var(--shadow)}
+    .card{border:1px solid var(--line);border-radius:var(--radius-12);background:#fff;padding:18px}
+
+    /* Sections */
+    section{padding:56px 0}
+    .h2{font-size:clamp(24px,3.2vw,40px);margin:0 0 8px}
+    .lead{color:#2B2B2B;max-width:880px}
+
+    /* Gallery (swap images as needed) */
+    .gallery{margin-top:22px;display:grid;gap:12px}
+    @media(min-width:880px){.gallery{grid-template-columns:2fr 1fr 1.2fr}}
+    .tile{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+    .tile>div{height:240px;background:#f3f3f3}
+    .tile.large>div{height:340px}
+    .caption{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.9);padding:6px 8px;border-radius:10px;font-size:12px;color:#333;border:1px solid var(--line)}
+
+    /* Feature chips */
+    .tag{display:inline-block;border:1px solid var(--line);padding:6px 10px;border-radius:999px;background:#FAFAFA;color:#323232;font-size:12px}
+
+    /* Facts grid */
+    .facts{display:grid;gap:10px;grid-template-columns:repeat(2,1fr)}
+    @media(min-width:880px){.facts{grid-template-columns:repeat(4,1fr)}}
+    .fact{padding:18px;text-align:center;border:1px solid var(--line);border-radius:12px;background:#fff}
+    .fact .num{font-size:32px;font-weight:700}
+    .fact .label{color:var(--muted);font-size:14px}
+
+    /* Tabs (to flex layout/content by segment) */
+    .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+    .tab{padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;cursor:pointer}
+    .tab[aria-selected="true"]{background:var(--red-050);border-color:#F1C8CB}
+
+    /* Pipeline list */
+    .program{padding:14px 14px;border-bottom:1px solid var(--line);display:grid;gap:6px}
+    .program:last-child{border-bottom:none}
+    .meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:#2B2B2B;font-size:14px}
+    .badge{display:inline-grid;place-items:center;min-width:22px;height:22px;border-radius:999px;background:var(--red-600);color:#fff;font-size:12px}
+    .phase{height:8px;border-radius:8px;background:#F3F3F3;border:1px solid var(--line);overflow:hidden}
+    .phase>span{display:block;height:100%;background:linear-gradient(90deg,var(--red-600),var(--red-700))}
+    .phase.p1>span{width:25%}.phase.p2>span{width:55%}.phase.p3>span{width:80%}.phase.p4>span{width:100%}
+
+    /* Forms */
+    form input, form textarea{
+      width:100%;height:44px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);padding:0 12px
+    }
+    textarea{height:120px;padding:12px}
+    form input:focus, form textarea:focus{outline:none;box-shadow:var(--focus);border-color:var(--red-600)}
+
+    /* Notices */
+    .note{padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fff}
+    .note.success{border-color:#CFE9D9;background:#F3FBF7}
+    .note.warn{border-color:#F4C7CD;background:#FFF5F6}
+
+    /* Footer */
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:14px}
+    .foot{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+
+  <nav class="nav">
+    <div class="container nav-in">
+      <div class="brand"><span class="crest"></span>Tiger BioSciences</div>
+      <div class="menu">
+        <a href="#science">Science</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#responsibility">Responsibility</a>
+        <a href="#investors">Investors</a>
+        <a href="#careers">Careers</a>
+      </div>
+      <div class="cta">
+        <a class="btn ghost" href="#contact">Contact</a>
+        <a class="btn primary" href="#briefing">Request a briefing</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <div class="eyebrow">Regenerative medicine • Human-centered science</div>
+      <h1 class="h1" id="heroTitle">Elegant biology. Rigorous results.</h1>
+      <p class="sub" id="heroSub">We design and scale cellular, acellular, and matrix-like products for wound care, soft-tissue reconstruction, and aesthetics.</p>
+      <div class="hero-cta">
+        <a class="btn primary" href="#science">Explore our science</a>
+        <a class="btn" href="#film">Watch the film</a>
+      </div>
+
+      <!-- brand-friendly, light UI imagery slots -->
+      <div class="gallery">
+        <figure class="tile large"><div id="img1" role="img" aria-label="Precision lab still life"></div><figcaption class="caption" id="cap1">Precision chemistry</figcaption></figure>
+        <figure class="tile"><div id="img2" role="img" aria-label="Micro texture"></div><figcaption class="caption" id="cap2">Life at scale</figcaption></figure>
+        <figure class="tile"><div id="img3" role="img" aria-label="Human portrait"></div><figcaption class="caption" id="cap3">Dignity in care</figcaption></figure>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Tabs to "flex" layout by segment -->
+    <section class="container">
+      <div class="tabs" role="tablist" aria-label="Segments">
+        <button class="tab" role="tab" aria-selected="true" data-seg="wound">Wound care</button>
+        <button class="tab" role="tab" aria-selected="false" data-seg="aesthetics">Aesthetics</button>
+        <button class="tab" role="tab" aria-selected="false" data-seg="regenerative">Regenerative tissue</button>
+      </div>
+      <div class="note warn" style="margin-top:10px">Investigational products are not approved for sale. Do not rely on this site for medical advice.</div>
+    </section>
+
+    <!-- Science -->
+    <section id="science" class="container">
+      <h2 class="h2">Platform, programs, and proof</h2>
+      <p class="lead">A unified platform spanning tissue engineering, HCT/P processing, clinical operations, and translational analytics. Every claim routes to data. Every decision respects the patient.</p>
+      <div class="panel" style="padding:18px;margin-top:14px">
+        <div class="facts" id="factsGrid"></div>
+      </div>
+    </section>
+
+    <!-- Portfolio / Pipeline -->
+    <section id="portfolio" class="container">
+      <div class="panel" style="padding:18px">
+        <h2 class="h2">Programs in development</h2>
+        <p class="lead">Representative programs, product lines, and clinical activity. Toggle segments above to see what changes.</p>
+        <div id="pipeline"></div>
+      </div>
+    </section>
+
+    <!-- Responsibility -->
+    <section id="responsibility" class="container">
+      <div class="panel" style="padding:18px">
+        <h2 class="h2">Luxury in craft. Respect in conduct.</h2>
+        <div class="facts" style="margin-top:10px">
+          <div class="fact"><div class="num" aria-hidden="true">✓</div><div class="label">Plain‑language consents</div></div>
+          <div class="fact"><div class="num" aria-hidden="true">✓</div><div class="label">Least‑privilege data access</div></div>
+          <div class="fact"><div class="num" aria-hidden="true">✓</div><div class="label">Independent audits</div></div>
+          <div class="fact"><div class="num" aria-hidden="true">✓</div><div class="label">Sustainable lab practices</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Investors / Press -->
+    <section id="investors" class="container">
+      <div class="panel" style="padding:18px">
+        <h2 class="h2">Investors & stakeholders</h2>
+        <p class="lead">Disciplined burn. Milestone‑based plans. Transparent reporting.</p>
+        <div id="pressList" style="margin-top:10px"></div>
+      </div>
+    </section>
+
+    <!-- Careers -->
+    <section id="careers" class="container">
+      <div class="panel" style="padding:18px">
+        <h2 class="h2">Work worth your talent</h2>
+        <div class="facts" id="jobsGrid" style="margin-top:10px"></div>
+      </div>
+    </section>
+
+    <!-- Film / Demo -->
+    <section id="film" class="container">
+      <div class="panel" style="padding:10px">
+        <div style="aspect-ratio:16/9;border:1px dashed var(--line);border-radius:12px;display:grid;place-items:center;color:#2B2B2B">Embed your brand film or overview here</div>
+      </div>
+    </section>
+
+    <!-- Primary CTA -->
+    <section id="briefing" class="container">
+      <div class="panel" style="padding:18px">
+        <h2 class="h2">Schedule a confidential briefing</h2>
+        <form action="[your-form-endpoint]" method="post" style="display:grid;gap:10px;max-width:640px">
+          <label class="sr-only" for="name">Name</label><input id="name" name="name" placeholder="Full name" required>
+          <label class="sr-only" for="email">Email</label><input id="email" name="email" type="email" placeholder="Email" required>
+          <label class="sr-only" for="org">Organization</label><input id="org" name="org" placeholder="Organization">
+          <label class="sr-only" for="msg">Message</label><textarea id="msg" name="message" placeholder="What would you like to discuss?"></textarea>
+          <div style="display:flex;gap:10px;align-items:center"><button class="btn primary" type="submit">Request a briefing</button><span class="muted">We reply within 2 business days.</span></div>
+          <div class="note" style="font-size:12px">By submitting, you consent to our privacy policy.</div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container">
+      <div class="panel" style="padding:18px">
+        <h2 class="h2">Contact</h2>
+        <div class="facts" id="contactGrid" style="margin-top:10px"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container foot">
+      <div>© <span id="y"></span> Tiger BioSciences</div>
+      <div style="display:flex;gap:16px">
+        <a href="/privacy">Privacy</a>
+        <a href="/ethics">Ethics</a>
+        <a href="/terms">Terms</a>
+      </div>
+    </div>
+    <div class="container" style="margin-top:8px;color:var(--muted);font-size:12px">
+      Forward‑looking statements involve risks and uncertainties. Investigational products are not approved for sale.
+    </div>
+  </footer>
+
+  <!-- One source of truth: change values here -->
+  <script>
+    const CONFIG = {
+      brand: {
+        images: {
+          // Replace with your brand-directed assets
+          img1: "images/lab-still-life.jpg",
+          img2: "images/micro-texture.jpg",
+          img3: "images/portrait.jpg",
+          cap1: "Precision chemistry",
+          cap2: "Life at scale",
+          cap3: "Dignity in care"
+        }
+      },
+      segments: {
+        wound: {
+          hero: {
+            title: "Restore the healing environment.",
+            sub: "CAMPs for chronic wounds—designed to support closure in diabetic foot and venous leg ulcers."
+          },
+          facts: [
+            {num:"340", label:"planned participants in current multicenter study"},
+            {num:"12",  label:"trial sites across countries"},
+            {num:"9",   label:"active patent families"},
+            {num:"3",   label:"clinical programs"}
+          ],
+          pipeline: [
+            {badge:"P4", name:"Chronic wound study (modified multi‑platform)", detail:"3 arms • multicenter", phase:"p4"},
+            {badge:"DEV", name:"Next‑gen acellular matrix", detail:"pre‑submission manufacturing work", phase:"p2"},
+            {badge:"R&D", name:"Adjunct device prototyping", detail:"iterating on usability & adherence", phase:"p1"}
+          ]
+        },
+        aesthetics: {
+          hero: {
+            title: "Beautiful outcomes. Durable performance.",
+            sub: "Implants, matrices, and adjunct devices for soft‑tissue reconstruction and aesthetics."
+          },
+          facts: [
+            {num:"$50M", label:"manufacturing expansion committed"},
+            {num:"3",    label:"product lines in development"},
+            {num:"24",   label:"month facility timeline"},
+            {num:"AA",   label:"regulatory/quality track in place"}
+          ],
+          pipeline: [
+            {badge:"MFG", name:"New silicone implant line", detail:"facility build‑out & validation", phase:"p3"},
+            {badge:"R&D", name:"Dermal/Adipose matrices", detail:"material science + biocompatibility", phase:"p2"},
+            {badge:"DEV", name:"Adjunct devices", detail:"form factors for precision placement", phase:"p1"}
+          ]
+        },
+        regenerative: {
+          hero: {
+            title: "Advanced tissue engineering.",
+            sub: "Research and translation for next‑gen biomedical products."
+          },
+          facts: [
+            {num:"8",  label:"portfolio companies"},
+            {num:"6",  label:"peer‑reviewed publications"},
+            {num:"4",  label:"core platform capabilities"},
+            {num:"∞",  label:"pipeline of ideas"}
+          ],
+          pipeline: [
+            {badge:"LAB", name:"Scaffold micro‑architecture", detail:"structure-guided design", phase:"p2"},
+            {badge:"LAB", name:"Cell/matrix interactions", detail:"bench to translational models", phase:"p2"},
+            {badge:"LAB", name:"Manufacturability studies", detail:"scale-up & QC analytics", phase:"p1"}
+          ]
+        }
+      },
+      press: [
+        {title:"Latest acquisition announcement", href:"#"},
+        {title:"Facility expansion update", href:"#"}
+      ],
+      jobs: [
+        {title:"Project Engineer", meta:"San Antonio, TX", href:"#"},
+        {title:"Biostatistician", meta:"Research & Translation", href:"#"},
+        {title:"Manager — IT Quality", meta:"Quality & Compliance", href:"#"}
+      ],
+      contact: [
+        {title:"HQ", body:"[Address line 1]<br>[City, State] [ZIP]"},
+        {title:"General", body:'<a href="mailto:info@tigerbios.com">info@tigerbios.com</a><br>1‑888‑665‑5005'},
+        {title:"Divisions", body:'<a href="#">Aesthetics</a> • <a href="#">Wound Care</a> • <a href="#">Regen Labs</a>'}
+      ]
+    };
+
+    // ---------- Runtime wiring (no framework) ----------
+    const byId = id => document.getElementById(id);
+    const factsGrid = byId('factsGrid');
+    const pipeline = byId('pipeline');
+    const pressList = byId('pressList');
+    const jobsGrid = byId('jobsGrid');
+    const contactGrid = byId('contactGrid');
+
+    // Images
+    const setImages = (imgs) => {
+      const applied = (id, url) => { const el = byId(id); if (el) el.style.background = `#f3f3f3 url('${url}') center/cover`; };
+      applied('img1', imgs.img1); applied('img2', imgs.img2); applied('img3', imgs.img3);
+      byId('cap1').textContent = imgs.cap1; byId('cap2').textContent = imgs.cap2; byId('cap3').textContent = imgs.cap3;
+    };
+
+    // Generic render helpers
+    const renderFacts = (items, node) => {
+      node.innerHTML = items.map(it => `
+        <div class="fact"><div class="num">${it.num}</div><div class="label">${it.label}</div></div>
+      `).join('');
+    };
+    const renderPipeline = items => {
+      pipeline.innerHTML = items.map(it => `
+        <div class="program">
+          <div class="meta"><div><span class="badge">${it.badge}</span> ${it.name}</div><div>${it.detail}</div></div>
+          <div class="phase ${it.phase}"><span></span></div>
+        </div>
+      `).join('');
+    };
+
+    // Tabs logic
+    const setSegment = key => {
+      const seg = CONFIG.segments[key];
+      document.querySelectorAll('.tab').forEach(t => t.setAttribute('aria-selected', t.dataset.seg === key ? 'true' : 'false'));
+      byId('heroTitle').textContent = seg.hero.title;
+      byId('heroSub').textContent = seg.hero.sub;
+      renderFacts(seg.facts, factsGrid);
+      renderPipeline(seg.pipeline);
+      localStorage.setItem('tiger-seg', key);
+    };
+
+    // Static lists
+    pressList.innerHTML = CONFIG.press.map(p => `<div class="card" style="margin-top:10px"><a href="${p.href}" target="_blank" rel="noopener">${p.title}</a></div>`).join('');
+    jobsGrid.innerHTML = CONFIG.jobs.map(j => `<div class="fact"><div class="num" style="font-size:16px">${j.title}</div><div class="label">${j.meta}</div></div>`).join('');
+    contactGrid.innerHTML = CONFIG.contact.map(c => `<div class="card"><h3 style="margin:0 0 6px">${c.title}</h3><p class="muted">${c.body}</p></div>`).join('');
+
+    // Init
+    setImages(CONFIG.brand.images);
+    const saved = localStorage.getItem('tiger-seg') || 'wound';
+    setSegment(saved);
+    document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => setSegment(t.dataset.seg)));
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

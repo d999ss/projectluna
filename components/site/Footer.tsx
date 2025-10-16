@@ -226,6 +226,9 @@ export function Footer() {
               <Link href="/style" className="hover:text-foreground transition-colors duration-200">
                 Style Guide
               </Link>
+              <Link href="/home-2" className="hover:text-foreground transition-colors duration-200">
+                Home Page 2
+              </Link>
             </div>
 
             {/* Social Links */}
