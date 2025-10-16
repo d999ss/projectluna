@@ -123,7 +123,7 @@ export function Nav({ variant }: NavProps = {}) {
 
           <NavbarRight>
             <div className="flex items-center gap-3">
-              <ThemeToggle />
+              <ThemeToggle variant={effectiveVariant} />
 
               {/* Mobile menu */}
               <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>

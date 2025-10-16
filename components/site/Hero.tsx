@@ -71,9 +71,9 @@ export function Hero({
         </>
       )}
 
-      <div className={`container mx-auto ${hasMediaBackground ? 'px-6 pb-6 md:px-10 md:pb-10' : 'px-4'} ${align === 'left' ? 'text-left' : 'text-center'} w-full`}>
+      <div className={`max-w-container mx-auto px-4 ${hasMediaBackground ? 'pb-6 md:pb-10' : ''} ${align === 'left' ? 'text-left' : 'text-center'} w-full`}>
         {subtitle && (
-          <div className="mb-6 inline-block rounded-full border border-brand/20 bg-brand/10 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-brand">
+          <div className="mb-6 inline-block rounded-full border border-white/30 bg-white/10 backdrop-blur-md px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-white">
             {subtitle}
           </div>
         )}

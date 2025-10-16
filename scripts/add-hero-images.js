@@ -7,8 +7,8 @@ const imageMap = {
   company: [
     '/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_2.png',
     '/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_3.png',
-    '/images/04.png',
     '/images/05.png',
+    '/images/06.png',
   ],
   solutions: [
     '/images/boredoptimism_close_up_of_skin_--ar_169_--raw_--profile_el37i_d81643f3-7159-4088-adcf-d7413e31b848_1.png',

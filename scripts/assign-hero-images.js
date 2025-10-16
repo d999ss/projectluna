@@ -21,8 +21,8 @@ const imageMap = {
     '/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_2.png',
     '/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_3.png',
     '/images/boredoptimism_Tiger_--ar_169_--raw_--profile_el37if6_--v_7_f42cc65d-2974-4137-9511-e38d2d45d406_2.png',
-    '/images/04.png',
     '/images/05.png',
+    '/images/06.png',
   ],
   international: [
     '/images/boredoptimism_close_up_of_a_man_eye_--ar_9151_--raw_--v_7_6e1ef8a8-f234-4f8d-b09d-ab30df60ec89_0.png',

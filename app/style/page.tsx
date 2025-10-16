@@ -451,7 +451,7 @@ import Figma from "@/components/logos/figma"
             <Card>
               <CardBody className="relative h-[200px] flex items-center justify-center overflow-hidden">
                 <Image
-                  src="/images/04.png"
+                  src="/images/05.png"
                   alt="Tiger Background"
                   fill
                   className="object-cover opacity-20 absolute inset-0"

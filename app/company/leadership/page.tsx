@@ -14,7 +14,7 @@ export default function Leadership() {
       <Hero
         title="Leadership Team"
         description="Our executive team brings decades of combined experience in biotechnology, clinical medicine, and healthcare innovation to advance the field of regenerative medicine."
-        backgroundImage="/images/04.png"
+        backgroundImage="/images/05.png"
       />
 
       <Section title="Executive Leadership" description="Guiding Tiger BioSciences toward a future of innovation and impact">
