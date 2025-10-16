@@ -14,6 +14,8 @@ export default function BiocareDivision() {
       <Hero
         title="Biocare Division"
         description="Complete portfolio of advanced wound care products and clinical support services designed to optimize healing outcomes and improve quality of life for patients with complex wounds."
+        backgroundImage="/images/boredoptimism_close_up_of_skin_--ar_169_--raw_--profile_el37i_d81643f3-7159-4088-adcf-d7413e31b848_1.png"
+        size="large"
       />
 
       <Section title="Product Categories" description="Comprehensive solutions for every phase of wound healing">

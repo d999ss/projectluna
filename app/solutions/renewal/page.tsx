@@ -14,6 +14,8 @@ export default function RenewalSolutions() {
       <Hero
         title="Renewal Solutions"
         description="Cutting-edge regenerative therapies that harness the body's natural healing mechanisms to renew, restore, and rejuvenate damaged or aging tissues."
+        backgroundImage="/images/boredoptimism_close_up_of_skin_--ar_169_--raw_--profile_el37i_d81643f3-7159-4088-adcf-d7413e31b848_1.png"
+        size="large"
       />
 
       <Section title="Clinical Applications" description="Comprehensive approaches to tissue renewal and restoration">

@@ -14,6 +14,8 @@ export default function WoundCareSolutions() {
       <Hero
         title="Wound Care Solutions"
         description="Advanced regenerative biomaterials that promote healing, reduce complications, and improve patient outcomes for complex acute and chronic wounds."
+        backgroundImage="/images/01.png"
+        size="large"
       />
 
       <Section title="Clinical Applications" description="Comprehensive solutions for challenging wound types">

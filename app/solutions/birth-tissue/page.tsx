@@ -14,6 +14,8 @@ export default function BirthTissueSciences() {
       <Hero
         title="Birth Tissue Sciences"
         description="Harnessing the unique regenerative and immunomodulatory properties of birth tissues to advance healing and tissue repair across diverse clinical applications."
+        backgroundImage="/images/boredoptimism_human_skin_--ar_169_--raw_--profile_e1dtuj2_--v_350bc8db-8fea-4316-aa3b-ec44b72f8094_1.png"
+        size="large"
       />
 
       <Section title="Birth Tissue Products" description="Comprehensive portfolio leveraging placental tissue biology">

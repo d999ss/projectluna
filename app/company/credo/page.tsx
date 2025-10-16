@@ -14,6 +14,7 @@ export default function CredoPage() {
       <Hero
         title="Our Credo & Purpose"
         description="Tiger BioSciences is committed to advancing medical science through innovation, integrity, and unwavering dedication to patient care."
+        backgroundImage="/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_3.png"
       />
 
       <Section

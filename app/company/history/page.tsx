@@ -14,6 +14,7 @@ export default function History() {
       <Hero
         title="Our Journey"
         description="From groundbreaking innovation to global leadership, Tiger BioSciences has been at the forefront of regenerative medicine for over two decades."
+        backgroundImage="/images/05.png"
       />
 
       <Section title="Foundation & Early Innovation" description="Building the foundation for regenerative medicine excellence">

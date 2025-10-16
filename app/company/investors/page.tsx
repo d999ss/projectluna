@@ -14,6 +14,7 @@ export default function InvestorsPage() {
       <Hero
         title="Investor Relations"
         description="Building long-term value through innovation, operational excellence, and commitment to our stakeholders."
+        backgroundImage="/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_3.png"
       />
 
       <Section

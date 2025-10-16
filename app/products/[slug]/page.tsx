@@ -47,6 +47,16 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <Link href="/products">Products</Link> <span className="mx-2">/</span> <span className="text-foreground">{p.title}</span>
       </nav>
 
+      {p.heroImage ? (
+        <div className="mb-8 rounded-lg overflow-hidden">
+          <img
+            src={p.heroImage}
+            alt={p.title}
+            className="w-full h-[300px] md:h-[400px] object-cover"
+          />
+        </div>
+      ) : null}
+
       <header>
         <div className="text-xs uppercase tracking-[0.14em] text-foreground/60">{p.company}</div>
         <h1 className="mt-2 text-3xl md:text-4xl font-semibold">{p.title}</h1>
@@ -72,11 +82,17 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
             <CardBody>
               <div className="text-sm text-foreground/65">Evidence</div>
               <ul className="mt-2 list-none space-y-2">
-                {p.evidence.map(e => (
-                  <li key={e.label}>
-                    {e.link ? <a className="underline" href={e.link}>{e.label}</a> : e.label}
-                  </li>
-                ))}
+                {p.evidence.map((e, idx) => {
+                  // Handle both string and object formats
+                  if (typeof e === 'string') {
+                    return <li key={idx} className="text-[15px]">{e}</li>
+                  }
+                  return (
+                    <li key={e.label || idx} className="text-[15px]">
+                      {e.link ? <a className="underline" href={e.link}>{e.label}</a> : e.label}
+                    </li>
+                  )
+                })}
               </ul>
             </CardBody>
           </Card>

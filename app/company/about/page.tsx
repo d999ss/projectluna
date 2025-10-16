@@ -14,6 +14,7 @@ export default function AboutPage() {
       <Hero
         title="About Tiger BioSciences"
         description="Pioneering tissue engineering and regenerative medicine to transform patient outcomes globally."
+        backgroundImage="/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_2.png"
       />
 
       <Section

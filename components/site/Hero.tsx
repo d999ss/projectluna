@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ReactNode } from "react";
 
 interface HeroProps {
@@ -8,6 +9,8 @@ interface HeroProps {
   primaryCTA?: { text: string; href: string };
   secondaryCTA?: { text: string; href: string };
   children?: ReactNode;
+  backgroundImage?: string;
+  size?: "default" | "large" | "extra-large";
 }
 
 export function Hero({
@@ -17,12 +20,36 @@ export function Hero({
   primaryCTA,
   secondaryCTA,
   children,
+  backgroundImage,
+  size = "default",
 }: HeroProps) {
+  const sizeClasses = {
+    "default": "",
+    "large": "min-h-[400px] md:min-h-[600px]",
+    "extra-large": "min-h-[600px] md:min-h-[800px]"
+  };
+
   return (
-    <div className="relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24">
-      {/* Graphite vignette with whisper of brand red */}
-      <div className="absolute inset-0 -z-10 bg-vignette" />
-      <div className="absolute inset-0 -z-10 bg-vignette-red" />
+    <div className={`relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 ${sizeClasses[size]}`}>
+      {backgroundImage ? (
+        <>
+          {/* Background image with overlay */}
+          <Image
+            src={backgroundImage}
+            alt=""
+            fill
+            className="absolute inset-0 -z-10 object-cover"
+            priority
+          />
+          <div className="absolute inset-0 -z-10 bg-background/80" />
+        </>
+      ) : (
+        <>
+          {/* Graphite vignette with whisper of brand red */}
+          <div className="absolute inset-0 -z-10 bg-vignette" />
+          <div className="absolute inset-0 -z-10 bg-vignette-red" />
+        </>
+      )}
 
       <div className="max-w-container mx-auto px-4 text-center">
         {subtitle && (

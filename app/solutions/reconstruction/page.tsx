@@ -14,6 +14,8 @@ export default function ReconstructionSolutions() {
       <Hero
         title="Reconstruction Solutions"
         description="Innovative acellular matrices for complex reconstructive procedures, providing structural support and promoting natural tissue integration for optimal functional and aesthetic outcomes."
+        backgroundImage="/images/01.png"
+        size="large"
       />
 
       <Section title="Surgical Applications" description="Comprehensive solutions for reconstructive surgery">

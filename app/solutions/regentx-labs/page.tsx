@@ -14,6 +14,8 @@ export default function RegenTXLabs() {
       <Hero
         title="RegenTX Labs"
         description="Our advanced research division driving innovation in regenerative medicine through cutting-edge science, translational research, and breakthrough technology development."
+        backgroundImage="/images/03.png"
+        size="large"
       />
 
       <Section title="Research Focus Areas" description="Pioneering the future of regenerative medicine">

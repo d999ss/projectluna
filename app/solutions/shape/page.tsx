@@ -14,6 +14,8 @@ export default function AestheticShape() {
       <Hero
         title="Aesthetic Shape Solutions"
         description="Innovative regenerative technologies for aesthetic contouring and body shaping that provide natural tissue integration and beautiful, long-lasting results."
+        backgroundImage="/images/boredoptimism_human_skin_--ar_169_--raw_--profile_e1dtuj2_--v_350bc8db-8fea-4316-aa3b-ec44b72f8094_1.png"
+        size="large"
       />
 
       <Section title="Clinical Applications" description="Comprehensive solutions for aesthetic enhancement">

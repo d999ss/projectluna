@@ -14,6 +14,7 @@ export default function NewsPage() {
       <Hero
         title="Company News"
         description="Stay informed about the latest developments, innovations, and achievements at Tiger BioSciences."
+        backgroundImage="/images/05.png"
       />
 
       <Section

@@ -14,6 +14,8 @@ export default function VolumeSolutions() {
       <Hero
         title="Volume Solutions"
         description="Innovative regenerative technologies for soft tissue volume restoration that provide natural tissue integration and long-lasting volumetric outcomes."
+        backgroundImage="/images/boredoptimism_science_aesthetics_--ar_169_--raw_--profile_e1d_be617358-9084-4f84-b1dc-378a67fd1009_0.png"
+        size="large"
       />
 
       <Section title="Clinical Applications" description="Comprehensive volume restoration across medical and aesthetic specialties">

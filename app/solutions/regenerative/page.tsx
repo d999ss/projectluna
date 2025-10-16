@@ -14,6 +14,8 @@ export default function RegenerativeMedicine() {
       <Hero
         title="Regenerative Medicine"
         description="Advanced regenerative medicine solutions that harness biological signals and native tissue architecture to promote organized tissue repair and functional restoration."
+        backgroundImage="/images/02.png"
+        size="large"
       />
 
       <Section title="Core Technologies" description="Foundational platforms driving regenerative innovation">

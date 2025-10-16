@@ -14,6 +14,7 @@ export default function Impact() {
       <Hero
         title="Global Impact"
         description="Tiger BioSciences is dedicated to improving patient outcomes and advancing healthcare systems worldwide through innovative regenerative medicine solutions and collaborative partnerships."
+        backgroundImage="/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_2.png"
       />
 
       <Section title="Patient Outcomes" description="Improving lives through advanced regenerative therapies">

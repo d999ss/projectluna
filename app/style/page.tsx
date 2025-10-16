@@ -6,6 +6,11 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { Nav } from "@/components/site/Nav"
 import { Footer } from "@/components/site/Footer"
 import { CodeBlock } from "@/components/ui/CodeBlock"
+import Image from "next/image"
+import Screenshot from "@/components/ui/screenshot"
+import Logo from "@/components/ui/logo"
+import Figma from "@/components/logos/figma"
+import React from "@/components/logos/react"
 
 export default function StyleGuide() {
   return (
@@ -284,6 +289,236 @@ export default function StyleGuide() {
             <CardBody>
               <h3 className="text-lg font-semibold mb-2">Standard Card</h3>
               <p className="text-muted-foreground">Professional card design with proper spacing and borders from the Launch UI system.</p>
+            </CardBody>
+          </Card>
+        </div>
+      </section>
+
+      {/* Images & Media */}
+      <section className="mb-12">
+        <h2 className="text-h3 mb-6">Images & Media</h2>
+
+        {/* Next.js Image Component */}
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold mb-4">Next.js Image Component</h3>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Card>
+              <CardBody>
+                <div className="mb-3">
+                  <Image
+                    src="/images/01.png"
+                    alt="Tiger BioSciences Product"
+                    width={400}
+                    height={200}
+                    className="rounded-lg w-full object-cover"
+                  />
+                </div>
+                <div className="text-sm font-medium">Standard Image</div>
+                <div className="text-xs text-muted-foreground mt-1">Optimized Next.js Image component with lazy loading</div>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardBody>
+                <CodeBlock
+                  filename="Image.tsx"
+                  code={`import Image from "next/image"
+
+<Image
+  src="/images/01.png"
+  alt="Description"
+  width={400}
+  height={200}
+  className="rounded-lg"
+/>`}
+                />
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+
+        {/* Screenshot Component (Theme-Aware) */}
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold mb-4">Screenshot Component (Theme-Aware)</h3>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Card>
+              <CardBody>
+                <div className="mb-3">
+                  <Screenshot
+                    srcLight="/images/02.png"
+                    srcDark="/images/06.png"
+                    alt="Tiger BioSciences Technology"
+                    width={600}
+                    height={400}
+                    className="rounded-lg w-full border border-border"
+                  />
+                </div>
+                <div className="text-sm font-medium">Theme-Aware Screenshot</div>
+                <div className="text-xs text-muted-foreground mt-1">Automatically switches between light/dark images based on theme</div>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardBody>
+                <CodeBlock
+                  filename="Screenshot.tsx"
+                  code={`import Screenshot from "@/components/ui/screenshot"
+
+<Screenshot
+  srcLight="/images/02.png"
+  srcDark="/images/06.png"
+  alt="Technology Preview"
+  width={600}
+  height={400}
+  className="rounded-lg"
+/>`}
+                />
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+
+        {/* Logo Component */}
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold mb-4">Logo Component</h3>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Card>
+              <CardBody>
+                <div className="space-y-4 mb-3">
+                  <Logo image={Figma} name="Figma" width={24} height={24} />
+                  <Logo image={React} name="React" version="19.1.1" width={24} height={24} />
+                  <Logo image={Figma} name="Figma" badge="New" width={24} height={24} />
+                </div>
+                <div className="text-sm font-medium">SVG Logo with Badge</div>
+                <div className="text-xs text-muted-foreground mt-1">Component for displaying logos with optional version and badge</div>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardBody>
+                <CodeBlock
+                  filename="Logo.tsx"
+                  code={`import Logo from "@/components/ui/logo"
+import Figma from "@/components/logos/figma"
+
+<Logo
+  image={Figma}
+  name="Figma"
+  badge="New"
+  width={24}
+  height={24}
+/>`}
+                />
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+
+        {/* Images in Cards */}
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold mb-4">Images in Glass Morphism Cards</h3>
+          <div className="grid gap-6 md:grid-cols-3">
+            <Card>
+              <CardBody className="p-0">
+                <Image
+                  src="/images/03.png"
+                  alt="Tiger Product"
+                  width={400}
+                  height={250}
+                  className="rounded-t-2xl w-full object-cover"
+                />
+                <div className="p-6">
+                  <h4 className="font-semibold mb-2">Product Card</h4>
+                  <p className="text-sm text-muted-foreground">Image with content below in glass card</p>
+                </div>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardBody>
+                <div className="flex items-center gap-4">
+                  <Image
+                    src="/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_2.png"
+                    alt="Tiger Eye Detail"
+                    width={64}
+                    height={64}
+                    className="rounded-lg object-cover"
+                  />
+                  <div>
+                    <h4 className="font-semibold text-sm">Icon Card</h4>
+                    <p className="text-xs text-muted-foreground">Side-by-side layout</p>
+                  </div>
+                </div>
+              </CardBody>
+            </Card>
+            <Card>
+              <CardBody className="relative h-[200px] flex items-center justify-center overflow-hidden">
+                <Image
+                  src="/images/04.png"
+                  alt="Tiger Background"
+                  fill
+                  className="object-cover opacity-20 absolute inset-0"
+                />
+                <div className="relative z-10 text-center">
+                  <h4 className="font-semibold mb-2">Overlay Card</h4>
+                  <p className="text-sm text-muted-foreground">Image as background</p>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+        </div>
+
+        {/* Responsive Image Patterns */}
+        <div className="mb-8">
+          <h3 className="text-lg font-semibold mb-4">Responsive Image Patterns</h3>
+          <Card>
+            <CardBody>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div>
+                  <div className="mb-3">
+                    <Image
+                      src="/images/05.png"
+                      alt="Tiger Responsive"
+                      width={800}
+                      height={400}
+                      className="rounded-lg w-full h-auto"
+                    />
+                  </div>
+                  <div className="text-sm font-medium">Full Width Responsive</div>
+                  <div className="text-xs text-muted-foreground mt-1">Uses w-full and h-auto for fluid sizing</div>
+                </div>
+                <div>
+                  <CodeBlock
+                    filename="Responsive.tsx"
+                    code={`<Image
+  src="/images/05.png"
+  alt="Responsive"
+  width={800}
+  height={400}
+  className="w-full h-auto"
+/>`}
+                  />
+                </div>
+              </div>
+            </CardBody>
+          </Card>
+        </div>
+
+        {/* Image Sizes Reference */}
+        <div>
+          <h3 className="text-lg font-semibold mb-4">Common Image Sizes</h3>
+          <Card>
+            <CardBody>
+              <div className="grid gap-4 md:grid-cols-2">
+                <div className="space-y-3 text-sm font-mono">
+                  <div><span className="text-brand">Hero Image:</span> 1920x1080 (16:9)</div>
+                  <div><span className="text-brand">Product Card:</span> 800x600 (4:3)</div>
+                  <div><span className="text-brand">Thumbnail:</span> 400x300 (4:3)</div>
+                  <div><span className="text-brand">Avatar:</span> 200x200 (1:1)</div>
+                </div>
+                <div className="space-y-3 text-sm font-mono">
+                  <div><span className="text-brand">OG Image:</span> 1200x630</div>
+                  <div><span className="text-brand">Icon:</span> 512x512 (1:1)</div>
+                  <div><span className="text-brand">Banner:</span> 1200x300 (4:1)</div>
+                  <div><span className="text-brand">Portrait:</span> 600x800 (3:4)</div>
+                </div>
+              </div>
             </CardBody>
           </Card>
         </div>

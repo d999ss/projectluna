@@ -14,6 +14,7 @@ export default function HeritagePage() {
       <Hero
         title="Our Heritage"
         description="A story of rapid innovation and strategic growth, building a comprehensive portfolio in regenerative medicine and tissue engineering."
+        backgroundImage="/images/04.png"
       />
 
       <Section

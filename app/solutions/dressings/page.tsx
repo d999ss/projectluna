@@ -14,6 +14,8 @@ export default function DressingsRecovery() {
       <Hero
         title="Dressings & Recovery"
         description="Advanced wound dressings and recovery solutions designed to protect healing tissue, maintain optimal moisture balance, and support the natural healing process."
+        backgroundImage="/images/boredoptimism_science_aesthetics_--ar_169_--raw_--profile_e1d_be617358-9084-4f84-b1dc-378a67fd1009_0.png"
+        size="large"
       />
 
       <Section title="Product Categories" description="Comprehensive dressing solutions for every healing phase">

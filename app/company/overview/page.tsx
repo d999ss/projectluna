@@ -14,6 +14,7 @@ export default function CompanyOverview() {
       <Hero
         title="Advancing Regenerative Medicine"
         description="Tiger BioSciences is a global leader in developing and commercializing innovative regenerative medicine solutions that improve patient outcomes and advance the standard of care across multiple therapeutic areas."
+        backgroundImage="/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_2.png"
       />
 
       <Section title="Our Mission" description="Transforming healthcare through innovation, quality, and dedication to patient outcomes">

@@ -14,6 +14,7 @@ export default function Sustainability() {
       <Hero
         title="Sustainability & Responsibility"
         description="Tiger BioSciences is committed to sustainable practices that protect our environment, ensure ethical operations, and create lasting positive impact for future generations."
+        backgroundImage="/images/boredoptimism_close_up_of_Tiger_eye_--ar_169_--raw_--profile__d0b094ae-d672-42f0-b38e-82826641a7d4_3.png"
       />
 
       <Section title="Environmental Stewardship" description="Minimizing our environmental footprint through innovative practices">

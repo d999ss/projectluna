@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
-import { Navbar, NavbarLeft, NavbarRight } from "@/components/ui/navbar";
+import { Navbar, NavbarCenter, NavbarLeft, NavbarRight } from "@/components/ui/navbar";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -26,7 +26,7 @@ import { MEGA_SECTIONS } from "@/data/megaNav";
 const mobileNavigation = [
   { name: "Solutions", href: "/solutions" },
   { name: "Divisions", href: "/divisions" },
-  { name: "Products", href: "/products" },
+  { name: "Our Brands", href: "/products" },
   { name: "Companies", href: "/companies" },
   { name: "Careers", href: "/careers" },
   { name: "Contact", href: "/contact" },
@@ -47,7 +47,7 @@ export function Nav() {
           </NavbarLeft>
 
           {/* Desktop Navigation with Shadcn NavigationMenu */}
-          <div className="hidden lg:flex">
+          <NavbarCenter className="hidden lg:flex">
             <NavigationMenu>
               <NavigationMenuList>
                 {MEGA_SECTIONS.map((section) => (
@@ -109,7 +109,7 @@ export function Nav() {
                 </NavigationMenuItem>
               </NavigationMenuList>
             </NavigationMenu>
-          </div>
+          </NavbarCenter>
 
           <NavbarRight>
             <div className="flex items-center gap-3">
