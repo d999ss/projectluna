@@ -1,4 +1,4 @@
-export { Card, CardBody } from "./Card"
+export { Card, CardBody, CardHeader } from "./card"
 // Add all approved primitives here as you add them:
 // export { Button } from "./Button"
 // export { Container } from "./Container"

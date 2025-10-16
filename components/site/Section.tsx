@@ -16,12 +16,12 @@ export function Section({ children, className, title, description }: SectionProp
         {(title || description) && (
           <div className="mb-12 text-center md:mb-16">
             {title && (
-              <h2 className="mb-4 text-3xl font-bold leading-tight md:text-5xl">
+              <h2 className="text-h2 mb-4">
                 {title}
               </h2>
             )}
             {description && (
-              <p className="text-muted-foreground mx-auto max-w-2xl text-lg">
+              <p className="text-lead text-muted-foreground mx-auto max-w-2xl">
                 {description}
               </p>
             )}

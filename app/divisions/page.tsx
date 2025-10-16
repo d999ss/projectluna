@@ -50,11 +50,11 @@ export default function DivisionsPage() {
 
           <Link href="/divisions/aesthetics" className="group">
             <StatCard
-              icon={<Building2Icon className="size-8 text-green-600" />}
+              icon={<Building2Icon className="size-8 text-brand" />}
               title="Tiger Aesthetics"
               description="Shaping the Future of Aesthetics. Delivering cutting-edge solutions across reconstructive, cosmetic, and regenerative domains."
             >
-              <div className="mt-4 flex items-center text-sm font-semibold text-green-600 transition-transform group-hover:translate-x-1">
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
                 Learn More
                 <ArrowRightIcon className="ml-2 size-4" />
               </div>

@@ -1,10 +1,15 @@
 import type { Config } from "tailwindcss"
+import defaultTheme from "tailwindcss/defaultTheme"
 
 const config: Config = {
   darkMode: "class",
   content: ["./app/**/*.{ts,tsx,mdx}","./components/**/*.{ts,tsx,mdx}","./src/**/*.{ts,tsx,mdx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-body)", ...defaultTheme.fontFamily.sans],
+        display: ["var(--font-display)", ...defaultTheme.fontFamily.sans],
+      },
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -16,6 +21,7 @@ const config: Config = {
         brand: "hsl(var(--brand))",
         "brand-foreground": "hsl(var(--brand-foreground))",
         accent: "hsl(var(--accent))",
+        "accent-foreground": "hsl(var(--accent-foreground))",
         success: "hsl(var(--success))",
         warning: "hsl(var(--warning))",
         danger: "hsl(var(--danger))",

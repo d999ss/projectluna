@@ -1,11 +1,18 @@
 // SERVER — do not add "use client"
+import type { Metadata } from "next"
 import { allProducts } from "@/lib/content"
 
 import ProductsGrid from "./products-grid"
 
+export const metadata: Metadata = {
+  title: "Products - Tiger BioSciences",
+  description: "Explore our comprehensive portfolio of medical technology products for wound care, soft tissue reconstruction, and aesthetics.",
+}
+
 export default async function ProductsIndex({
   searchParams,
-}: { searchParams?: { q?: string; division?: string } }) {
+}: { searchParams?: Promise<{ q?: string; division?: string }> }) {
+  const params = await searchParams;
   const products = allProducts().map(p => ({
     slug: p.slug,
     title: p.title,
@@ -19,8 +26,8 @@ export default async function ProductsIndex({
       <h1 className="text-3xl md:text-4xl font-semibold">Products</h1>
       <ProductsGrid
         initialProducts={products}
-        initialQ={searchParams?.q ?? ""}
-        initialDivision={searchParams?.division ?? "all"}
+        initialQ={params?.q ?? ""}
+        initialDivision={params?.division ?? "all"}
       />
     </main>
   )

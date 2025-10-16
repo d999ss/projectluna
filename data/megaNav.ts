@@ -111,8 +111,8 @@ export const MEGA_SECTIONS: MegaSection[] = [
 ]
 
 function labelFor(id: "company"|"expertise"|"products"){
-  if(id === "company") return "Company"
-  if(id === "expertise") return "Expertise"
-  return "Products"
+  if(id === "company") return "About Tiger"
+  if(id === "expertise") return "Our Expertise"
+  return "Our Brands"
 }
 

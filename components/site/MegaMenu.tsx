@@ -2,7 +2,7 @@
 import * as React from "react"
 import Link from "next/link"
 
-import { Card, CardBody } from "@/components/ui/Card"
+import { Card, CardBody } from "@/components/ui/card"
 import { MEGA_SECTIONS, MegaSection } from "@/data/megaNav"
 
 type TriggerId = MegaSection["id"]

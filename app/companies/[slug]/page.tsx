@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation"
 
-import { Card, CardBody } from "@/components/ui/Card"
+import { Card, CardBody } from "@/components/ui/card"
 import { allCompanies, allProducts, getCompany } from "@/lib/content"
 
 export async function generateStaticParams() {

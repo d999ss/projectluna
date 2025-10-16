@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react"
 import { type ColorToken, getColorInfo, getAllTokens } from "@/lib/colors"
-import { Button } from "@/components/ui/Button"
-import { Card, CardBody, CardHeader } from "@/components/ui/Card"
+import { Button } from "@/components/ui/button"
+import { Card, CardBody, CardHeader } from "@/components/ui/card"
 
 interface ColorSwatchProps {
   token: ColorToken
@@ -251,9 +251,9 @@ export default function ColorsPage() {
       
       <header className="flex items-center justify-between gap-4 mb-8">
         <div>
-          <h1 className="text-h2">Color System Dashboard</h1>
+          <h1 className="font-display text-xl">Color System Dashboard</h1>
           <p className="text-muted-foreground mt-2">
-            Centralized color management for Tiger BioSciences
+            Centralized color management for Tiger BioSciences™
           </p>
         </div>
         <div className="flex gap-2">

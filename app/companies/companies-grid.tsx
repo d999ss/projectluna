@@ -3,7 +3,7 @@ import Link from "next/link"
 import { useRouter, useSearchParams } from "next/navigation"
 import { useEffect, useMemo, useState } from "react"
 
-import { Card, CardBody } from "@/components/ui/Card"
+import { Card, CardBody } from "@/components/ui/card"
 
 type Company = {
   slug: string

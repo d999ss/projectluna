@@ -1,4 +1,9 @@
-export const metadata = { title: "Careers | Tiger BioSciences" }
+import type { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Careers - Tiger BioSciences",
+  description: "Join our team of innovators advancing biotechnology through science, integrity, and excellence.",
+}
 
 export default function Careers() {
   const roles = [

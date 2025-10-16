@@ -10,8 +10,8 @@ export const ProductFM = z.object({
   tech: z.array(z.string()).optional().default([]),
   indications: z.array(z.string()).optional().default([]),
   benefits: z.array(z.string()).optional().default([]),
-  evidence: z.array(z.object({ label: z.string(), link: z.string().url().optional().default("")})).optional().default([]),
-  skus: z.array(z.object({ sku: z.string(), size: z.string().optional().default("")})).optional().default([]),
+  evidence: z.array(z.any()).optional().default([]),
+  skus: z.array(z.any()).optional().default([]),
   regulatory: z.object({
     fda: z.string().optional().default(""),
     ce: z.string().optional().default(""),

@@ -87,22 +87,22 @@ export default function SolutionsPage() {
       >
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           <StatCard
-            icon={<FlaskConicalIcon className="size-6 text-green-600" />}
+            icon={<FlaskConicalIcon className="size-6 text-brand" />}
             title="RegenTX"
             description="Leading in tissue processing and CAMP-based innovation with scientific precision"
           />
           <StatCard
-            icon={<FlaskConicalIcon className="size-6 text-green-600" />}
+            icon={<FlaskConicalIcon className="size-6 text-brand" />}
             title="RegenTX Labs"
             description="Advanced research facilities driving next-generation tissue solutions"
           />
           <StatCard
-            icon={<FlaskConicalIcon className="size-6 text-green-600" />}
+            icon={<FlaskConicalIcon className="size-6 text-brand" />}
             title="Birth Tissue Recovery"
             description="Ethical tissue recovery programs with rigorous safety standards"
           />
           <StatCard
-            icon={<FlaskConicalIcon className="size-6 text-green-600" />}
+            icon={<FlaskConicalIcon className="size-6 text-brand" />}
             title="bioCARE"
             description="Comprehensive tissue banking and processing services"
           />
