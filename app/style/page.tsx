@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Nav } from "@/components/site/Nav"
 import { Footer } from "@/components/site/Footer"
+import { Hero } from "@/components/site/Hero"
 import { CodeBlock } from "@/components/ui/CodeBlock"
 import Image from "next/image"
 import Screenshot from "@/components/ui/screenshot"
@@ -887,6 +888,114 @@ import Figma from "@/components/logos/figma"
             </div>
           </CardBody>
         </Card>
+      </section>
+
+      {/* Hero Component Examples */}
+      <section className="mb-16">
+        <h2 className="text-h3 mb-6">Hero Component Variants</h2>
+        <div className="space-y-8">
+          {/* Video Hero */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Video Background Hero</h3>
+            <Card>
+              <CardBody className="p-0 overflow-hidden">
+                <Hero
+                  title="Video Background Hero"
+                  description="Looping MP4 video background with auto-play and overlay for text readability"
+                  backgroundVideo="/images/social_boredoptimism_reflection_in_the_cats_eyes_--ar_9151_--bs_1_--_fd91aae9-9fc0-4a4c-98d7-2d0bf3ced741_0.mp4"
+                  size="large"
+                />
+              </CardBody>
+            </Card>
+            <div className="mt-3">
+              <CodeBlock
+                code={`<Hero
+  title="Video Background Hero"
+  description="Looping MP4 video background"
+  backgroundVideo="/images/video.mp4"
+  size="large"
+/>`}
+                language="tsx"
+              />
+            </div>
+          </div>
+
+          {/* Extra Large Hero */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Extra Large Hero (600-800px)</h3>
+            <Card>
+              <CardBody className="p-0 overflow-hidden">
+                <Hero
+                  title="Extra Large Hero"
+                  subtitle="Homepage Feature"
+                  description="Maximum impact hero section for homepage with 600-800px minimum height"
+                  backgroundImage="/images/boredoptimism_Tiger_--ar_169_--raw_--profile_el37if6_--v_7_f42cc65d-2974-4137-9511-e38d2d45d406_2.png"
+                  size="extra-large"
+                />
+              </CardBody>
+            </Card>
+            <div className="mt-3">
+              <CodeBlock
+                code={`<Hero
+  title="Extra Large Hero"
+  subtitle="Homepage Feature"
+  description="Maximum impact hero section"
+  backgroundImage="/images/hero.png"
+  size="extra-large"
+/>`}
+                language="tsx"
+              />
+            </div>
+          </div>
+
+          {/* Large Hero */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Large Hero (400-600px)</h3>
+            <Card>
+              <CardBody className="p-0 overflow-hidden">
+                <Hero
+                  title="Large Hero Section"
+                  description="Standard page hero with 400-600px minimum height for solutions and product pages"
+                  backgroundImage="/images/02.png"
+                  size="large"
+                />
+              </CardBody>
+            </Card>
+            <div className="mt-3">
+              <CodeBlock
+                code={`<Hero
+  title="Large Hero Section"
+  description="Standard page hero"
+  backgroundImage="/images/hero.png"
+  size="large"
+/>`}
+                language="tsx"
+              />
+            </div>
+          </div>
+
+          {/* Default Hero */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Default Hero</h3>
+            <Card>
+              <CardBody className="p-0 overflow-hidden">
+                <Hero
+                  title="Default Hero"
+                  description="Gradient background with content-based height"
+                />
+              </CardBody>
+            </Card>
+            <div className="mt-3">
+              <CodeBlock
+                code={`<Hero
+  title="Default Hero"
+  description="Gradient background"
+/>`}
+                language="tsx"
+              />
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Usage Guidelines */}

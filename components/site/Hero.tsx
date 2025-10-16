@@ -10,6 +10,7 @@ interface HeroProps {
   secondaryCTA?: { text: string; href: string };
   children?: ReactNode;
   backgroundImage?: string;
+  backgroundVideo?: string;
   size?: "default" | "large" | "extra-large";
 }
 
@@ -21,6 +22,7 @@ export function Hero({
   secondaryCTA,
   children,
   backgroundImage,
+  backgroundVideo,
   size = "default",
 }: HeroProps) {
   const sizeClasses = {
@@ -31,7 +33,21 @@ export function Hero({
 
   return (
     <div className={`relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 ${sizeClasses[size]}`}>
-      {backgroundImage ? (
+      {backgroundVideo ? (
+        <>
+          {/* Background video with overlay */}
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 -z-10 h-full w-full object-cover"
+          >
+            <source src={backgroundVideo} type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 -z-10 bg-background/80" />
+        </>
+      ) : backgroundImage ? (
         <>
           {/* Background image with overlay */}
           <Image
