@@ -34,7 +34,7 @@ export function Hero({
   const hasMediaBackground = backgroundVideo || backgroundImage;
 
   return (
-    <div className={`relative overflow-hidden ${hasMediaBackground ? 'flex items-center' : 'pt-32 pb-16 md:pt-40 md:pb-24'} ${sizeClasses[size]}`}>
+    <div className={`relative overflow-hidden ${hasMediaBackground ? 'h-[80vh] flex items-center' : 'pt-32 pb-16 md:pt-40 md:pb-24'} ${!hasMediaBackground ? sizeClasses[size] : ''}`}>
       {backgroundVideo ? (
         <>
           {/* Background video with overlay */}

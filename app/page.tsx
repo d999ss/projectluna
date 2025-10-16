@@ -14,7 +14,7 @@ export default function Home() {
         description="Tiger BioSciences is a global leader in medical technology, dedicated to delivering cutting-edge solutions for clinicians worldwide. Specializing in cellular, acellular, and matrix-like products (CAMPS)."
         primaryCTA={{ text: "Request a Demo", href: "/contact" }}
         secondaryCTA={{ text: "Learn More", href: "/#about" }}
-        backgroundImage="/images/boredoptimism_Tiger_--ar_169_--raw_--profile_el37if6_--v_7_f42cc65d-2974-4137-9511-e38d2d45d406_2.png"
+        backgroundVideo="/images/social_boredoptimism_reflection_in_the_cats_eyes_--ar_9151_--bs_1_--_fd91aae9-9fc0-4a4c-98d7-2d0bf3ced741_0.mp4"
         size="extra-large"
       />
 
