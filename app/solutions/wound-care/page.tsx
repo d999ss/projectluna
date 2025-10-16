@@ -59,6 +59,8 @@ export default function WoundCareSolutionsPage() {
         description="Tiger BioSciences delivers cutting-edge cellular, acellular, and matrix-like products (CAMPs) designed to address the most challenging wound care needs. From chronic wounds to extremity reconstruction and surgical dressings, our solutions combine scientific innovation with proven clinical outcomes."
         primaryCTA={{ text: "Request a Demo", href: "/contact" }}
         secondaryCTA={{ text: "View All Solutions", href: "/solutions" }}
+        backgroundImage="/images/boredoptimism_human_skin_--ar_169_--raw_--profile_e1dtuj2_--v_350bc8db-8fea-4316-aa3b-ec44b72f8094_2.png"
+        size="extra-large"
       />
 
       {/* Stats Section */}

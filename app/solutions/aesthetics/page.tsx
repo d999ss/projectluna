@@ -59,6 +59,8 @@ export default function AestheticSolutionsPage() {
         description="Tiger BioSciences delivers cutting-edge solutions across reconstructive, cosmetic, and regenerative domains. Our aesthetic portfolio combines innovation, safety, and proven clinical outcomes to help practitioners deliver exceptional results for their patients."
         primaryCTA={{ text: "Request a Demo", href: "/contact" }}
         secondaryCTA={{ text: "View All Solutions", href: "/solutions" }}
+        backgroundImage="/images/boredoptimism_beauty_aesthetics_--ar_169_--raw_--profile_e1dt_34284714-30fb-4104-8ef7-79f98077bc60_2.png"
+        size="extra-large"
       />
 
       {/* Stats Section */}

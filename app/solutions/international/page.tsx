@@ -47,6 +47,8 @@ export default function InternationalSolutionsPage() {
         description="Tiger BioSciences International enables worldwide distribution of cutting-edge cell and tissue technologies. Based in Germany, our international division brings the same quality, innovation, and clinical excellence that defines Tiger BioSciences to healthcare providers across global markets."
         primaryCTA={{ text: "Request a Demo", href: "/contact" }}
         secondaryCTA={{ text: "View All Solutions", href: "/solutions" }}
+        backgroundImage="/images/G2lpOORXYAAwOtV.jpeg"
+        size="extra-large"
       />
 
       {/* Stats Section */}
