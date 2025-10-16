@@ -12,6 +12,7 @@ interface HeroProps {
   backgroundImage?: string;
   backgroundVideo?: string;
   size?: "default" | "large" | "extra-large";
+  align?: "center" | "left";
 }
 
 export function Hero({
@@ -24,6 +25,7 @@ export function Hero({
   backgroundImage,
   backgroundVideo,
   size = "default",
+  align = "center",
 }: HeroProps) {
   const sizeClasses = {
     "default": "",
@@ -34,7 +36,7 @@ export function Hero({
   const hasMediaBackground = backgroundVideo || backgroundImage;
 
   return (
-    <div className={`relative overflow-hidden ${hasMediaBackground ? 'h-[80vh] flex items-center' : 'pt-32 pb-16 md:pt-40 md:pb-24'} ${!hasMediaBackground ? sizeClasses[size] : ''}`}>
+    <div className={`relative overflow-hidden ${hasMediaBackground ? 'h-[90vh] flex items-end' : 'pt-32 pb-16 md:pt-40 md:pb-24'} ${!hasMediaBackground ? sizeClasses[size] : ''}`}>
       {backgroundVideo ? (
         <>
           {/* Background video with overlay */}
@@ -69,7 +71,7 @@ export function Hero({
         </>
       )}
 
-      <div className={`max-w-container mx-auto px-4 text-center w-full ${hasMediaBackground ? 'py-32 md:py-40' : ''}`}>
+      <div className={`container mx-auto ${hasMediaBackground ? 'px-6 pb-6 md:px-10 md:pb-10' : 'px-4'} ${align === 'left' ? 'text-left' : 'text-center'} w-full`}>
         {subtitle && (
           <div className="mb-6 inline-block rounded-full border border-brand/20 bg-brand/10 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-brand">
             {subtitle}
@@ -79,12 +81,12 @@ export function Hero({
           {title}
         </h1>
         {description && (
-          <p className={`text-lead mx-auto mb-10 max-w-[72ch] ${hasMediaBackground ? 'text-white/90' : 'text-muted-foreground/90'}`}>
+          <p className={`text-lead mb-10 max-w-[72ch] ${align === 'center' ? 'mx-auto' : ''} ${hasMediaBackground ? 'text-white/90' : 'text-muted-foreground/90'}`}>
             {description}
           </p>
         )}
         {(primaryCTA || secondaryCTA) && (
-          <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
+          <div className={`flex flex-col gap-3 sm:flex-row ${align === 'center' ? 'items-center justify-center' : 'items-start'}`}>
             {primaryCTA && (
               <Link
                 href={primaryCTA.href}

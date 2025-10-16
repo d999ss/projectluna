@@ -2,6 +2,7 @@
 
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
@@ -32,17 +33,26 @@ const mobileNavigation = [
   { name: "Contact", href: "/contact" },
 ];
 
-export function Nav() {
+interface NavProps {
+  variant?: "default" | "light";
+}
+
+export function Nav({ variant }: NavProps = {}) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Auto-apply light variant on homepage, otherwise use provided variant or default
+  const effectiveVariant = pathname === "/" ? "light" : (variant || "default");
+  const isLight = effectiveVariant === "light";
 
   return (
     <header className="fixed top-0 z-50 w-full">
-      <div className="absolute inset-0 bg-[rgba(255,255,255,.55)] dark:bg-[rgba(0,0,0,.35)] backdrop-blur-xl" />
+      <div className={`absolute inset-0 ${isLight ? 'bg-[rgba(0,0,0,.15)]' : 'bg-[rgba(255,255,255,.55)] dark:bg-[rgba(0,0,0,.35)]'} backdrop-blur-xl`} />
       <div className="container relative mx-auto max-w-7xl px-6 md:px-10">
         <Navbar className="py-4">
           <NavbarLeft>
             <Link href="/" className="-m-1.5 p-1.5 transition-all duration-200 ease-in-out focus:outline-hidden focus:ring-2 focus:ring-brand/70 rounded-md">
-              <span className="text-base font-[Neuropa,Archivo] font-normal tracking-tight uppercase">Tiger BioSciences™</span>
+              <span className={`text-base font-[Neuropa,Archivo] font-normal tracking-tight uppercase ${isLight ? 'text-white' : ''}`}>Tiger BioSciences™</span>
             </Link>
           </NavbarLeft>
 
@@ -52,7 +62,7 @@ export function Nav() {
               <NavigationMenuList>
                 {MEGA_SECTIONS.map((section) => (
                   <NavigationMenuItem key={section.id}>
-                    <NavigationMenuTrigger className="font-display text-sm font-light tracking-wide">
+                    <NavigationMenuTrigger className={`font-display text-sm font-light tracking-wide ${isLight ? 'text-white data-[state=open]:text-foreground' : ''}`}>
                       {section.id === "company" ? "Company" : section.id === "expertise" ? "Expertise" : "Products"}
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
@@ -102,7 +112,7 @@ export function Nav() {
                 ))}
                 <NavigationMenuItem>
                   <NavigationMenuLink asChild>
-                    <Link href="/careers" className="font-display group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-light tracking-wide transition-all duration-200 ease-in-out hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-hidden focus:ring-2 focus:ring-brand/70">
+                    <Link href="/careers" className={`font-display group inline-flex h-9 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-light tracking-wide transition-all duration-200 ease-in-out hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-hidden focus:ring-2 focus:ring-brand/70 ${isLight ? 'text-white' : ''}`}>
                       Career
                     </Link>
                   </NavigationMenuLink>
@@ -120,7 +130,7 @@ export function Nav() {
                 <SheetTrigger asChild className="lg:hidden">
                   <button
                     type="button"
-                    className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-foreground transition-all duration-200 ease-in-out hover:bg-muted focus:outline-hidden focus:ring-2 focus:ring-brand/70"
+                    className={`-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 transition-all duration-200 ease-in-out hover:bg-muted focus:outline-hidden focus:ring-2 focus:ring-brand/70 ${isLight ? 'text-white' : 'text-foreground'}`}
                   >
                     <span className="sr-only">Open main menu</span>
                     <Menu className="size-6" aria-hidden="true" />
