@@ -31,8 +31,10 @@ export function Hero({
     "extra-large": "min-h-[600px] md:min-h-[800px]"
   };
 
+  const hasMediaBackground = backgroundVideo || backgroundImage;
+
   return (
-    <div className={`relative overflow-hidden pt-32 pb-16 md:pt-40 md:pb-24 ${sizeClasses[size]}`}>
+    <div className={`relative overflow-hidden ${hasMediaBackground ? 'flex items-center' : 'pt-32 pb-16 md:pt-40 md:pb-24'} ${sizeClasses[size]}`}>
       {backgroundVideo ? (
         <>
           {/* Background video with overlay */}
@@ -67,17 +69,17 @@ export function Hero({
         </>
       )}
 
-      <div className="max-w-container mx-auto px-4 text-center">
+      <div className={`max-w-container mx-auto px-4 text-center w-full ${hasMediaBackground ? 'py-32 md:py-40' : ''}`}>
         {subtitle && (
           <div className="mb-6 inline-block rounded-full border border-brand/20 bg-brand/10 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-brand">
             {subtitle}
           </div>
         )}
-        <h1 className="text-display mb-6 text-foreground">
+        <h1 className={`text-display mb-6 ${hasMediaBackground ? 'text-white' : 'text-foreground'}`}>
           {title}
         </h1>
         {description && (
-          <p className="text-lead text-muted-foreground/90 mx-auto mb-10 max-w-[72ch]">
+          <p className={`text-lead mx-auto mb-10 max-w-[72ch] ${hasMediaBackground ? 'text-white/90' : 'text-muted-foreground/90'}`}>
             {description}
           </p>
         )}
@@ -94,7 +96,7 @@ export function Hero({
             {secondaryCTA && (
               <Link
                 href={secondaryCTA.href}
-                className="inline-flex items-center justify-center rounded-full px-8 py-3 border border-border/60 text-foreground hover:bg-muted/60 transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/60"
+                className={`inline-flex items-center justify-center rounded-full px-8 py-3 border ${hasMediaBackground ? 'border-white/60 text-white hover:bg-white/10' : 'border-border/60 text-foreground hover:bg-muted/60'} transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand/60`}
               >
                 {secondaryCTA.text}
               </Link>

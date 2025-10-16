@@ -741,24 +741,59 @@ import Figma from "@/components/logos/figma"
       {/* Badges */}
       <section className="mb-12">
         <h2 className="text-h3 mb-6">Badges</h2>
-        <Card>
-          <CardBody>
-            <div className="flex flex-wrap gap-3 items-center">
-              <Badge variant="default">Default</Badge>
-              <Badge variant="brand">Brand</Badge>
-              <Badge variant="secondary">Secondary</Badge>
-              <Badge variant="destructive">Destructive</Badge>
-              <Badge variant="outline">Outline</Badge>
-              <Badge variant="glass">Glass</Badge>
-              <Badge size="sm">Small</Badge>
-            </div>
-            <div className="mt-4 text-xs text-muted-foreground">
-              <code>variant: default | brand | secondary | destructive | outline | glass</code>
-              <br />
-              <code>size: default | sm</code>
-            </div>
-          </CardBody>
-        </Card>
+        <div className="space-y-6">
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Badge Component Variants</h3>
+            <Card>
+              <CardBody>
+                <div className="flex flex-wrap gap-3 items-center">
+                  <Badge variant="default">Default</Badge>
+                  <Badge variant="brand">Brand</Badge>
+                  <Badge variant="secondary">Secondary</Badge>
+                  <Badge variant="destructive">Destructive</Badge>
+                  <Badge variant="outline">Outline</Badge>
+                  <Badge variant="glass">Glass</Badge>
+                  <Badge size="sm">Small</Badge>
+                </div>
+                <div className="mt-4 text-xs text-muted-foreground">
+                  <code>variant: default | brand | secondary | destructive | outline | glass</code>
+                  <br />
+                  <code>size: default | sm</code>
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Hero Subtitle Pill</h3>
+            <Card>
+              <CardBody>
+                <div className="flex flex-col gap-4">
+                  <div className="inline-block rounded-full border border-brand/20 bg-brand/10 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-brand w-fit">
+                    Unified Flagship Line
+                  </div>
+                  <div className="inline-block rounded-full border border-brand/20 bg-brand/10 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-brand w-fit">
+                    Homepage Feature
+                  </div>
+                  <div className="inline-block rounded-full border border-brand/20 bg-brand/10 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-brand w-fit">
+                    New Release
+                  </div>
+                </div>
+                <div className="mt-4">
+                  <CodeBlock
+                    code={`<div className="inline-block rounded-full border border-brand/20 bg-brand/10 px-4 py-1.5 text-[11px] font-medium uppercase tracking-[0.18em] text-brand">
+  Unified Flagship Line
+</div>`}
+                    language="tsx"
+                  />
+                </div>
+                <div className="mt-3 text-sm text-muted-foreground">
+                  Used in Hero component as the <code>subtitle</code> prop. Creates a pill-shaped label with glass morphism effect.
+                </div>
+              </CardBody>
+            </Card>
+          </div>
+        </div>
       </section>
 
       {/* Accordion */}
