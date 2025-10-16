@@ -1,6 +1,6 @@
 export type NavItem = { label: string; href: string }
 export type NavGroup = { title: string; items: NavItem[] }
-export type FeatureCard = { badge: string; title: string; body: string; cta: { label: string; href: string } }
+export type FeatureCard = { badge: string; title: string; body: string; cta: { label: string; href: string }; image?: string }
 export type MegaSection = { id: "company"|"expertise"|"products"; groups: NavGroup[]; feature: FeatureCard }
 
 export const MEGA_SECTIONS: MegaSection[] = [
@@ -32,7 +32,8 @@ export const MEGA_SECTIONS: MegaSection[] = [
       badge: "ABOUT",
       title: "Transforming Lives Through Science",
       body: "Tiger BioSciences advances biotechnology with innovation, integrity, and excellence.",
-      cta: { label: "Learn More", href: "/company/overview" }
+      cta: { label: "Learn More", href: "/company/overview" },
+      image: "/images/boredoptimism_close_up_of_a_man_eye_--ar_9151_--raw_--v_7_6e1ef8a8-f234-4f8d-b09d-ab30df60ec89_0.png"
     }
   },
   {
@@ -67,7 +68,8 @@ export const MEGA_SECTIONS: MegaSection[] = [
       badge: "EXPERTISE",
       title: "Innovation Across Disciplines",
       body: "From cell & tissue engineering to regenerative sciences, Tiger BioSciences delivers clinical impact.",
-      cta: { label: "Explore More", href: "/solutions" }
+      cta: { label: "Explore More", href: "/solutions" },
+      image: "/images/boredoptimism_close_up_of_skin_--ar_169_--raw_--profile_el37i_d81643f3-7159-4088-adcf-d7413e31b848_1.png"
     }
   },
   {
@@ -105,7 +107,8 @@ export const MEGA_SECTIONS: MegaSection[] = [
       badge: "FEATURED",
       title: "CAMPs Technology",
       body: "Cell & tissue products with proven clinical outcomes and standardized quality.",
-      cta: { label: "Discover CAMPs", href: "/products/camps" }
+      cta: { label: "Discover CAMPs", href: "/products/camps" },
+      image: "/images/boredoptimism_human_skin_--ar_169_--raw_--profile_e1dtuj2_--v_350bc8db-8fea-4316-aa3b-ec44b72f8094_2.png"
     }
   },
 ]

@@ -93,8 +93,17 @@ export function Nav({ variant }: NavProps = {}) {
                         </div>
 
                         {/* Right side: Featured section */}
-                        <div className="rounded-lg bg-muted/40 border border-border/60 p-6 space-y-4">
-                          <span className="font-display inline-block text-xs tracking-wide font-light rounded-full px-3 py-1 bg-brand/15 text-brand border border-brand/25">
+                        <div className="rounded-lg bg-muted/40 p-6 space-y-4 overflow-hidden relative">
+                          {section.feature.image && (
+                            <div className="absolute inset-0 -z-10">
+                              <img
+                                src={section.feature.image}
+                                alt={section.feature.title}
+                                className="w-full h-full object-cover opacity-20"
+                              />
+                            </div>
+                          )}
+                          <span className="font-display inline-block text-xs tracking-wide font-light rounded-full px-3 py-1 bg-brand/15 text-brand">
                             {section.feature.badge}
                           </span>
                           <h3 className="font-display text-xl font-light tracking-tight">{section.feature.title}</h3>
