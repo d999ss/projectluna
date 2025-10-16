@@ -17,6 +17,63 @@ export default function Home() {
         align="left"
       />
 
+      {/* Solution Hubs Section - Moved to Top */}
+      <Section title="Our Solution Portfolios" description="Explore our comprehensive solutions across four specialized areas">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <Link href="/solutions/wound-care" className="group">
+            <StatCard
+              icon={<HeartPulseIcon className="size-6 text-brand" />}
+              title="Wound Care Solutions"
+              description="Advanced CAMP solutions for chronic wounds, extremity reconstruction, and surgical dressings."
+            >
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
+                Explore Solutions
+                <ArrowRightIcon className="ml-2 size-4" />
+              </div>
+            </StatCard>
+          </Link>
+
+          <Link href="/solutions/aesthetics" className="group">
+            <StatCard
+              icon={<Building2Icon className="size-6 text-green-600" />}
+              title="Aesthetic Solutions"
+              description="Cutting-edge solutions for reconstruction, shape, renewal, and volume across aesthetic medicine."
+            >
+              <div className="mt-4 flex items-center text-sm font-semibold text-green-600 transition-transform group-hover:translate-x-1">
+                Explore Solutions
+                <ArrowRightIcon className="ml-2 size-4" />
+              </div>
+            </StatCard>
+          </Link>
+
+          <Link href="/solutions/regenerative-sciences" className="group">
+            <StatCard
+              icon={<FlaskConicalIcon className="size-6 text-brand" />}
+              title="Regenerative Sciences"
+              description="Leading tissue processing, R&D, birth tissue recovery, and biocare innovations."
+            >
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
+                Explore Solutions
+                <ArrowRightIcon className="ml-2 size-4" />
+              </div>
+            </StatCard>
+          </Link>
+
+          <Link href="/solutions/international" className="group">
+            <StatCard
+              icon={<GlobeIcon className="size-6 text-brand" />}
+              title="International"
+              description="Global access to advanced cell and tissue technologies through our international division."
+            >
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
+                Explore Solutions
+                <ArrowRightIcon className="ml-2 size-4" />
+              </div>
+            </StatCard>
+          </Link>
+        </div>
+      </Section>
+
       {/* Stats Section */}
       <Section>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -81,63 +138,6 @@ export default function Home() {
               </div>
             </StatCard>
           ))}
-        </div>
-      </Section>
-
-      {/* Solution Hubs Section */}
-      <Section title="Our Solution Portfolios" description="Explore our comprehensive solutions across four specialized areas">
-        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-          <Link href="/solutions/wound-care" className="group">
-            <StatCard
-              icon={<HeartPulseIcon className="size-6 text-brand" />}
-              title="Wound Care Solutions"
-              description="Advanced CAMP solutions for chronic wounds, extremity reconstruction, and surgical dressings."
-            >
-              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
-                Explore Solutions
-                <ArrowRightIcon className="ml-2 size-4" />
-              </div>
-            </StatCard>
-          </Link>
-
-          <Link href="/solutions/aesthetics" className="group">
-            <StatCard
-              icon={<Building2Icon className="size-6 text-green-600" />}
-              title="Aesthetic Solutions"
-              description="Cutting-edge solutions for reconstruction, shape, renewal, and volume across aesthetic medicine."
-            >
-              <div className="mt-4 flex items-center text-sm font-semibold text-green-600 transition-transform group-hover:translate-x-1">
-                Explore Solutions
-                <ArrowRightIcon className="ml-2 size-4" />
-              </div>
-            </StatCard>
-          </Link>
-
-          <Link href="/solutions/regenerative-sciences" className="group">
-            <StatCard
-              icon={<FlaskConicalIcon className="size-6 text-brand" />}
-              title="Regenerative Sciences"
-              description="Leading tissue processing, R&D, birth tissue recovery, and biocare innovations."
-            >
-              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
-                Explore Solutions
-                <ArrowRightIcon className="ml-2 size-4" />
-              </div>
-            </StatCard>
-          </Link>
-
-          <Link href="/solutions/international" className="group">
-            <StatCard
-              icon={<GlobeIcon className="size-6 text-brand" />}
-              title="International"
-              description="Global access to advanced cell and tissue technologies through our international division."
-            >
-              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
-                Explore Solutions
-                <ArrowRightIcon className="ml-2 size-4" />
-              </div>
-            </StatCard>
-          </Link>
         </div>
       </Section>
     </main>
