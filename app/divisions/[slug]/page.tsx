@@ -127,7 +127,7 @@ export default async function DivisionPage({ params }: { params: Promise<{ slug:
         subtitle={division.subtitle}
         title={division.title}
         description={division.description}
-        primaryCTA={{ text: "Request Demo", href: "/contact" }}
+        primaryCTA={{ text: "Request a Demo", href: "/contact" }}
         secondaryCTA={{ text: "View All Divisions", href: "/divisions" }}
       />
 

@@ -1,4 +1,5 @@
-import { Building2Icon, FlaskConicalIcon, GlobeIcon, HeartPulseIcon } from "lucide-react";
+import { Building2Icon, FlaskConicalIcon, GlobeIcon, HeartPulseIcon, ArrowRightIcon } from "lucide-react";
+import Link from "next/link";
 import { Metadata } from "next";
 
 import CTA from "../../components/sections/cta/default";
@@ -9,6 +10,8 @@ import Items from "../../components/sections/items/default";
 import Logos from "../../components/sections/logos/default";
 import Navbar from "../../components/sections/navbar/default";
 import Stats from "../../components/sections/stats/default";
+import { Section } from "@/components/site/Section";
+import { StatCard } from "@/components/site/StatCard";
 
 export const metadata: Metadata = {
   title: "Tiger BioSciences - Medical Technology Innovation",
@@ -39,7 +42,7 @@ export default function TigerBioSciencesTemplate() {
       />
       
       <Hero
-        title="The first of its kind"
+        title="Leading Innovation in Medical Technology"
         description="Tiger BioSciences is a global leader in medical technology, dedicated to delivering cutting-edge solutions for clinicians worldwide. Specializing in cellular, acellular, and matrix-like products (CAMPS), we are advancing wound care, soft tissue reconstruction, and aesthetics."
         badge={false}
         buttons={[
@@ -74,27 +77,84 @@ export default function TigerBioSciencesTemplate() {
       <Stats
         items={[
           {
-            label: "Global",
             value: "Leader",
-            description: "in medical technology innovation",
+            label: "Global Presence",
+            description: "Trusted by healthcare institutions worldwide",
           },
           {
-            label: "Fully",
-            value: "Integrated",
-            description: "from tissue to distribution",
+            value: "100%",
+            label: "Vertically Integrated",
+            description: "Complete control from tissue to distribution",
           },
           {
-            label: "Multiple",
-            value: "Divisions",
-            description: "serving diverse medical needs",
+            value: "4",
+            label: "Core Divisions",
+            description: "Serving diverse medical technology needs",
           },
           {
-            label: "Worldwide",
-            value: "Impact",
-            description: "supporting clinicians globally",
+            value: "24/7",
+            label: "Global Support",
+            description: "Supporting clinicians around the clock",
           },
         ]}
       />
+
+      {/* Solution Hubs Section */}
+      <Section title="Our Solution Portfolios" description="Explore our comprehensive solutions across four specialized areas">
+        <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <Link href="/solutions/wound-care" className="group">
+            <StatCard
+              icon={<HeartPulseIcon className="size-6 text-brand" />}
+              title="Wound Care Solutions"
+              description="Advanced CAMP solutions for chronic wounds, extremity reconstruction, and surgical dressings."
+            >
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
+                Explore Solutions
+                <ArrowRightIcon className="ml-2 size-4" />
+              </div>
+            </StatCard>
+          </Link>
+
+          <Link href="/solutions/aesthetics" className="group">
+            <StatCard
+              icon={<Building2Icon className="size-6 text-green-600" />}
+              title="Aesthetic Solutions"
+              description="Cutting-edge solutions for reconstruction, shape, renewal, and volume across aesthetic medicine."
+            >
+              <div className="mt-4 flex items-center text-sm font-semibold text-green-600 transition-transform group-hover:translate-x-1">
+                Explore Solutions
+                <ArrowRightIcon className="ml-2 size-4" />
+              </div>
+            </StatCard>
+          </Link>
+
+          <Link href="/solutions/regenerative-sciences" className="group">
+            <StatCard
+              icon={<FlaskConicalIcon className="size-6 text-brand" />}
+              title="Regenerative Sciences"
+              description="Leading tissue processing, R&D, birth tissue recovery, and biocare innovations."
+            >
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
+                Explore Solutions
+                <ArrowRightIcon className="ml-2 size-4" />
+              </div>
+            </StatCard>
+          </Link>
+
+          <Link href="/solutions/international" className="group">
+            <StatCard
+              icon={<GlobeIcon className="size-6 text-brand" />}
+              title="International"
+              description="Global access to advanced cell and tissue technologies through our international division."
+            >
+              <div className="mt-4 flex items-center text-sm font-semibold text-brand transition-transform group-hover:translate-x-1">
+                Explore Solutions
+                <ArrowRightIcon className="ml-2 size-4" />
+              </div>
+            </StatCard>
+          </Link>
+        </div>
+      </Section>
 
       <section id="solutions">
         <Items

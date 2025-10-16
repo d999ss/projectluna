@@ -16,7 +16,7 @@ export default function SolutionsPage() {
       <Hero
         title="Our Solutions"
         description="Comprehensive medical technology solutions designed to advance patient care across multiple therapeutic areas."
-        primaryCTA={{ text: "Request Demo", href: "/contact" }}
+        primaryCTA={{ text: "Request a Demo", href: "/contact" }}
         secondaryCTA={{ text: "View Divisions", href: "/divisions" }}
       />
 

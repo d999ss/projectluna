@@ -3,8 +3,8 @@ export const metadata = { title: "Contact | Tiger BioSciences" }
 export default function Contact() {
   return (
     <main className="container mx-auto max-w-3xl px-4 md:px-6 py-12 md:py-16 mt-16">
-      <h1 className="text-3xl md:text-4xl font-semibold">Contact</h1>
-      <p className="mt-3 text-foreground/70">We&apos;ll get back to you within one business day.</p>
+      <h1 className="text-3xl md:text-4xl font-semibold">Contact Us</h1>
+      <p className="mt-3 text-foreground/70">We&apos;ll get back to you within one business day (Monday-Friday, 9 AM - 5 PM ET).</p>
       <form className="mt-8 grid gap-4">
         <input className="rounded-md border border-border/60 bg-card/70 px-3 py-2" placeholder="Full name" />
         <input className="rounded-md border border-border/60 bg-card/70 px-3 py-2" placeholder="Email" type="email" />

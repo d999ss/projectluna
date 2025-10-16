@@ -2,15 +2,15 @@ export const metadata = { title: "Careers | Tiger BioSciences" }
 
 export default function Careers() {
   const roles = [
-    { title: "Senior Research Scientist - Regenerative Medicine", location: "San Diego, CA", type: "Full-time" },
-    { title: "Tissue Engineering Manager", location: "San Diego, CA", type: "Full-time" },
-    { title: "Clinical Research Associate", location: "San Diego, CA", type: "Full-time" },
+    { title: "Senior Research Scientist - Regenerative Medicine", location: "Conshohocken, PA", type: "Full-time" },
+    { title: "Tissue Engineering Manager", location: "Conshohocken, PA", type: "Full-time" },
+    { title: "Clinical Research Associate", location: "Conshohocken, PA", type: "Full-time" },
   ]
   return (
     <main className="container mx-auto max-w-5xl px-4 md:px-6 py-12 md:py-16 mt-16">
-      <h1 className="text-3xl md:text-4xl font-semibold">Careers</h1>
+      <h1 className="text-3xl md:text-4xl font-semibold">Careers at Tiger BioSciences</h1>
       <p className="mt-3 text-foreground/70 max-w-2xl">
-        Join our team of innovators advancing biotechnology through science, integrity, and excellence.
+        Join our team of innovators advancing medical technology through science, integrity, and excellence. At Tiger BioSciences, you'll work on cutting-edge solutions that directly impact patient care and clinician success worldwide.
       </p>
       <div className="mt-8 grid gap-4">
         {roles.map((r) => (

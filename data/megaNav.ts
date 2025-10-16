@@ -39,22 +39,26 @@ export const MEGA_SECTIONS: MegaSection[] = [
     id: "expertise",
     groups: [
       { title: "Wound Care Solutions", items: [
+        { label: "Overview", href: "/solutions/wound-care" },
         { label: "Wound Care", href: "/solutions/wound" },
         { label: "Reconstruction", href: "/solutions/reconstruction" },
         { label: "Dressings & Recovery", href: "/solutions/dressings" },
       ]},
       { title: "Aesthetic Solutions", items: [
+        { label: "Overview", href: "/solutions/aesthetics" },
         { label: "Shape", href: "/solutions/shape" },
         { label: "Renewal", href: "/solutions/renewal" },
         { label: "Volume", href: "/solutions/volume" },
       ]},
       { title: "Regenerative Sciences", items: [
+        { label: "Overview", href: "/solutions/regenerative-sciences" },
         { label: "Regenerative Medicine", href: "/solutions/regenerative" },
         { label: "RegenTX Labs", href: "/solutions/regentx-labs" },
         { label: "Birth Tissue Sciences", href: "/solutions/birth-tissue" },
         { label: "Biocare Division", href: "/solutions/biocare" },
       ]},
       { title: "International", items: [
+        { label: "Overview", href: "/solutions/international" },
         { label: "Health Technology Systems", href: "/solutions/international/health-tech" },
         { label: "Airway Systems", href: "/solutions/international/airway" },
       ]},
